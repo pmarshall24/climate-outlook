@@ -18,5 +18,6 @@ August 3, 2023
 
 This resource is created by Peter Marshall (Contact: [Peter.Marshall@metrovancouver.org](mailto:Peter.Marshall@metrovancouver.org)). Weather and climate data are primarily from a network of hydro-meteorological stations within the water supply areas. Additional data and plots from [Environment and Climate Change Canada](https://weather.gc.ca/), the [BC River Forecast Centre](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre), the [BC Wildfire Service](https://www2.gov.bc.ca/gov/content/safety/wildfire-status), [NOAA](https://www.cpc.ncep.noaa.gov/), and other resources are used in this report. Credit is given where applicable. 
 
-```{tableofcontents}
-```
+
+
+![banner](img/stripes.jpeg)

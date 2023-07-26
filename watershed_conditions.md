@@ -1,6 +1,11 @@
 # Watershed Conditions
 
-This is a summary section tester
+```{admonition} **Drought Status**
+:class: attention
+British Columbia, including the Lower Mainland basin, are experiencing significant seasonal drought this summer. More information on current drought conditions are provided in this resource, and can also be found in the [BC Drought Information Portal](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/drought-information)
+```
+
+This section summarizes recent weather conditions in Metro Vancouver's water supply areas. It has been an exceptionally warm and dry spring. Some relief came with moderate rainfall at the end of July. This was enough rain to cool off the local wildfire season, but it may not be enough to change drought conditions. Please refer to the [](outlook.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
 
 ::::{grid} 1 1 2 2
 :class-container: text-left
