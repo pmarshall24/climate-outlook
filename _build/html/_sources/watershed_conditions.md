@@ -1,6 +1,6 @@
 # Watershed Conditions
 
-```{admonition} **Drought Status**
+```{admonition} **Drought Status:** 
 :class: attention
 British Columbia, including the Lower Mainland basin, are experiencing significant seasonal drought this summer. More information on current drought conditions are provided in this resource, and can also be found in the [BC Drought Information Portal](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/drought-information)
 ```
