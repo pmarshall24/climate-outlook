@@ -1,6 +1,11 @@
 # Watershed Conditions
 
-This is a summary section tester
+```{admonition} **Drought Status:** 
+:class: attention
+British Columbia, including the Lower Mainland basin, are experiencing significant seasonal drought this summer. More information on current drought conditions are provided in this resource, and can also be found in the [BC Drought Information Portal](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/drought-information).
+```
+
+This section summarizes recent weather conditions in Metro Vancouver's water supply areas. It has been an exceptionally warm and dry spring. Some relief came with moderate rainfall at the end of July. This was enough rain to temporarily cool off the local wildfire season, but it was not enough to significantly improve drought conditions. Please refer to the [](outlook.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
 
 ::::{grid} 1 1 2 2
 :class-container: text-left
@@ -17,9 +22,9 @@ This is a summary section tester
 :align: center
 ```
 
-- It's been hot, damn hot
-- Really really hot
-- hotter than a ...
+- The winter was generally cooler than normal
+- May averaged almost 4 degrees warmer than normal
+- June and July have been consistently warm
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -36,9 +41,9 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- It's been super dry
-- Not much rain at all
-- Nothing. Seriously
+- Last summer experienced prolonged drought well into October
+- Only 40% of normal for precipitation has fallen in May-June-July
+- There have been 33-day and 25-day dry spells already this year
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -55,9 +60,9 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- Where'd all the water go??
-- Drink less water and drink more beer
-- Invite someone into your bath
+- Source water supply remains within the normal range 
+- The snowpack was near-normal on May 1st, but melted rapidly in May
+- River inflows have dropped to near record low levels for July
 +++
 Check out the [](water_supply.ipynb) section for more information
 
@@ -74,9 +79,9 @@ Check out the [](water_supply.ipynb) section for more information
 :align: center
 ```
 
-- Great year for making money
-- Bucket loads of money
-- It is smoky though
+- This has been a record-setting wildfire year nationally and provincially
+- Locally, fire danger has been rated high or extreme for 38 days already this year
+- Watershed fire protection crews have responded to multiple local fires
 +++
 Check out the [](crossover.ipynb) section for more information
 

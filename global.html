@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Air Temperature and Precipitation" href="air-temp.html" />
+    <link rel="next" title="Outlook Summary" href="outlook_summary.html" />
     <link rel="prev" title="Watershed Conditions" href="watershed_conditions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -160,6 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="watershed_conditions.html">Watershed Conditions</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Global Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outlook_summary.html">Outlook Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Current Conditions</span></p>
 <ul class="nav bd-sidenav">
@@ -172,6 +173,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="drivers.html">Climate Drivers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analog.html">Analog Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="outlook.html">Climate Outlook</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="links.html">Links and Resources</a></li>
 </ul>
 
     </div>
@@ -375,21 +380,26 @@ document.write(`
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">Earth from space (NASA)</span><a class="headerlink" href="#globe" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Many parts of the globe have experienced intense and prolonged heat waves in 2023. Globally, June was the <a class="reference external" href="https://www.noaa.gov/news/earth-just-had-its-hottest-june-on-record">hottest ever</a> this year, and by a considerable margin. Moving into July, headlines were made when average global temperatures climbed into all-time record territory, and stayed there for well over a week. The chart below shows the global average temperature from 1979 to present (bold black line). 2022 is represented by the orange line. The previous global high temperature was set on August 14, 2016 (16.92 C).</p>
+<div class="danger admonition">
+<p class="admonition-title"><strong>Off the Charts Heat</strong> </p>
+<p>July was the hottest month on Earth in over 100,000 years (and by a significant margin)!</p>
+</div>
+<p>Many parts of the globe have experienced intense and prolonged heat waves in 2023. Globally, June was the <a class="reference external" href="https://www.noaa.gov/news/earth-just-had-its-hottest-june-on-record">hottest ever</a> this year, and by a considerable margin. Moving into July, headlines were made when average global temperatures climbed into all-time record territory and stayed there all month. This July was the <a class="reference external" href="https://public.wmo.int/en/media/press-release/july-2023-set-be-hottest-month-record">hottest month ever on record</a>.</p>
+<p>The chart below shows the global average temperature from 1979 to present. The bold black line represents 2023, while the orange line highlights 2022. The previous global high temperature was set on August 14, 2016 (16.92 C).</p>
 <figure class="align-default" id="temp-world">
 <a class="reference internal image-reference" href="_images/cfsr_world.png"><img alt="_images/cfsr_world.png" src="_images/cfsr_world.png" style="height: 400px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2 </span><span class="caption-text">Global average temperatures, 1979-2023. <a class="reference external" href="https://climatereanalyzer.org/clim/t2_daily/">Climate Reanalyzer</a></span><a class="headerlink" href="#temp-world" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Sea surface temperatures have also been off the charts in 2023. The chart below is absolutely shocking! This means there is significant heat (energy) at the surface of the ocean to interact with the atmosphere. As a result, we could see hotter average air temperatures and more intense storms.</p>
+<p>Sea surface temperatures have also been in completely new territory this year. The chart below is absolutely shocking! This means there is significant heat (energy) at the surface of the ocean to interact with the atmosphere. As a result, we could see hotter average air temperatures and more intense storms in the coming months and years.</p>
 <figure class="align-default" id="temp-sea">
 <a class="reference internal image-reference" href="_images/world_sst.png"><img alt="_images/world_sst.png" src="_images/world_sst.png" style="height: 400px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">Global average sea surface temperatures, 1981-2023. <a class="reference external" href="https://climatereanalyzer.org/clim/sst_daily/">Climate Reanalyzer</a></span><a class="headerlink" href="#temp-sea" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>It’s very hard to accurately predict the weather in the long range. Seasonal climate outlooks are designed to lay out probabilities of different patterns occurring (i.e. will it be warmer, colder, wetter, or drier than normal). One thing is certain though, and that is we must expect the unexpected.</p>
+<p>It’s very hard to accurately predict the weather in the long range. Seasonal climate outlooks are designed to lay out probabilities of different patterns occurring (i.e. will it be warmer, colder, wetter, or drier than normal). One thing is certain though, and that is we <strong>must expect the unexpected.</strong> Weather this year has been alarming and there is no reason to believe these alarms bells will fade.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -433,11 +443,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="air-temp.html"
+       href="outlook_summary.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Air Temperature and Precipitation</p>
+        <p class="prev-next-title">Outlook Summary</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
