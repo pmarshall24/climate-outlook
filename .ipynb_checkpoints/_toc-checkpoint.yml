@@ -1,0 +1,24 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Summary
+    chapters:
+    - file: watershed_conditions.md
+    - file: global.md
+    - file: outlook_summary.md
+  - caption: Current Conditions
+    chapters:
+    - file: air-temp.ipynb
+    - file: crossover.ipynb
+    - file: water_supply.ipynb
+  - caption: Outlook
+    chapters:
+    - file: drivers.md
+    - file: analog.md
+    - file: outlook.md
+  - caption: Resources
+    chapters:
+    - file: links.md
