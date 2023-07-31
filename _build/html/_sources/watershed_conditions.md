@@ -22,9 +22,9 @@ This section summarizes recent weather conditions in Metro Vancouver's water sup
 :align: center
 ```
 
-- It's been hot, damn hot
-- Really really hot
-- hotter than a ...
+- February, March, and April were all cooler than normal
+- May was exceptionally warm, averaging almost 4 degrees warmer than normal
+- June and July have been consistently warm
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -41,9 +41,9 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- It's been super dry
-- Not much rain at all
-- Nothing. Seriously
+- One of the strongest storms of the year occurred on the Easter weekend in April
+- Only 109 mm of rain has fallen since April 24 (43% of normal for May-June-July)
+- There have been two long dry already this summer - 33 days and 25 days
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -60,9 +60,9 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- Where'd all the water go??
-- Drink less water and drink more beer
-- Invite someone into your bath
+- Source water supply remains within the normal range 
+- The snowpack was near-normal on May 1st, but melted rapidly in May
+- River inflows have dropped to near record low levels for July
 +++
 Check out the [](water_supply.ipynb) section for more information
 
@@ -79,9 +79,9 @@ Check out the [](water_supply.ipynb) section for more information
 :align: center
 ```
 
-- Great year for making money
-- Bucket loads of money
-- It is smoky though
+- This has been a record-setting wildfire year nationally and provincially
+- Locally, fire danger has been rated high or extreme for x days already this year
+- Watershed fire protection crews have fought multiple local fires
 +++
 Check out the [](crossover.ipynb) section for more information
 
