@@ -1,7 +1,7 @@
 
 ![banner](img/indian-arm_hazy.png)
 
-# Watershed Climate Outlook
+# Water Services Seasonal Climate Outlook
 
 
 This book provides a summary of current and recent weather conditions in Metro Vancouver's water supply areas. You will find a high-level summaries in the [](watershed_conditions.md), [](global.md), and the [](outlook_summary.md) sections. This is a good place to start. Detailed local conditions are laid out in the [](air-temp.ipynb), [](water_supply.ipynb), and [](crossover.ipynb) sections. You will also find a more detailed medium-to-long range [](outlook.md). 
