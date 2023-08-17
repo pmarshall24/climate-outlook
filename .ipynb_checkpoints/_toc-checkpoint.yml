@@ -6,6 +6,7 @@ root: intro
 parts:
   - caption: Summary
     chapters:
+    - file: overview_map.ipynb
     - file: watershed_conditions.md
     - file: global.md
     - file: outlook_summary.md
@@ -19,6 +20,10 @@ parts:
     - file: drivers.md
     - file: analog.md
     - file: outlook.md
+  - caption: Other Climate-related Topics
+    chapters:
+    - file: forest_health.md
+    - file: glacier.md
   - caption: Resources
     chapters:
     - file: links.md
