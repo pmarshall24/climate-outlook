@@ -403,7 +403,7 @@ document.write(`
 <section id="drought">
 <span id="label1"></span><h2>Drought<a class="headerlink" href="#drought" title="Permalink to this headline">#</a></h2>
 <figure class="align-default" id="drawdown">
-<a class="reference internal image-reference" href="_images/coq_drawdown.jpg"><img alt="_images/coq_drawdown.jpg" src="_images/coq_drawdown.jpg" style="height: 300px;" /></a>
+<img alt="_images/coq_drawdown.jpg" src="_images/coq_drawdown.jpg" />
 <figcaption>
 <p><span class="caption-number">Fig. 7 </span><span class="caption-text">Coquitlam Lake shore in 2022</span><a class="headerlink" href="#drawdown" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -420,23 +420,80 @@ document.write(`
 <p><span class="caption-number">Fig. 8 </span><span class="caption-text">Latest BC drought map from the BC River Forecast Centre <a class="reference external" href="https://governmentofbc.maps.arcgis.com/apps/MapSeries/index.html?appid=838d533d8062411c820eef50b08f7ebc">BCRFC</a></span><a class="headerlink" href="#drought-map" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The table below shows drought levels in the Lower Mainland basin for 2015 to 2023. Drought levels reached the highest level (level 5) on August 17th this year. In 2022, this occurred at the end of September. In level 5, adverse impacts are almost certain.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-170141e0465040f682e3cdf089d8f305"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-170141e0465040f682e3cdf089d8f305") {
+      outputDiv = document.getElementById("altair-viz-170141e0465040f682e3cdf089d8f305");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "step": 14, "strokeWidth": 0}, "axis": {"domain": false}}, "data": {"name": "data-6ce76c1aab6bfa9c917d9b5f60f73de7"}, "mark": {"type": "square", "size": 300}, "encoding": {"color": {"field": "level", "scale": {"domain": ["-0.1", "0", "1", "2", "3", "4", "5"], "range": ["#1C00ff00", "lightgreen", "yellow", "orange", "darkorange", "red", "darkred"]}, "title": "Drought Level", "type": "quantitative"}, "tooltip": [{"field": "date", "timeUnit": "monthdate", "title": "Date", "type": "temporal"}, {"field": "level", "title": "Drought Level", "type": "quantitative"}], "x": {"field": "date", "timeUnit": "monthdate", "title": null, "type": "temporal"}, "y": {"field": "year", "title": null, "type": "ordinal"}}, "height": 200, "title": "Drought Levels - Lower Mainland Basin", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-6ce76c1aab6bfa9c917d9b5f60f73de7": [{"year": 2015, "month": 4, "day": 25, "level": -0.1, "date": "2015-04-25T00:00:00"}, {"year": 2015, "month": 5, "day": 1, "level": 1.0, "date": "2015-05-01T00:00:00"}, {"year": 2015, "month": 5, "day": 7, "level": 1.0, "date": "2015-05-07T00:00:00"}, {"year": 2015, "month": 5, "day": 15, "level": 2.0, "date": "2015-05-15T00:00:00"}, {"year": 2015, "month": 5, "day": 23, "level": 2.0, "date": "2015-05-23T00:00:00"}, {"year": 2015, "month": 5, "day": 31, "level": 2.0, "date": "2015-05-31T00:00:00"}, {"year": 2015, "month": 6, "day": 7, "level": 2.0, "date": "2015-06-07T00:00:00"}, {"year": 2015, "month": 6, "day": 15, "level": 2.0, "date": "2015-06-15T00:00:00"}, {"year": 2015, "month": 6, "day": 22, "level": 3.0, "date": "2015-06-22T00:00:00"}, {"year": 2015, "month": 6, "day": 30, "level": 3.0, "date": "2015-06-30T00:00:00"}, {"year": 2015, "month": 7, "day": 7, "level": 3.0, "date": "2015-07-07T00:00:00"}, {"year": 2015, "month": 7, "day": 15, "level": 4.0, "date": "2015-07-15T00:00:00"}, {"year": 2015, "month": 7, "day": 23, "level": 4.0, "date": "2015-07-23T00:00:00"}, {"year": 2015, "month": 7, "day": 31, "level": 4.0, "date": "2015-07-31T00:00:00"}, {"year": 2015, "month": 8, "day": 7, "level": 4.0, "date": "2015-08-07T00:00:00"}, {"year": 2015, "month": 8, "day": 15, "level": 4.0, "date": "2015-08-15T00:00:00"}, {"year": 2015, "month": 8, "day": 23, "level": 4.0, "date": "2015-08-23T00:00:00"}, {"year": 2015, "month": 8, "day": 31, "level": 4.0, "date": "2015-08-31T00:00:00"}, {"year": 2015, "month": 9, "day": 7, "level": 3.0, "date": "2015-09-07T00:00:00"}, {"year": 2015, "month": 9, "day": 15, "level": 2.0, "date": "2015-09-15T00:00:00"}, {"year": 2015, "month": 9, "day": 23, "level": 2.0, "date": "2015-09-23T00:00:00"}, {"year": 2015, "month": 9, "day": 30, "level": 1.0, "date": "2015-09-30T00:00:00"}, {"year": 2015, "month": 10, "day": 7, "level": 1.0, "date": "2015-10-07T00:00:00"}, {"year": 2015, "month": 10, "day": 15, "level": 1.0, "date": "2015-10-15T00:00:00"}, {"year": 2015, "month": 10, "day": 23, "level": 1.0, "date": "2015-10-23T00:00:00"}, {"year": 2015, "month": 10, "day": 31, "level": 1.0, "date": "2015-10-31T00:00:00"}, {"year": 2016, "month": 4, "day": 25, "level": -0.1, "date": "2016-04-25T00:00:00"}, {"year": 2016, "month": 5, "day": 1, "level": 1.0, "date": "2016-05-01T00:00:00"}, {"year": 2016, "month": 5, "day": 7, "level": 1.0, "date": "2016-05-07T00:00:00"}, {"year": 2016, "month": 5, "day": 15, "level": 2.0, "date": "2016-05-15T00:00:00"}, {"year": 2016, "month": 5, "day": 23, "level": 2.0, "date": "2016-05-23T00:00:00"}, {"year": 2016, "month": 5, "day": 31, "level": 2.0, "date": "2016-05-31T00:00:00"}, {"year": 2016, "month": 6, "day": 7, "level": 2.0, "date": "2016-06-07T00:00:00"}, {"year": 2016, "month": 6, "day": 15, "level": 2.0, "date": "2016-06-15T00:00:00"}, {"year": 2016, "month": 6, "day": 22, "level": 2.0, "date": "2016-06-22T00:00:00"}, {"year": 2016, "month": 6, "day": 30, "level": 2.0, "date": "2016-06-30T00:00:00"}, {"year": 2016, "month": 7, "day": 7, "level": 2.0, "date": "2016-07-07T00:00:00"}, {"year": 2016, "month": 7, "day": 15, "level": 2.0, "date": "2016-07-15T00:00:00"}, {"year": 2016, "month": 7, "day": 23, "level": 2.0, "date": "2016-07-23T00:00:00"}, {"year": 2016, "month": 7, "day": 31, "level": 2.0, "date": "2016-07-31T00:00:00"}, {"year": 2016, "month": 8, "day": 7, "level": 2.0, "date": "2016-08-07T00:00:00"}, {"year": 2016, "month": 8, "day": 15, "level": 2.0, "date": "2016-08-15T00:00:00"}, {"year": 2016, "month": 8, "day": 23, "level": 2.0, "date": "2016-08-23T00:00:00"}, {"year": 2016, "month": 8, "day": 31, "level": 2.0, "date": "2016-08-31T00:00:00"}, {"year": 2016, "month": 9, "day": 7, "level": 2.0, "date": "2016-09-07T00:00:00"}, {"year": 2016, "month": 9, "day": 15, "level": 2.0, "date": "2016-09-15T00:00:00"}, {"year": 2016, "month": 9, "day": 23, "level": 1.0, "date": "2016-09-23T00:00:00"}, {"year": 2016, "month": 9, "day": 30, "level": 1.0, "date": "2016-09-30T00:00:00"}, {"year": 2016, "month": 10, "day": 7, "level": 1.0, "date": "2016-10-07T00:00:00"}, {"year": 2016, "month": 10, "day": 15, "level": 1.0, "date": "2016-10-15T00:00:00"}, {"year": 2016, "month": 10, "day": 23, "level": 1.0, "date": "2016-10-23T00:00:00"}, {"year": 2016, "month": 10, "day": 31, "level": 1.0, "date": "2016-10-31T00:00:00"}, {"year": 2017, "month": 4, "day": 25, "level": -0.1, "date": "2017-04-25T00:00:00"}, {"year": 2017, "month": 5, "day": 1, "level": 0.0, "date": "2017-05-01T00:00:00"}, {"year": 2017, "month": 5, "day": 7, "level": 0.0, "date": "2017-05-07T00:00:00"}, {"year": 2017, "month": 5, "day": 15, "level": 0.0, "date": "2017-05-15T00:00:00"}, {"year": 2017, "month": 5, "day": 23, "level": 0.0, "date": "2017-05-23T00:00:00"}, {"year": 2017, "month": 5, "day": 31, "level": 1.0, "date": "2017-05-31T00:00:00"}, {"year": 2017, "month": 6, "day": 7, "level": 1.0, "date": "2017-06-07T00:00:00"}, {"year": 2017, "month": 6, "day": 15, "level": 1.0, "date": "2017-06-15T00:00:00"}, {"year": 2017, "month": 6, "day": 22, "level": 1.0, "date": "2017-06-22T00:00:00"}, {"year": 2017, "month": 6, "day": 30, "level": 1.0, "date": "2017-06-30T00:00:00"}, {"year": 2017, "month": 7, "day": 7, "level": 1.0, "date": "2017-07-07T00:00:00"}, {"year": 2017, "month": 7, "day": 15, "level": 1.0, "date": "2017-07-15T00:00:00"}, {"year": 2017, "month": 7, "day": 23, "level": 1.0, "date": "2017-07-23T00:00:00"}, {"year": 2017, "month": 7, "day": 31, "level": 2.0, "date": "2017-07-31T00:00:00"}, {"year": 2017, "month": 8, "day": 7, "level": 2.0, "date": "2017-08-07T00:00:00"}, {"year": 2017, "month": 8, "day": 15, "level": 2.0, "date": "2017-08-15T00:00:00"}, {"year": 2017, "month": 8, "day": 23, "level": 2.0, "date": "2017-08-23T00:00:00"}, {"year": 2017, "month": 8, "day": 31, "level": 2.0, "date": "2017-08-31T00:00:00"}, {"year": 2017, "month": 9, "day": 7, "level": 2.0, "date": "2017-09-07T00:00:00"}, {"year": 2017, "month": 9, "day": 15, "level": 3.0, "date": "2017-09-15T00:00:00"}, {"year": 2017, "month": 9, "day": 23, "level": 3.0, "date": "2017-09-23T00:00:00"}, {"year": 2017, "month": 9, "day": 30, "level": 3.0, "date": "2017-09-30T00:00:00"}, {"year": 2017, "month": 10, "day": 7, "level": 4.0, "date": "2017-10-07T00:00:00"}, {"year": 2017, "month": 10, "day": 15, "level": 1.0, "date": "2017-10-15T00:00:00"}, {"year": 2017, "month": 10, "day": 23, "level": 1.0, "date": "2017-10-23T00:00:00"}, {"year": 2017, "month": 10, "day": 31, "level": 1.0, "date": "2017-10-31T00:00:00"}, {"year": 2018, "month": 4, "day": 25, "level": -0.1, "date": "2018-04-25T00:00:00"}, {"year": 2018, "month": 5, "day": 1, "level": 0.0, "date": "2018-05-01T00:00:00"}, {"year": 2018, "month": 5, "day": 7, "level": 0.0, "date": "2018-05-07T00:00:00"}, {"year": 2018, "month": 5, "day": 15, "level": 1.0, "date": "2018-05-15T00:00:00"}, {"year": 2018, "month": 5, "day": 23, "level": 1.0, "date": "2018-05-23T00:00:00"}, {"year": 2018, "month": 5, "day": 31, "level": 1.0, "date": "2018-05-31T00:00:00"}, {"year": 2018, "month": 6, "day": 7, "level": 1.0, "date": "2018-06-07T00:00:00"}, {"year": 2018, "month": 6, "day": 15, "level": 2.0, "date": "2018-06-15T00:00:00"}, {"year": 2018, "month": 6, "day": 22, "level": 2.0, "date": "2018-06-22T00:00:00"}, {"year": 2018, "month": 6, "day": 30, "level": 2.0, "date": "2018-06-30T00:00:00"}, {"year": 2018, "month": 7, "day": 7, "level": 2.0, "date": "2018-07-07T00:00:00"}, {"year": 2018, "month": 7, "day": 15, "level": 2.0, "date": "2018-07-15T00:00:00"}, {"year": 2018, "month": 7, "day": 23, "level": 3.0, "date": "2018-07-23T00:00:00"}, {"year": 2018, "month": 7, "day": 31, "level": 3.0, "date": "2018-07-31T00:00:00"}, {"year": 2018, "month": 8, "day": 7, "level": 3.0, "date": "2018-08-07T00:00:00"}, {"year": 2018, "month": 8, "day": 15, "level": 3.0, "date": "2018-08-15T00:00:00"}, {"year": 2018, "month": 8, "day": 23, "level": 3.0, "date": "2018-08-23T00:00:00"}, {"year": 2018, "month": 8, "day": 31, "level": 3.0, "date": "2018-08-31T00:00:00"}, {"year": 2018, "month": 9, "day": 7, "level": 3.0, "date": "2018-09-07T00:00:00"}, {"year": 2018, "month": 9, "day": 15, "level": 2.0, "date": "2018-09-15T00:00:00"}, {"year": 2018, "month": 9, "day": 23, "level": 2.0, "date": "2018-09-23T00:00:00"}, {"year": 2018, "month": 9, "day": 30, "level": 1.0, "date": "2018-09-30T00:00:00"}, {"year": 2018, "month": 10, "day": 7, "level": 1.0, "date": "2018-10-07T00:00:00"}, {"year": 2018, "month": 10, "day": 15, "level": 1.0, "date": "2018-10-15T00:00:00"}, {"year": 2018, "month": 10, "day": 23, "level": 1.0, "date": "2018-10-23T00:00:00"}, {"year": 2018, "month": 10, "day": 31, "level": 1.0, "date": "2018-10-31T00:00:00"}, {"year": 2019, "month": 4, "day": 25, "level": -0.1, "date": "2019-04-25T00:00:00"}, {"year": 2019, "month": 5, "day": 1, "level": 1.0, "date": "2019-05-01T00:00:00"}, {"year": 2019, "month": 5, "day": 7, "level": 1.0, "date": "2019-05-07T00:00:00"}, {"year": 2019, "month": 5, "day": 15, "level": 1.0, "date": "2019-05-15T00:00:00"}, {"year": 2019, "month": 5, "day": 23, "level": 1.0, "date": "2019-05-23T00:00:00"}, {"year": 2019, "month": 5, "day": 31, "level": 2.0, "date": "2019-05-31T00:00:00"}, {"year": 2019, "month": 6, "day": 7, "level": 2.0, "date": "2019-06-07T00:00:00"}, {"year": 2019, "month": 6, "day": 15, "level": 3.0, "date": "2019-06-15T00:00:00"}, {"year": 2019, "month": 6, "day": 22, "level": 3.0, "date": "2019-06-22T00:00:00"}, {"year": 2019, "month": 6, "day": 30, "level": 3.0, "date": "2019-06-30T00:00:00"}, {"year": 2019, "month": 7, "day": 7, "level": 3.0, "date": "2019-07-07T00:00:00"}, {"year": 2019, "month": 7, "day": 15, "level": 3.0, "date": "2019-07-15T00:00:00"}, {"year": 2019, "month": 7, "day": 23, "level": 3.0, "date": "2019-07-23T00:00:00"}, {"year": 2019, "month": 7, "day": 31, "level": 3.0, "date": "2019-07-31T00:00:00"}, {"year": 2019, "month": 8, "day": 7, "level": 3.0, "date": "2019-08-07T00:00:00"}, {"year": 2019, "month": 8, "day": 15, "level": 3.0, "date": "2019-08-15T00:00:00"}, {"year": 2019, "month": 8, "day": 23, "level": 3.0, "date": "2019-08-23T00:00:00"}, {"year": 2019, "month": 8, "day": 31, "level": 3.0, "date": "2019-08-31T00:00:00"}, {"year": 2019, "month": 9, "day": 7, "level": 3.0, "date": "2019-09-07T00:00:00"}, {"year": 2019, "month": 9, "day": 15, "level": 1.0, "date": "2019-09-15T00:00:00"}, {"year": 2019, "month": 9, "day": 23, "level": 1.0, "date": "2019-09-23T00:00:00"}, {"year": 2019, "month": 9, "day": 30, "level": 1.0, "date": "2019-09-30T00:00:00"}, {"year": 2019, "month": 10, "day": 7, "level": 1.0, "date": "2019-10-07T00:00:00"}, {"year": 2019, "month": 10, "day": 15, "level": 1.0, "date": "2019-10-15T00:00:00"}, {"year": 2019, "month": 10, "day": 23, "level": 1.0, "date": "2019-10-23T00:00:00"}, {"year": 2019, "month": 10, "day": 31, "level": 1.0, "date": "2019-10-31T00:00:00"}, {"year": 2020, "month": 4, "day": 25, "level": -0.1, "date": "2020-04-25T00:00:00"}, {"year": 2020, "month": 5, "day": 1, "level": 0.0, "date": "2020-05-01T00:00:00"}, {"year": 2020, "month": 5, "day": 7, "level": 0.0, "date": "2020-05-07T00:00:00"}, {"year": 2020, "month": 5, "day": 15, "level": 0.0, "date": "2020-05-15T00:00:00"}, {"year": 2020, "month": 5, "day": 23, "level": 0.0, "date": "2020-05-23T00:00:00"}, {"year": 2020, "month": 5, "day": 31, "level": 0.0, "date": "2020-05-31T00:00:00"}, {"year": 2020, "month": 6, "day": 7, "level": 0.0, "date": "2020-06-07T00:00:00"}, {"year": 2020, "month": 6, "day": 15, "level": 0.0, "date": "2020-06-15T00:00:00"}, {"year": 2020, "month": 6, "day": 22, "level": 1.0, "date": "2020-06-22T00:00:00"}, {"year": 2020, "month": 6, "day": 30, "level": 1.0, "date": "2020-06-30T00:00:00"}, {"year": 2020, "month": 7, "day": 7, "level": 1.0, "date": "2020-07-07T00:00:00"}, {"year": 2020, "month": 7, "day": 15, "level": 1.0, "date": "2020-07-15T00:00:00"}, {"year": 2020, "month": 7, "day": 23, "level": 1.0, "date": "2020-07-23T00:00:00"}, {"year": 2020, "month": 7, "day": 31, "level": 1.0, "date": "2020-07-31T00:00:00"}, {"year": 2020, "month": 8, "day": 7, "level": 1.0, "date": "2020-08-07T00:00:00"}, {"year": 2020, "month": 8, "day": 15, "level": 1.0, "date": "2020-08-15T00:00:00"}, {"year": 2020, "month": 8, "day": 23, "level": 1.0, "date": "2020-08-23T00:00:00"}, {"year": 2020, "month": 8, "day": 31, "level": 1.0, "date": "2020-08-31T00:00:00"}, {"year": 2020, "month": 9, "day": 7, "level": 1.0, "date": "2020-09-07T00:00:00"}, {"year": 2020, "month": 9, "day": 15, "level": 1.0, "date": "2020-09-15T00:00:00"}, {"year": 2020, "month": 9, "day": 23, "level": 1.0, "date": "2020-09-23T00:00:00"}, {"year": 2020, "month": 9, "day": 30, "level": 1.0, "date": "2020-09-30T00:00:00"}, {"year": 2020, "month": 10, "day": 7, "level": 1.0, "date": "2020-10-07T00:00:00"}, {"year": 2020, "month": 10, "day": 15, "level": 1.0, "date": "2020-10-15T00:00:00"}, {"year": 2020, "month": 10, "day": 23, "level": 0.0, "date": "2020-10-23T00:00:00"}, {"year": 2020, "month": 10, "day": 31, "level": 0.0, "date": "2020-10-31T00:00:00"}, {"year": 2021, "month": 4, "day": 25, "level": -0.1, "date": "2021-04-25T00:00:00"}, {"year": 2021, "month": 5, "day": 1, "level": 0.0, "date": "2021-05-01T00:00:00"}, {"year": 2021, "month": 5, "day": 7, "level": 0.0, "date": "2021-05-07T00:00:00"}, {"year": 2021, "month": 5, "day": 15, "level": 0.0, "date": "2021-05-15T00:00:00"}, {"year": 2021, "month": 5, "day": 23, "level": 1.0, "date": "2021-05-23T00:00:00"}, {"year": 2021, "month": 5, "day": 31, "level": 1.0, "date": "2021-05-31T00:00:00"}, {"year": 2021, "month": 6, "day": 7, "level": 1.0, "date": "2021-06-07T00:00:00"}, {"year": 2021, "month": 6, "day": 15, "level": 1.0, "date": "2021-06-15T00:00:00"}, {"year": 2021, "month": 6, "day": 22, "level": 1.0, "date": "2021-06-22T00:00:00"}, {"year": 2021, "month": 6, "day": 30, "level": 1.0, "date": "2021-06-30T00:00:00"}, {"year": 2021, "month": 7, "day": 7, "level": 1.0, "date": "2021-07-07T00:00:00"}, {"year": 2021, "month": 7, "day": 15, "level": 3.0, "date": "2021-07-15T00:00:00"}, {"year": 2021, "month": 7, "day": 23, "level": 3.0, "date": "2021-07-23T00:00:00"}, {"year": 2021, "month": 7, "day": 31, "level": 4.0, "date": "2021-07-31T00:00:00"}, {"year": 2021, "month": 8, "day": 7, "level": 4.0, "date": "2021-08-07T00:00:00"}, {"year": 2021, "month": 8, "day": 15, "level": 4.0, "date": "2021-08-15T00:00:00"}, {"year": 2021, "month": 8, "day": 23, "level": 4.0, "date": "2021-08-23T00:00:00"}, {"year": 2021, "month": 8, "day": 31, "level": 4.0, "date": "2021-08-31T00:00:00"}, {"year": 2021, "month": 9, "day": 7, "level": 4.0, "date": "2021-09-07T00:00:00"}, {"year": 2021, "month": 9, "day": 15, "level": 3.0, "date": "2021-09-15T00:00:00"}, {"year": 2021, "month": 9, "day": 23, "level": 2.0, "date": "2021-09-23T00:00:00"}, {"year": 2021, "month": 9, "day": 30, "level": 1.0, "date": "2021-09-30T00:00:00"}, {"year": 2021, "month": 10, "day": 7, "level": 0.0, "date": "2021-10-07T00:00:00"}, {"year": 2021, "month": 10, "day": 15, "level": 0.0, "date": "2021-10-15T00:00:00"}, {"year": 2021, "month": 10, "day": 23, "level": 0.0, "date": "2021-10-23T00:00:00"}, {"year": 2021, "month": 10, "day": 31, "level": 0.0, "date": "2021-10-31T00:00:00"}, {"year": 2022, "month": 4, "day": 25, "level": -0.1, "date": "2022-04-25T00:00:00"}, {"year": 2022, "month": 5, "day": 1, "level": 0.0, "date": "2022-05-01T00:00:00"}, {"year": 2022, "month": 5, "day": 7, "level": 0.0, "date": "2022-05-07T00:00:00"}, {"year": 2022, "month": 5, "day": 15, "level": 0.0, "date": "2022-05-15T00:00:00"}, {"year": 2022, "month": 5, "day": 23, "level": 0.0, "date": "2022-05-23T00:00:00"}, {"year": 2022, "month": 5, "day": 31, "level": 0.0, "date": "2022-05-31T00:00:00"}, {"year": 2022, "month": 6, "day": 7, "level": 0.0, "date": "2022-06-07T00:00:00"}, {"year": 2022, "month": 6, "day": 15, "level": 0.0, "date": "2022-06-15T00:00:00"}, {"year": 2022, "month": 6, "day": 22, "level": 0.0, "date": "2022-06-22T00:00:00"}, {"year": 2022, "month": 6, "day": 30, "level": 0.0, "date": "2022-06-30T00:00:00"}, {"year": 2022, "month": 7, "day": 7, "level": 0.0, "date": "2022-07-07T00:00:00"}, {"year": 2022, "month": 7, "day": 15, "level": 0.0, "date": "2022-07-15T00:00:00"}, {"year": 2022, "month": 7, "day": 23, "level": 0.0, "date": "2022-07-23T00:00:00"}, {"year": 2022, "month": 7, "day": 31, "level": 1.0, "date": "2022-07-31T00:00:00"}, {"year": 2022, "month": 8, "day": 7, "level": 1.0, "date": "2022-08-07T00:00:00"}, {"year": 2022, "month": 8, "day": 15, "level": 1.0, "date": "2022-08-15T00:00:00"}, {"year": 2022, "month": 8, "day": 23, "level": 2.0, "date": "2022-08-23T00:00:00"}, {"year": 2022, "month": 8, "day": 31, "level": 2.0, "date": "2022-08-31T00:00:00"}, {"year": 2022, "month": 9, "day": 7, "level": 3.0, "date": "2022-09-07T00:00:00"}, {"year": 2022, "month": 9, "day": 15, "level": 4.0, "date": "2022-09-15T00:00:00"}, {"year": 2022, "month": 9, "day": 23, "level": 4.0, "date": "2022-09-23T00:00:00"}, {"year": 2022, "month": 9, "day": 30, "level": 5.0, "date": "2022-09-30T00:00:00"}, {"year": 2022, "month": 10, "day": 7, "level": 5.0, "date": "2022-10-07T00:00:00"}, {"year": 2022, "month": 10, "day": 15, "level": 5.0, "date": "2022-10-15T00:00:00"}, {"year": 2022, "month": 10, "day": 23, "level": 5.0, "date": "2022-10-23T00:00:00"}, {"year": 2022, "month": 10, "day": 31, "level": 3.0, "date": "2022-10-31T00:00:00"}, {"year": 2023, "month": 4, "day": 25, "level": -0.1, "date": "2023-04-25T00:00:00"}, {"year": 2023, "month": 5, "day": 1, "level": 1.0, "date": "2023-05-01T00:00:00"}, {"year": 2023, "month": 5, "day": 7, "level": 1.0, "date": "2023-05-07T00:00:00"}, {"year": 2023, "month": 5, "day": 15, "level": 2.0, "date": "2023-05-15T00:00:00"}, {"year": 2023, "month": 5, "day": 23, "level": 2.0, "date": "2023-05-23T00:00:00"}, {"year": 2023, "month": 5, "day": 31, "level": 2.0, "date": "2023-05-31T00:00:00"}, {"year": 2023, "month": 6, "day": 7, "level": 3.0, "date": "2023-06-07T00:00:00"}, {"year": 2023, "month": 6, "day": 15, "level": 3.0, "date": "2023-06-15T00:00:00"}, {"year": 2023, "month": 6, "day": 22, "level": 3.0, "date": "2023-06-22T00:00:00"}, {"year": 2023, "month": 6, "day": 30, "level": 4.0, "date": "2023-06-30T00:00:00"}, {"year": 2023, "month": 7, "day": 7, "level": 4.0, "date": "2023-07-07T00:00:00"}, {"year": 2023, "month": 7, "day": 15, "level": 4.0, "date": "2023-07-15T00:00:00"}, {"year": 2023, "month": 7, "day": 23, "level": 4.0, "date": "2023-07-23T00:00:00"}, {"year": 2023, "month": 7, "day": 31, "level": 4.0, "date": "2023-07-31T00:00:00"}, {"year": 2023, "month": 8, "day": 7, "level": 4.0, "date": "2023-08-07T00:00:00"}, {"year": 2023, "month": 8, "day": 15, "level": 5.0, "date": "2023-08-15T00:00:00"}, {"year": 2023, "month": 8, "day": 23, "level": null, "date": "2023-08-23T00:00:00"}, {"year": 2023, "month": 8, "day": 31, "level": null, "date": "2023-08-31T00:00:00"}, {"year": 2023, "month": 9, "day": 7, "level": null, "date": "2023-09-07T00:00:00"}, {"year": 2023, "month": 9, "day": 15, "level": null, "date": "2023-09-15T00:00:00"}, {"year": 2023, "month": 9, "day": 23, "level": null, "date": "2023-09-23T00:00:00"}, {"year": 2023, "month": 9, "day": 30, "level": null, "date": "2023-09-30T00:00:00"}, {"year": 2023, "month": 10, "day": 7, "level": null, "date": "2023-10-07T00:00:00"}, {"year": 2023, "month": 10, "day": 15, "level": null, "date": "2023-10-15T00:00:00"}, {"year": 2023, "month": 10, "day": 23, "level": null, "date": "2023-10-23T00:00:00"}, {"year": 2023, "month": 10, "day": 31, "level": null, "date": "2023-10-31T00:00:00"}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
 <section id="soil-moisture">
 <h3>Soil Moisture<a class="headerlink" href="#soil-moisture" title="Permalink to this headline">#</a></h3>
 <p>With very little precipitation during the spring and first half of the summer, it’s no surprise that soil moisture levels are exceptionally low. The plot below shows the amount of water (cm^3) in a cubic metre of soil, or the soil water content (SWC). Values are derived from Satellite data and are averaged over the Capilano Watershed area. Soil moisture levels were at record-breaking low levels in late October 2022, and are currently trending even lower this season.</p>
 <div class="cell tag_remove-input docutils container">
 </div>
 <div class="cell tag_remove-input docutils container">
-</div>
-<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-861709e4afdd449bbcaa86553f9b2bc9"></div>
+<div id="altair-viz-cd445a81d0ae4ad6b064f66cd14700e4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-861709e4afdd449bbcaa86553f9b2bc9") {
-      outputDiv = document.getElementById("altair-viz-861709e4afdd449bbcaa86553f9b2bc9");
+    if (outputDiv.id !== "altair-viz-cd445a81d0ae4ad6b064f66cd14700e4") {
+      outputDiv = document.getElementById("altair-viz-cd445a81d0ae4ad6b064f66cd14700e4");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -493,13 +550,13 @@ document.write(`
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-183a4920d31449d6a661b56d6aeaa9d5"></div>
+<div id="altair-viz-43f4e51b601043f5b78a84c9a1c03d6f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-183a4920d31449d6a661b56d6aeaa9d5") {
-      outputDiv = document.getElementById("altair-viz-183a4920d31449d6a661b56d6aeaa9d5");
+    if (outputDiv.id !== "altair-viz-43f4e51b601043f5b78a84c9a1c03d6f") {
+      outputDiv = document.getElementById("altair-viz-43f4e51b601043f5b78a84c9a1c03d6f");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -559,13 +616,13 @@ document.write(`
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-14c0388948f14b958a7f74b47190e52b"></div>
+<div id="altair-viz-ef8a72de1e0648cdae0d8ac8a771fcdd"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-14c0388948f14b958a7f74b47190e52b") {
-      outputDiv = document.getElementById("altair-viz-14c0388948f14b958a7f74b47190e52b");
+    if (outputDiv.id !== "altair-viz-ef8a72de1e0648cdae0d8ac8a771fcdd") {
+      outputDiv = document.getElementById("altair-viz-ef8a72de1e0648cdae0d8ac8a771fcdd");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -614,13 +671,6 @@ document.write(`
   })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": {"type": "bar", "color": "darkgray", "opacity": 0.8, "size": 10}, "encoding": {"color": {"condition": {"value": "red", "test": "(datum.year === 2023)"}, "value": "darkgrey"}, "tooltip": [{"field": "year", "title": "Year", "type": "quantitative"}, {"field": "area_burned", "title": "Area Burned", "type": "quantitative"}], "x": {"field": "date", "title": null, "type": "temporal"}, "y": {"field": "area_burned", "title": "Area Burned in Hectares", "type": "quantitative"}}, "height": 250, "title": "BC Area Burned per Year", "width": 350}, {"mark": {"type": "bar", "color": "red", "opacity": 0.8, "size": 10}, "encoding": {"color": {"condition": {"value": "red", "test": "(datum.year === 2023)"}, "value": "darkgrey"}, "tooltip": [{"field": "year", "title": "Year", "type": "quantitative"}, {"field": "fire_no", "title": "Number of Fires", "type": "quantitative"}], "x": {"field": "date", "title": null, "type": "temporal"}, "y": {"field": "fire_no", "title": "Number of Fires", "type": "quantitative"}}, "height": 250, "title": "BC Number of Fires", "width": 350}], "data": {"name": "data-ec9840393ed38aef337da765ed1e737f"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-ec9840393ed38aef337da765ed1e737f": [{"date": "2008-01-01T00:00:00", "area_burned": 13240, "fire_no": 2023, "avg_size": 6.5, "year": 2008}, {"date": "2009-01-01T00:00:00", "area_burned": 247419, "fire_no": 3064, "avg_size": 80.8, "year": 2009}, {"date": "2010-01-01T00:00:00", "area_burned": 337149, "fire_no": 1672, "avg_size": 201.6, "year": 2010}, {"date": "2011-01-01T00:00:00", "area_burned": 12604, "fire_no": 653, "avg_size": 19.3, "year": 2011}, {"date": "2012-01-01T00:00:00", "area_burned": 102122, "fire_no": 1649, "avg_size": 61.9, "year": 2012}, {"date": "2013-01-01T00:00:00", "area_burned": 18298, "fire_no": 1861, "avg_size": 9.8, "year": 2013}, {"date": "2014-01-01T00:00:00", "area_burned": 369168, "fire_no": 1481, "avg_size": 249.3, "year": 2014}, {"date": "2015-01-01T00:00:00", "area_burned": 280605, "fire_no": 1858, "avg_size": 151.0, "year": 2015}, {"date": "2016-01-01T00:00:00", "area_burned": 100366, "fire_no": 1050, "avg_size": 95.6, "year": 2016}, {"date": "2017-01-01T00:00:00", "area_burned": 1216053, "fire_no": 1353, "avg_size": 898.8, "year": 2017}, {"date": "2018-01-01T00:00:00", "area_burned": 1354284, "fire_no": 2117, "avg_size": 639.7, "year": 2018}, {"date": "2019-01-01T00:00:00", "area_burned": 21138, "fire_no": 825, "avg_size": 25.6, "year": 2019}, {"date": "2020-01-01T00:00:00", "area_burned": 14536, "fire_no": 670, "avg_size": 21.7, "year": 2020}, {"date": "2021-01-01T00:00:00", "area_burned": 869300, "fire_no": 1647, "avg_size": 527.8, "year": 2021}, {"date": "2022-01-01T00:00:00", "area_burned": 135235, "fire_no": 1801, "avg_size": 75.1, "year": 2022}, {"date": "2023-01-01T00:00:00", "area_burned": 1550000, "fire_no": 1532, "avg_size": 1011.7, "year": 2023}]}}, {"mode": "vega-lite"});
 </script></div></div>
 </div>
-<p>Below is a recent provincial fire danger map from the <a class="reference external" href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prepare/weather-fire-danger/fire-danger">BCWS</a></p>
-<figure class="align-default" id="fire-danger">
-<a class="reference internal image-reference" href="_images/fire_dgr.PNG"><img alt="_images/fire_dgr.PNG" src="_images/fire_dgr.PNG" style="height: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Fire danger ratings on <strong>July 30, 2023</strong></span><a class="headerlink" href="#fire-danger" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
 <div class="cell tag_remove-input docutils container">
 </div>
 <div class="cell tag_remove-input docutils container">
@@ -631,20 +681,27 @@ document.write(`
 <section id="watershed-wildfire-conditions">
 <h3>Watershed Wildfire Conditions<a class="headerlink" href="#watershed-wildfire-conditions" title="Permalink to this headline">#</a></h3>
 <div class="attention admonition">
-<p class="admonition-title"><strong>Current Fire Danger:</strong> </p>
+<p class="admonition-title"><strong>Current Fire Danger:</strong></p>
 <p>The Watershed fire danger rating is <strong>MODERATE</strong> as of <strong>July 31, 2023</strong></p>
+<figure class="align-default" id="fire-danger">
+<a class="reference internal image-reference" href="_images/fire_dgr.PNG"><img alt="_images/fire_dgr.PNG" src="_images/fire_dgr.PNG" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Fire danger ratings on <strong>July 30, 2023</strong></span><a class="headerlink" href="#fire-danger" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Check the <a class="reference external" href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status/prepare/weather-fire-danger/fire-danger">BCWS</a> website for the current Provincial fire danger map</p>
 </div>
 <p>The plot below shows the number of days where fire danger was rated high or extreme in the watershed areas. This varies from season to season, but there has been an increasing trend over time. This year is already above average with two months of summer remaining.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-ceed563e18574678b50d67b5ce29c799"></div>
+<div id="altair-viz-300929adb3f0482a8a64d201ebd9574a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ceed563e18574678b50d67b5ce29c799") {
-      outputDiv = document.getElementById("altair-viz-ceed563e18574678b50d67b5ce29c799");
+    if (outputDiv.id !== "altair-viz-300929adb3f0482a8a64d201ebd9574a") {
+      outputDiv = document.getElementById("altair-viz-300929adb3f0482a8a64d201ebd9574a");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -707,13 +764,13 @@ document.write(`
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<div id="altair-viz-afed074601f745a7b456c5bf0266e0c9"></div>
+<div id="altair-viz-eb04613de47e4b0787da052437de2f5d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-afed074601f745a7b456c5bf0266e0c9") {
-      outputDiv = document.getElementById("altair-viz-afed074601f745a7b456c5bf0266e0c9");
+    if (outputDiv.id !== "altair-viz-eb04613de47e4b0787da052437de2f5d") {
+      outputDiv = document.getElementById("altair-viz-eb04613de47e4b0787da052437de2f5d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
