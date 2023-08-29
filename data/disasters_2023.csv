@@ -1,0 +1,22 @@
+date,lat,long,type,name,detail
+17-Aug-23,49.95,-119.6,wildfire,BC Wildfires,Interior BC wildfires
+12-May-23,57.528,-122.6,wildfire,Donnie Creek,BC's largest ever wildfire - Donnie Creek 
+15-Aug-23,62.478,-114.33,wildfire,NWT Wildfires,Whitehorse evacuates due to wildfire threat
+8-Aug-23,20.88,-156.68,wildfire,Lahaina Wildfire,Lahaina is destroyed by wildfire
+20-Aug-23,39.115,21.7369,wildfire,Greek Wildfires,Wildfires in Greece - included EU's largest wildfire ever
+1-Feb-23,-37.855,-72.05,wildfire,Chilean Wildfires,"Chilean wildfires caused by heat and ""mega-drought"""
+10-Jul-23,44.11,-72.667,flooding,Vermont Flooding,Record-breaking rainfall and flooding in Vermont
+11-Jul-23,32.665,131.1,flooding,Japan Flooding,"""Heaviest rains ever"" hit southwest Japan"
+20-Aug-23,33.798,-116.41,flooding,Southwest Flooding,A years worth of rain falls on Palm Springs and other areas of the US southwest
+17-May-23,44.335,11.18,flooding,Italy Floding,"Torrential rainfall, flooding, and landslides in Italy"
+1-Feb-23,11.99,30.8799,flooding,South Sudan Flooding,South Sudan experiences fourth consecutive year of extensive flooding
+20-Feb-23,-15.91,38.088,flooding,Cyclone Freddy,Cyclone Freddy pummels southeast Africa and Madagascar
+15-Apr-23,23.99,108.486,heatwave,Asian Heatwave,Worst April heatwave ever in Asia
+20-Feb-23,-21.3,-50.35,flooding,Barzil Flooding,Southeast Brazil experiences heavy rain and flooding
+1-Aug-23,-77.43,168.858,sea ice,Antarctic Sea Ice,Antarctic sea ice is at it's lowest ever extent
+1-Aug-23,27.27,-79.0589,heatwave,Marine Heatwave,Marine heatwave causing catastrophic damage to coral reefs
+6-Jun-23,67.68,66.136,heatwave,Siberian Heatwave,Extreme heatwave in Siberia
+18-Jul-23,40.155,9.03,heatwave,European Heatwaves,Extended European heatwaves
+8-Jul-23,65.28,-126.83,heatwave,Normal Wells Heat,"Normal Wells (NWT) reached 38C, the highest temp ever recorded this far north"
+20-Jul-23,32.768,-104.6,heatwave,Southwest Heatwave,Extreme heatwave in the US southwest. Phoenix had temps >43C for 31 straight days
+2-Aug-23,-25.429,-60.74,heatwave,South American Winter Heatwave,Mid-winter heatwave in South America with temps exceeding 30C
