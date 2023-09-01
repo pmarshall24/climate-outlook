@@ -1,0 +1,1405 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; Watershed Climate Outlook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Untitled4';</script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/mv_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/mv_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Water Services Seasonal Climate Outlook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Summary</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview_map.html">Overview Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="watershed_conditions.html">Watershed Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outlook_summary.html">Outlook Summary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Current Conditions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="air-temp.html">Air Temperature and Precipitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crossover.html">Drought and Wildfire Situation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="water_supply.html">Water Supply Summary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Outlook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="drivers.html">Climate Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog.html">Analog Comparison</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outlook.html">Climate Outlook</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Other Climate-related Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="forest_health.html">Forest Health</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glacier.html">Coquitlam Glacier</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="links.html">Links and Resources</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUntitled4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Untitled4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">shapefile</span> <span class="k">as</span> <span class="nn">shp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\pmarshal\Anaconda3\lib\site-packages\geopandas\_compat.py:123: UserWarning: The Shapely GEOS version (3.8.0-CAPI-1.13.1 ) is incompatible with the GEOS version PyGEOS was compiled with (3.10.4-CAPI-1.16.2). Conversions between both will be slow.
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.basemap</span> <span class="kn">import</span> <span class="n">Basemap</span>
+<span class="kn">import</span> <span class="nn">folium</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/disasters_2023.csv&#39;</span><span class="p">,</span> <span class="n">parse_dates</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">points</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">long</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">lat</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">35.42518</span><span class="p">,</span> <span class="o">-</span><span class="mf">50.95</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">marker1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">49.95</span><span class="p">,</span> <span class="o">-</span><span class="mf">119.6</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;BC Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;BC declares a state of emergency as wildfires threaten several interior communities&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">57.53</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.6</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Donnie Creek Wildfire&lt;/b&gt;&lt;br&gt;2023.08.17&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Donnie Creek Wildfire&lt;/h5&gt;&lt;p&gt;Donnie Creek fire ignites on May 12 and becomes the largest wildfire in the provinces history&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker3</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">62.48</span><span class="p">,</span> <span class="o">-</span><span class="mf">114.33</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;NWT Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;NWT Wildfires&lt;/h5&gt;&lt;p&gt;Whitehorse is evacuated due to wildfire threat&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker4</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">20.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">156.68</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Maui Wildfires&lt;/b&gt;&lt;br&gt;2023.08.08&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Maui Wildfires&lt;/h5&gt;&lt;p&gt;The town of Lahaina is almost completely destroyed by fire, killing hundreds&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker5</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">39.115</span><span class="p">,</span> <span class="mf">21.74</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Greek Wildfires&lt;/b&gt;&lt;br&gt;2023.08.15&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;Wildfires ravage Greece and many other European countries. Largest ever EU fire in Greece&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker6</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">37.86</span><span class="p">,</span> <span class="o">-</span><span class="mf">72.05</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Chilean Wildfires&lt;/b&gt;&lt;br&gt;2023.02.01&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Chilean Wildfires&lt;/h5&gt;&lt;p&gt;Chile experiences a difficult fire season as a result of heat and mega-drought&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;fire-flame-curved&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker7</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">44.11</span><span class="p">,</span> <span class="o">-</span><span class="mf">72.667</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Vermont Flooding&lt;/b&gt;&lt;br&gt;2023.07.10&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Vermont Flooding&lt;/h5&gt;&lt;p&gt;Vermont and other eastern US states experience extensive flooding&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker8</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">32.665</span><span class="p">,</span> <span class="mf">131.1</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Japan Flooding&lt;/b&gt;&lt;br&gt;2023.07.11&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Japan Flooding&lt;/h5&gt;&lt;p&gt;&quot;Heaviest rains ever&quot; hit southwest Japan&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker9</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">33.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">116.4</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;US Southwest Floods&lt;/b&gt;&lt;br&gt;2023.08.20&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;US Southwest Floods&lt;/h5&gt;&lt;p&gt;Palm Springs receives a years worth of rain in one storm&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker10</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">44.335</span><span class="p">,</span> <span class="mf">11.2</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Italy Floods&lt;/b&gt;&lt;br&gt;2023.05.17&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Italy Floods&lt;/h5&gt;&lt;p&gt;Torrential rainfall results in flooding and landslides in northern Italy&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker11</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">11.99</span><span class="p">,</span> <span class="mf">30.88</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;South Sudan Floods&lt;/b&gt;&lt;br&gt;2023.02.01&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;South Sudan Floods&lt;/h5&gt;&lt;p&gt;South Sudan experiences widespread flooding for the fourth consecutive year&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker12</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">15.91</span><span class="p">,</span> <span class="mf">38.088</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Cyclone Freddy&lt;/b&gt;&lt;br&gt;2023.02.20&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Cyclone Freddy&lt;/h5&gt;&lt;p&gt;Southeast Africa and Madagascar are pummelled by Cyclone Freddy for one month&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;house-flood-water&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker13</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">24.0</span><span class="p">,</span> <span class="mf">108.5</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Asian Heatwave&lt;/b&gt;&lt;br&gt;2023.04.15&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Asian Heatwave&lt;/h5&gt;&lt;p&gt;Asia records its strongest ever April heatwave&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker14</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">27.27</span><span class="p">,</span> <span class="o">-</span><span class="mf">79.06</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Marine Heatwave&lt;/b&gt;&lt;br&gt;2023.08.15&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Marine Heatwave&lt;/h5&gt;&lt;p&gt;Oceans are the hottest on record in 2023, threatening coral reefs and other marine life&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker15</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">67.68</span><span class="p">,</span> <span class="mf">66.136</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Siberian Heatwave&lt;/b&gt;&lt;br&gt;2023.06.06&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Siberian Heatwave&lt;/h5&gt;&lt;p&gt;Extreme heatwave hits northern Russia&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker16</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">40.155</span><span class="p">,</span> <span class="mf">9.03</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;European Heatwave&lt;/b&gt;&lt;br&gt;2023.07.18&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;European Heatwave&lt;/h5&gt;&lt;p&gt;Summer 2023 will be remembered for extended heatwaves throughout Europe&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker17</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">65.28</span><span class="p">,</span> <span class="o">-</span><span class="mf">126.83</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;NWT Record Heat&lt;/b&gt;&lt;br&gt;2023.04.15&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Normal Wells Record Heat&lt;/h5&gt;&lt;p&gt;The town of Normal Wells (NWT) sets a northern latitude record with a high of 38 C&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker18</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">32.77</span><span class="p">,</span> <span class="o">-</span><span class="mf">104.6</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;US Southwest Heatwave&lt;/b&gt;&lt;br&gt;2023.07.20&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;US Southwest Heatwave&lt;/h5&gt;&lt;p&gt;Phoenix sets a record with 31 consecutive days over 43 C&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker19</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">25.43</span><span class="p">,</span> <span class="o">-</span><span class="mf">60.75</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;South American Winter Heatwave&lt;/b&gt;&lt;br&gt;2023.08.02&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;South American Winter Heatwave&lt;/h5&gt;&lt;p&gt;Mid-winter heatwave in South America with temperatures exceeding 30 C&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;temperature-arrow-up&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker19</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">77.43</span><span class="p">,</span> <span class="mf">168.86</span><span class="p">],</span> 
+                       <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;&lt;b&gt;Antarctic Sea Ice&lt;/b&gt;&lt;br&gt;2023.08.02&#39;</span><span class="p">,</span> 
+                       <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;&lt;h5&gt;Antarctic Sea Ice&lt;/h5&gt;&lt;p&gt;Antarctic sea ice extent is at its lowest in recorded history&lt;/p&gt;&#39;</span><span class="p">,</span>
+                       <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span><span class="n">icon</span><span class="o">=</span><span class="s2">&quot;snowflake&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;fa&#39;</span><span class="p">))</span>
+
+<span class="n">marker1</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker2</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker3</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker4</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker5</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker6</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker7</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker8</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker9</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker10</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker11</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker12</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker13</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker14</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker15</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker16</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker17</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker18</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">marker19</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">m</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_0920b5657fee2cf118e9443f900a0b40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_0920b5657fee2cf118e9443f900a0b40&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_0920b5657fee2cf118e9443f900a0b40 = L.map(
+                &quot;map_0920b5657fee2cf118e9443f900a0b40&quot;,
+                {
+                    center: [35.42518, -50.95],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0676e7fa25b7a6baa7e4437c544f0ce = L.tileLayer(
+                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var marker_b1b98ba35bf6579f39cb74ee602421c7 = L.marker(
+                [49.95, -119.6],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_736b4fb9699b9859a9ab37388a27d4b8 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_b1b98ba35bf6579f39cb74ee602421c7.setIcon(icon_736b4fb9699b9859a9ab37388a27d4b8);
+        
+    
+        var popup_85df95bde94b20949c8170d39d52afdf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_cd38ed9685f42afc01b152f2b59d6715 = $(`&lt;div id=&quot;html_cd38ed9685f42afc01b152f2b59d6715&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;BC declares a state of emergency as wildfires threaten several interior communities&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_85df95bde94b20949c8170d39d52afdf.setContent(html_cd38ed9685f42afc01b152f2b59d6715);
+            
+        
+
+        marker_b1b98ba35bf6579f39cb74ee602421c7.bindPopup(popup_85df95bde94b20949c8170d39d52afdf)
+        ;
+
+        
+    
+    
+            marker_b1b98ba35bf6579f39cb74ee602421c7.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;BC Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_f3b199dbc8753cf0f2198099f82c96b4 = L.marker(
+                [57.53, -122.6],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_d1ab8e3603835174a76b4d8328544a04 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_f3b199dbc8753cf0f2198099f82c96b4.setIcon(icon_d1ab8e3603835174a76b4d8328544a04);
+        
+    
+        var popup_ed9ff7570d272b87a06d44d33caf4efc = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_f73517bedf07186cfe7b38039787ce5a = $(`&lt;div id=&quot;html_f73517bedf07186cfe7b38039787ce5a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Donnie Creek Wildfire&lt;/h5&gt;&lt;p&gt;Donnie Creek fire ignites on May 12 and becomes the largest wildfire in the provinces history&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_ed9ff7570d272b87a06d44d33caf4efc.setContent(html_f73517bedf07186cfe7b38039787ce5a);
+            
+        
+
+        marker_f3b199dbc8753cf0f2198099f82c96b4.bindPopup(popup_ed9ff7570d272b87a06d44d33caf4efc)
+        ;
+
+        
+    
+    
+            marker_f3b199dbc8753cf0f2198099f82c96b4.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Donnie Creek Wildfire&lt;/b&gt;&lt;br&gt;2023.08.17
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_e09328ca012c3f000a09f633e1fc22d3 = L.marker(
+                [62.48, -114.33],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_3b2073766f2f75f795dca631902e567f = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_e09328ca012c3f000a09f633e1fc22d3.setIcon(icon_3b2073766f2f75f795dca631902e567f);
+        
+    
+        var popup_592c232062574b8f7d454221643b117c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ddfe6142ce5316ab561261633398439d = $(`&lt;div id=&quot;html_ddfe6142ce5316ab561261633398439d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;NWT Wildfires&lt;/h5&gt;&lt;p&gt;Whitehorse is evacuated due to wildfire threat&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_592c232062574b8f7d454221643b117c.setContent(html_ddfe6142ce5316ab561261633398439d);
+            
+        
+
+        marker_e09328ca012c3f000a09f633e1fc22d3.bindPopup(popup_592c232062574b8f7d454221643b117c)
+        ;
+
+        
+    
+    
+            marker_e09328ca012c3f000a09f633e1fc22d3.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;NWT Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_f3d3b5f42370dd92f7b67b15c8ef6cdb = L.marker(
+                [20.9, -156.68],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_e3e92041ce2e4f4f564150a7cebc18bf = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_f3d3b5f42370dd92f7b67b15c8ef6cdb.setIcon(icon_e3e92041ce2e4f4f564150a7cebc18bf);
+        
+    
+        var popup_5f3cf2d6b6dafc3b8793454a71132589 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d2d36998172a09949fc75bdb1301ace6 = $(`&lt;div id=&quot;html_d2d36998172a09949fc75bdb1301ace6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Maui Wildfires&lt;/h5&gt;&lt;p&gt;The town of Lahaina is almost completely destroyed by fire, killing hundreds&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_5f3cf2d6b6dafc3b8793454a71132589.setContent(html_d2d36998172a09949fc75bdb1301ace6);
+            
+        
+
+        marker_f3d3b5f42370dd92f7b67b15c8ef6cdb.bindPopup(popup_5f3cf2d6b6dafc3b8793454a71132589)
+        ;
+
+        
+    
+    
+            marker_f3d3b5f42370dd92f7b67b15c8ef6cdb.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Maui Wildfires&lt;/b&gt;&lt;br&gt;2023.08.08
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_d1cfb1e175abd11ebd0936f1677ab410 = L.marker(
+                [39.115, 21.74],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_e89aa5a90997af9ffa04b606f651e685 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_d1cfb1e175abd11ebd0936f1677ab410.setIcon(icon_e89aa5a90997af9ffa04b606f651e685);
+        
+    
+        var popup_67511d5e9d7d14252872fdddb6d152d9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_5daf1b5a5833eb10c980932be8fac7aa = $(`&lt;div id=&quot;html_5daf1b5a5833eb10c980932be8fac7aa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;Wildfires ravage Greece and many other European countries. Largest ever EU fire in Greece&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_67511d5e9d7d14252872fdddb6d152d9.setContent(html_5daf1b5a5833eb10c980932be8fac7aa);
+            
+        
+
+        marker_d1cfb1e175abd11ebd0936f1677ab410.bindPopup(popup_67511d5e9d7d14252872fdddb6d152d9)
+        ;
+
+        
+    
+    
+            marker_d1cfb1e175abd11ebd0936f1677ab410.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Greek Wildfires&lt;/b&gt;&lt;br&gt;2023.08.15
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_d0d65306b63e1c11ede46e6c2b42d4ab = L.marker(
+                [-37.86, -72.05],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_4fa22839c104d0cf7d9ea5994fda8ef8 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_d0d65306b63e1c11ede46e6c2b42d4ab.setIcon(icon_4fa22839c104d0cf7d9ea5994fda8ef8);
+        
+    
+        var popup_7b714161b9efc3282f06b29e0ba9062d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_7f5cfa2a337ce14d02039a31f253a27b = $(`&lt;div id=&quot;html_7f5cfa2a337ce14d02039a31f253a27b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Chilean Wildfires&lt;/h5&gt;&lt;p&gt;Chile experiences a difficult fire season as a result of heat and mega-drought&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_7b714161b9efc3282f06b29e0ba9062d.setContent(html_7f5cfa2a337ce14d02039a31f253a27b);
+            
+        
+
+        marker_d0d65306b63e1c11ede46e6c2b42d4ab.bindPopup(popup_7b714161b9efc3282f06b29e0ba9062d)
+        ;
+
+        
+    
+    
+            marker_d0d65306b63e1c11ede46e6c2b42d4ab.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Chilean Wildfires&lt;/b&gt;&lt;br&gt;2023.02.01
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_cf62c8b82440b4f64f17a26a93a7cab5 = L.marker(
+                [44.11, -72.667],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_65609e51a3daaa5c3f3292cd29b8cc93 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_cf62c8b82440b4f64f17a26a93a7cab5.setIcon(icon_65609e51a3daaa5c3f3292cd29b8cc93);
+        
+    
+        var popup_d3ddad8db4e7750d26d903a236f33e38 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b98d4f28d44eaed088e083645d7a0e5e = $(`&lt;div id=&quot;html_b98d4f28d44eaed088e083645d7a0e5e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Vermont Flooding&lt;/h5&gt;&lt;p&gt;Vermont and other eastern US states experience extensive flooding&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d3ddad8db4e7750d26d903a236f33e38.setContent(html_b98d4f28d44eaed088e083645d7a0e5e);
+            
+        
+
+        marker_cf62c8b82440b4f64f17a26a93a7cab5.bindPopup(popup_d3ddad8db4e7750d26d903a236f33e38)
+        ;
+
+        
+    
+    
+            marker_cf62c8b82440b4f64f17a26a93a7cab5.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Vermont Flooding&lt;/b&gt;&lt;br&gt;2023.07.10
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_bd31f4a63cf829fa59c29ae02865ae6f = L.marker(
+                [32.665, 131.1],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_d0cb572183303cc8cc50fa5b39bb7225 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_bd31f4a63cf829fa59c29ae02865ae6f.setIcon(icon_d0cb572183303cc8cc50fa5b39bb7225);
+        
+    
+        var popup_2fd08b0729f1cdc6c15d14d45aabc011 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_2323278dda8529f0611b78c69b6d7398 = $(`&lt;div id=&quot;html_2323278dda8529f0611b78c69b6d7398&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Japan Flooding&lt;/h5&gt;&lt;p&gt;&quot;Heaviest rains ever&quot; hit southwest Japan&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_2fd08b0729f1cdc6c15d14d45aabc011.setContent(html_2323278dda8529f0611b78c69b6d7398);
+            
+        
+
+        marker_bd31f4a63cf829fa59c29ae02865ae6f.bindPopup(popup_2fd08b0729f1cdc6c15d14d45aabc011)
+        ;
+
+        
+    
+    
+            marker_bd31f4a63cf829fa59c29ae02865ae6f.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Japan Flooding&lt;/b&gt;&lt;br&gt;2023.07.11
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_aa95440ee351d311b8b7d6579cd0630b = L.marker(
+                [33.8, -116.4],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_a99709723f68a2cf54c58578cca4c299 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_aa95440ee351d311b8b7d6579cd0630b.setIcon(icon_a99709723f68a2cf54c58578cca4c299);
+        
+    
+        var popup_e024c9d5821327a89c921f700b572a06 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_acdc701b65b2dc13ff6da9c437d34122 = $(`&lt;div id=&quot;html_acdc701b65b2dc13ff6da9c437d34122&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Floods&lt;/h5&gt;&lt;p&gt;Palm Springs receives a years worth of rain in one storm&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_e024c9d5821327a89c921f700b572a06.setContent(html_acdc701b65b2dc13ff6da9c437d34122);
+            
+        
+
+        marker_aa95440ee351d311b8b7d6579cd0630b.bindPopup(popup_e024c9d5821327a89c921f700b572a06)
+        ;
+
+        
+    
+    
+            marker_aa95440ee351d311b8b7d6579cd0630b.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;US Southwest Floods&lt;/b&gt;&lt;br&gt;2023.08.20
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_7825e918a57e5f452832a1480aa4a02e = L.marker(
+                [44.335, 11.2],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_2cb380bbcbe7c7a9a7689cb07762062f = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_7825e918a57e5f452832a1480aa4a02e.setIcon(icon_2cb380bbcbe7c7a9a7689cb07762062f);
+        
+    
+        var popup_a6dfbd6ac4bea5fee3a2bb0138035bb4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fca9fddf6910d8930ce3e6e1f5f348ee = $(`&lt;div id=&quot;html_fca9fddf6910d8930ce3e6e1f5f348ee&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Italy Floods&lt;/h5&gt;&lt;p&gt;Torrential rainfall results in flooding and landslides in northern Italy&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_a6dfbd6ac4bea5fee3a2bb0138035bb4.setContent(html_fca9fddf6910d8930ce3e6e1f5f348ee);
+            
+        
+
+        marker_7825e918a57e5f452832a1480aa4a02e.bindPopup(popup_a6dfbd6ac4bea5fee3a2bb0138035bb4)
+        ;
+
+        
+    
+    
+            marker_7825e918a57e5f452832a1480aa4a02e.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Italy Floods&lt;/b&gt;&lt;br&gt;2023.05.17
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_2c2230f767cf393e149af5aa9a0b1bd6 = L.marker(
+                [11.99, 30.88],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_0443298f492033c067f039ad5b3f3c0a = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_2c2230f767cf393e149af5aa9a0b1bd6.setIcon(icon_0443298f492033c067f039ad5b3f3c0a);
+        
+    
+        var popup_4e7fed45925a67d23db4a064c005c667 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_dd5ad12f621dcf9f92c5a33e2a040281 = $(`&lt;div id=&quot;html_dd5ad12f621dcf9f92c5a33e2a040281&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;South Sudan Floods&lt;/h5&gt;&lt;p&gt;South Sudan experiences widespread flooding for the fourth consecutive year&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_4e7fed45925a67d23db4a064c005c667.setContent(html_dd5ad12f621dcf9f92c5a33e2a040281);
+            
+        
+
+        marker_2c2230f767cf393e149af5aa9a0b1bd6.bindPopup(popup_4e7fed45925a67d23db4a064c005c667)
+        ;
+
+        
+    
+    
+            marker_2c2230f767cf393e149af5aa9a0b1bd6.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;South Sudan Floods&lt;/b&gt;&lt;br&gt;2023.02.01
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_9a27f053ed6162cb6238b01821167308 = L.marker(
+                [-15.91, 38.088],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_b806e729f2e6e01477e54097d06eb662 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_9a27f053ed6162cb6238b01821167308.setIcon(icon_b806e729f2e6e01477e54097d06eb662);
+        
+    
+        var popup_5f639841fb285f7b462011905a01d109 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_9d2a8a4f3339bf40239da8bb235bb52b = $(`&lt;div id=&quot;html_9d2a8a4f3339bf40239da8bb235bb52b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Cyclone Freddy&lt;/h5&gt;&lt;p&gt;Southeast Africa and Madagascar are pummelled by Cyclone Freddy for one month&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_5f639841fb285f7b462011905a01d109.setContent(html_9d2a8a4f3339bf40239da8bb235bb52b);
+            
+        
+
+        marker_9a27f053ed6162cb6238b01821167308.bindPopup(popup_5f639841fb285f7b462011905a01d109)
+        ;
+
+        
+    
+    
+            marker_9a27f053ed6162cb6238b01821167308.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Cyclone Freddy&lt;/b&gt;&lt;br&gt;2023.02.20
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_82a97fedca62fb9ff6ea7b2e65fa74f6 = L.marker(
+                [24.0, 108.5],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_4408526f2e8672c75b051bdf224ceb57 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_82a97fedca62fb9ff6ea7b2e65fa74f6.setIcon(icon_4408526f2e8672c75b051bdf224ceb57);
+        
+    
+        var popup_17dabf3ce638ca1434ec535cd85e47e1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_6eaa8afc96dc7166e8e6944f88690465 = $(`&lt;div id=&quot;html_6eaa8afc96dc7166e8e6944f88690465&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Asian Heatwave&lt;/h5&gt;&lt;p&gt;Asia records its strongest ever April heatwave&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_17dabf3ce638ca1434ec535cd85e47e1.setContent(html_6eaa8afc96dc7166e8e6944f88690465);
+            
+        
+
+        marker_82a97fedca62fb9ff6ea7b2e65fa74f6.bindPopup(popup_17dabf3ce638ca1434ec535cd85e47e1)
+        ;
+
+        
+    
+    
+            marker_82a97fedca62fb9ff6ea7b2e65fa74f6.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Asian Heatwave&lt;/b&gt;&lt;br&gt;2023.04.15
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_14f840216b0891931cf032bdcd8cf943 = L.marker(
+                [27.27, -79.06],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_c1084239c486f885a39f1787e33814e9 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_14f840216b0891931cf032bdcd8cf943.setIcon(icon_c1084239c486f885a39f1787e33814e9);
+        
+    
+        var popup_b0e64750dd29f871fd770d54cf775d9a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_2bf2ccd2eab0badd73a2d095fdaf2421 = $(`&lt;div id=&quot;html_2bf2ccd2eab0badd73a2d095fdaf2421&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Marine Heatwave&lt;/h5&gt;&lt;p&gt;Oceans are the hottest on record in 2023, threatening coral reefs and other marine life&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_b0e64750dd29f871fd770d54cf775d9a.setContent(html_2bf2ccd2eab0badd73a2d095fdaf2421);
+            
+        
+
+        marker_14f840216b0891931cf032bdcd8cf943.bindPopup(popup_b0e64750dd29f871fd770d54cf775d9a)
+        ;
+
+        
+    
+    
+            marker_14f840216b0891931cf032bdcd8cf943.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Marine Heatwave&lt;/b&gt;&lt;br&gt;2023.08.15
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_ec6fc21e6c620cf3c6fbb13d993dea02 = L.marker(
+                [67.68, 66.136],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_b8e2e1973834d9e2a31662d8b5f8eed6 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_ec6fc21e6c620cf3c6fbb13d993dea02.setIcon(icon_b8e2e1973834d9e2a31662d8b5f8eed6);
+        
+    
+        var popup_fec07dc27b451e0a4d4e93004cfb67ae = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_9f1e498d11dd44d0124be63844c55372 = $(`&lt;div id=&quot;html_9f1e498d11dd44d0124be63844c55372&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Siberian Heatwave&lt;/h5&gt;&lt;p&gt;Extreme heatwave hits northern Russia&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_fec07dc27b451e0a4d4e93004cfb67ae.setContent(html_9f1e498d11dd44d0124be63844c55372);
+            
+        
+
+        marker_ec6fc21e6c620cf3c6fbb13d993dea02.bindPopup(popup_fec07dc27b451e0a4d4e93004cfb67ae)
+        ;
+
+        
+    
+    
+            marker_ec6fc21e6c620cf3c6fbb13d993dea02.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Siberian Heatwave&lt;/b&gt;&lt;br&gt;2023.06.06
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_79545109998e76aed96bb9c3d3c92454 = L.marker(
+                [40.155, 9.03],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_29f099288c7c94b16e9830b22611d061 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_79545109998e76aed96bb9c3d3c92454.setIcon(icon_29f099288c7c94b16e9830b22611d061);
+        
+    
+        var popup_d16e2d57fde9623263033b890212785d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_da1af88e03c4bbe822e0b47601c6f370 = $(`&lt;div id=&quot;html_da1af88e03c4bbe822e0b47601c6f370&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;European Heatwave&lt;/h5&gt;&lt;p&gt;Summer 2023 will be remembered for extended heatwaves throughout Europe&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d16e2d57fde9623263033b890212785d.setContent(html_da1af88e03c4bbe822e0b47601c6f370);
+            
+        
+
+        marker_79545109998e76aed96bb9c3d3c92454.bindPopup(popup_d16e2d57fde9623263033b890212785d)
+        ;
+
+        
+    
+    
+            marker_79545109998e76aed96bb9c3d3c92454.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;European Heatwave&lt;/b&gt;&lt;br&gt;2023.07.18
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_ba158267fe8fcb617eeac66fe12cabe5 = L.marker(
+                [65.28, -126.83],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_f669930c4493274b5bdeb22dc8fd8fe0 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_ba158267fe8fcb617eeac66fe12cabe5.setIcon(icon_f669930c4493274b5bdeb22dc8fd8fe0);
+        
+    
+        var popup_b810c5603cfdfa7cb2debfc1cae90e2e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a0698a4c8e903319f9ac9b923dc823f6 = $(`&lt;div id=&quot;html_a0698a4c8e903319f9ac9b923dc823f6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Normal Wells Record Heat&lt;/h5&gt;&lt;p&gt;The town of Normal Wells (NWT) sets a northern latitude record with a high of 38 C&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_b810c5603cfdfa7cb2debfc1cae90e2e.setContent(html_a0698a4c8e903319f9ac9b923dc823f6);
+            
+        
+
+        marker_ba158267fe8fcb617eeac66fe12cabe5.bindPopup(popup_b810c5603cfdfa7cb2debfc1cae90e2e)
+        ;
+
+        
+    
+    
+            marker_ba158267fe8fcb617eeac66fe12cabe5.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;NWT Record Heat&lt;/b&gt;&lt;br&gt;2023.04.15
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_c7eb79a97cf59ed53191b8a87e2372cf = L.marker(
+                [32.77, -104.6],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_04b1ffb1cd7ad57448ee37fe562b4a66 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_c7eb79a97cf59ed53191b8a87e2372cf.setIcon(icon_04b1ffb1cd7ad57448ee37fe562b4a66);
+        
+    
+        var popup_aa188ee50e0d4f175b5a122dc0576205 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_e7c716d9bd49d20c03f4073fa1d4d372 = $(`&lt;div id=&quot;html_e7c716d9bd49d20c03f4073fa1d4d372&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Heatwave&lt;/h5&gt;&lt;p&gt;Phoenix sets a record with 31 consecutive days over 43 C&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_aa188ee50e0d4f175b5a122dc0576205.setContent(html_e7c716d9bd49d20c03f4073fa1d4d372);
+            
+        
+
+        marker_c7eb79a97cf59ed53191b8a87e2372cf.bindPopup(popup_aa188ee50e0d4f175b5a122dc0576205)
+        ;
+
+        
+    
+    
+            marker_c7eb79a97cf59ed53191b8a87e2372cf.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;US Southwest Heatwave&lt;/b&gt;&lt;br&gt;2023.07.20
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_b1a555b8a391cff4a479d4087a6ecbb0 = L.marker(
+                [-77.43, 168.86],
+                {}
+            ).addTo(map_0920b5657fee2cf118e9443f900a0b40);
+        
+    
+            var icon_4501d91e76f628522794b134a4b83ee3 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;snowflake&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;lightblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_b1a555b8a391cff4a479d4087a6ecbb0.setIcon(icon_4501d91e76f628522794b134a4b83ee3);
+        
+    
+        var popup_1b3d6cf302e4e8666bfdedce93abe97f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_945bd4dd1f62b43f3fe99d0898520af1 = $(`&lt;div id=&quot;html_945bd4dd1f62b43f3fe99d0898520af1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Antarctic Sea Ice&lt;/h5&gt;&lt;p&gt;Antarctic sea ice extent is at its lowest in recorded history&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_1b3d6cf302e4e8666bfdedce93abe97f.setContent(html_945bd4dd1f62b43f3fe99d0898520af1);
+            
+        
+
+        marker_b1a555b8a391cff4a479d4087a6ecbb0.bindPopup(popup_1b3d6cf302e4e8666bfdedce93abe97f)
+        ;
+
+        
+    
+    
+            marker_b1a555b8a391cff4a479d4087a6ecbb0.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Antarctic Sea Ice&lt;/b&gt;&lt;br&gt;2023.08.02
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Peter Marshall
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
