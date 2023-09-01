@@ -1,5 +1,7 @@
 # Coquitlam Glacier
 
+![banner](img/coq_glacier.jfif)
+
 The last remaining glacier in Metro Vancouver's water supply areas sits on a high north-facing slope on the east side of the Coquitlam Watershed. This glacier formed during the Little Ice Age, a period of regional cooling in Europe and North America that began in the 1300's and lasted until about 1850. Capilano and Seymour Watersheds may have each had one or two remaining glaciers at the beginning of the 20th century, but these likely disappeared almost 100 years ago. 
 
 ```{figure} img/glacier_orthos.png
