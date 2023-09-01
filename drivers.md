@@ -23,7 +23,7 @@ name: enso
 Model-based ENSO Forecast (mid-August). [Link](https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/)
 ```
 
-What does this mean for Western Canada and the BC South Coast? First off, the warm and cool phases of ENSO (El Niño and La Niña) are related to sea surface temperatures in the tropical Pacific Ocean (specifically the Niño 3.4 region). When the waters in this region become warmer than normal it causes a shift in atmospheric circulation and impacts weather around the world. Globally, the warmest years on record are typically El Niño years. This is also true for the BC South Coast (2015-16). The effects of El Niño are felt more during the winter and spring months. Warmer temperatures typically mean less snow (a higher snowline elevation) on our relatively low North Shore Mountains. This can have significant impacts on source water supply as we move into the drier season. 
+What does this mean for Western Canada and the BC South Coast? First off, the warm and cool phases of ENSO (El Niño and La Niña) are related to sea surface temperatures in the tropical Pacific Ocean (specifically the Niño 3.4 region). When the waters in this region become warmer than normal it causes a shift in atmospheric circulation and impacts weather around the world. Globally, the warmest years on record are typically El Niño years. This is also true for the BC South Coast (E.g. 2015-16). The effects of El Niño are felt more during the winter and spring months. Warmer temperatures typically mean less snow (a higher snowline elevation) on our relatively low North Shore Mountains. This can have significant impacts on source water supply as we move into the drier season. 
 
 ## Pacific Decadal Oscillation 
 
@@ -33,13 +33,12 @@ The diagram below shows what sea surface temperature anomalies look like during 
 
 ```{figure} img/pdo_phases.jfif
 ---
-height: 300px
 name: pdo
 ---
 PDO cool and warm phases
 ```
 
-The map below shows monthly average sea surface temperature anomalies. Negative PDO conditions are apparent in the North Pacific, and El Niño is evident in the tropical Pacific (warm waters). Globally, sea surface temperatures have been record-breaking for most of 2023. 
+The map below shows monthly average sea surface temperature anomalies in August. Negative PDO conditions are apparent in the North Pacific (warm waters off the west coast of N. America), and El Niño is evident in the tropical Pacific (warm waters off the coast of Peru). Globally, sea surface temperatures have been record-breaking for most of 2023. Temperatures have actually been in uncharted territory!
 
 ```{figure} img/sst_anom.gif
 ---
