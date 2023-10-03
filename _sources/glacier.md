@@ -22,6 +22,13 @@ name: glacier-map
 Map of the Coquitlam glacier showing the change in elevation and extent
 ```
 
-This summer has been another difficult year for glaciers. The seasonal snowpack melted very quickly this spring, exposing the glacier ice much earlier than usual. Persistent hot and dry conditions will cause the ice to melt much more this summer. It also looks likely that we'll see a fairly long summer this year. Ash from wildfires has also been deposited on the ice surface over the past several years. This has darkened the ice surface, causing it to absorb more heat. To add to this, the arrival of El Nino may also mean we have less seasonal snow cover on the wasting glacier this coming winter. This poor glacier can't catch a break!
+This summer has been another difficult year for glaciers. The seasonal snowpack melted very quickly this spring, exposing the glacier ice much earlier than usual. Persistent hot and dry conditions will cause the ice to melt much more this summer. It also looks likely that we'll see a fairly long summer this year. Ash from wildfires has also been deposited on the ice surface over the past several years. This has darkened the ice surface, causing it to absorb more heat. To add to this, the arrival of El Nino may also mean we have less seasonal snow cover on the wasting glacier this coming winter. The images below show the glacier on September 17, 2022 (left) and September 17, 2023 (right). The change in just one season is clearly evident in this comparison. This poor glacier can't catch a break! 
+
+```{figure} img/glacier_compare.png
+---
+name: glacier-compare
+---
+Lower Coquitlam Glacier on Sep. 17, 2022 (left) and Sep. 17 2023 (right). 
+```
 
 This glacier is not a significant source of drinking water for the region, but it's disappearance is symbolic of the impacts of climate change on our region and around the world. Our climate is changing quickly and it is having far-reaching impacts. We may not be able to rely on seasonal snow in the near future, and dry summers may extend longer into the fall. 
