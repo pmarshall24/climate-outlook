@@ -19,7 +19,7 @@ parts:
     chapters:
     - file: drivers.md
     - file: analog.md
-    - file: outlook.md
+    - file: outlook.ipynb
   - caption: Other Climate-related Topics
     chapters:
     - file: forest_health.md

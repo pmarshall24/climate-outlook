@@ -11,7 +11,7 @@ The purpose of this book is to provide information for source water supply plann
 This book will be updated monthly during the first week of each month. 
 
 ```{admonition} **Last updated on:**
-September 1, 2023
+October 3, 2023
 ```
 
 ### Credits
