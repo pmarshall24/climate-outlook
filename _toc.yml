@@ -13,8 +13,9 @@ parts:
   - caption: Current Conditions
     chapters:
     - file: air-temp.ipynb
-    - file: crossover.ipynb
-    - file: water_supply.ipynb
+    - file: snowpack.ipynb
+    - file: drought.ipynb
+    - file: wildfire.ipynb
   - caption: Outlook
     chapters:
     - file: drivers.md

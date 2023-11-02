@@ -4,7 +4,7 @@ This section compares this year to other years with similar climate characterist
 
 **Fall 2009**
 
-Fall rains came relatively early in 2009 and it was generally a wet fall season overall. October saw 110% of normal precipitation, November saw 158%, and December was much drier with only 56% of normal precipitation. Average temperatures on the BC south coast in October-December 2009 were slightly below normal. Warm temperatures were seen in northern and eastern Canada during this period.
+Fall rains came relatively early in 2009 and it was generally a wet fall season overall. November saw 158% of normal precipitation, and December was much drier and cooler with only 56% of normal precipitation and over 1 degree cooler than normal. El Nino really kicked into gear in January. Precipitation was near-normal this month, but average temperatures were almost 3 degrees warmer than normal. Overall, the BC south coast saw conditions that were slightly drier and cooler than normal during this period, but it was very different from month to month.
 
 Moving into the winter, mild temperatures kept snowpack levels below normal for the first half of the season. This was the year of the Vancouver Olympics, which was marked by poor North Shore snow conditions in February ([No Snow at Olympics Site](https://www.cbc.ca/news/canada/british-columbia/no-snow-at-olympic-site-leaves-vanoc-scrambling-1.918004)). The second half of the season was a very different story though. Temperatures cooled and the snowpack built to near-normal levels in the spring. 
 
@@ -12,7 +12,7 @@ Moving into the winter, mild temperatures kept snowpack levels below normal for 
 ---
 name: analog_temp
 ---
-Temperature Anomaly for Oct-Nov-Dec 2009. Lightly above normal for the BC South Coast. 
+Temperature Anomaly for Nov-Dec-Jan 2009-2010. Cooler than normal for most of Canada. 
 ```
 
 ```{figure} img/era5_precip.png
@@ -20,7 +20,7 @@ Temperature Anomaly for Oct-Nov-Dec 2009. Lightly above normal for the BC South 
 
 name: analog_precip
 ---
-Percent of Normal Precipitation for Oct-Nov-Dec 2009. Above normal for the BC South Coast. 
+Percent of Normal Precipitation for Nov-Dec-Jan 2009-2010. Below normal for the BC South Coast. 
 ```
 
 **Other Potential Analog Years**
