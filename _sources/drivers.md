@@ -2,7 +2,7 @@
 
 ```{admonition} **Valid for:**
 :class: attention
-October-November-December 2023
+November-December 2023, January 2024
 ```
 The El Niño–Southern Oscillation (ENSO) and the Pacific Decadal Oscillation (PDO) have been identified as the two most influential ocean–atmosphere teleconnections on the hydro-climatology of western Canada. ENSO and the PDO can both influence temperatures, snowpack, streamflow, and precipitation on British Columbia’s south coast. The oscillating warming and cooling pattern of ENSO happens over a period of 1-3 years, whereas the PDO is longer lasting and shifts in periods of 2-3 decades. Below we can see current and forecasted ENSO conditions. It's not possible to forecast PDO conditions, but we have been in a predominantly cool PDO phase for 25 years now.  
 
@@ -17,7 +17,7 @@ La Niña faded to neutral conditions this spring, with El Niño being officially
 ---
 name: enso
 ---
-Model-based ENSO Forecast (mid-September). [Link](https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/)
+Model-based ENSO Forecast (mid-October). [Link](https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/)
 ```
 What does this mean for Western Canada and the BC South Coast? First off, the warm and cool phases of ENSO (El Niño and La Niña) are related to sea surface temperatures in the tropical Pacific Ocean (specifically the Niño 3.4 region). When the waters in this region become warmer than normal it causes a shift in atmospheric circulation and impacts weather around the world. Globally, the warmest years on record are typically El Niño years. This is also true for the BC South Coast (E.g. 2015-16). The effects of El Niño are felt more during the winter and spring months. Warmer temperatures typically mean less snow (a higher snowline elevation) on our relatively low North Shore Mountains. The 2015 winter season was marked by a historic snow drought. This can have significant impacts on source water supply as we move into the drier season. 
 
@@ -38,5 +38,5 @@ The map below shows monthly average sea surface temperature anomalies in Septemb
 ---
 name: sst
 ---
-Monthly sea surface temperature anomaly (issued Oct 1). [Link](https://psl.noaa.gov/map/clim/sst.shtml)
+Monthly sea surface temperature anomaly (issued Oct 31). [Link](https://psl.noaa.gov/map/clim/sst.shtml)
 ```

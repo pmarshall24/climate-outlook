@@ -1,11 +1,6 @@
 # Watershed Conditions
 
-```{admonition} **Drought Status:** 
-:class: attention
-British Columbia, including the Lower Mainland basin, is experiencing significant seasonal drought this summer. More information on current drought conditions are provided in this resource, and can also be found in the [BC Drought Information Portal](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/drought-information).
-```
-
-This section summarizes recent weather conditions in Metro Vancouver's water supply areas. It was an exceptionally warm and dry spring and summer. This led to extreme drought conditions, elevated wildfire risk, and regional water supply concerns. Drought conditions still remain as we move into the rainy season. Please refer to the [](outlook.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
+This section summarizes recent weather conditions in Metro Vancouver's water supply areas. Please refer to the [](outlook.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
 
 ::::{grid} 1 1 2 2
 :class-container: text-left
@@ -17,15 +12,15 @@ This section summarizes recent weather conditions in Metro Vancouver's water sup
 
 **Air Temperatures**
 ^^^
-```{image} img/temp.jfif
+```{image} img/Temp_icon.png
 :height: 100
 :align: center
 ```
 
-- May saw record-breaking heat, averaging almost 4 degrees warmer than normal
-- June, July and August averaged 1.6 degrees warmer than normal
-- September was slightly warmer than normal despite a cool final week
-- 19 new daily temperatures records have been set so far this year
+- May saw record-breaking heat, averaging 3.5 degrees warmer than normal
+- June, July and August averaged over 1 degree warmer than normal
+- Sep. and Oct. were both slightly warmer than normal
+- Globally, 2023 is almost certain to be the warmest year on record
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -37,14 +32,14 @@ Check out the [](air-temp.ipynb) section for more information
 
 **Precipitation**
 ^^^
-```{image} img/precip-icon.jfif
+```{image} img/Precip_icon.png
 :height: 100
 :align: center
 ```
 
 - Total precipitation was 50% of normal between May 1 and Sep 30
-- There have been 33-day, 25-day, and 21-day dry spells this year
-- The Lower Mainland basin dropped to level 4 drought status on Sep 28
+- Heavy rainfall was delivered by a series of atmospheric rivers in mid-Oct. 
+- The Lower Capilano Watershed received over 100 mm of rain on Oct 18
 +++
 Check out the [](air-temp.ipynb) section for more information
 
@@ -54,16 +49,16 @@ Check out the [](air-temp.ipynb) section for more information
 :class-body: text-left
 :class-header: bg-light text-center
 
-**Water Supply**
+**Snowpack**
 ^^^
-```{image} img/river_discharge_icon.jpg
+```{image} img/Cryosphere.png
 :height: 100
 :align: center
 ```
 
-- Source water supply remains within the normal range, but still lower than the past few years
-- River inflows were close to record-low levels throughout the summer
-- Late September rains rapidly refilled the primary drinking water reservoirs
+- The first snowfall of the year occurred on Oct. 25-26
+- This early snow disappeared by the beginning of November
+- Analog years saw below, or near-normal spring snowpacks
 +++
 Check out the [](water_supply.ipynb) section for more information
 
@@ -73,16 +68,16 @@ Check out the [](water_supply.ipynb) section for more information
 :class-body: text-left
 :class-header: bg-light text-center
 
-**Wildfires and Smoke**
+**Wildfires and Drought**
 ^^^
 ```{image} img/wildfire-icon.jpg
 :height: 100
 :align: center
 ```
 
-- Locally, fire danger has been rated high or extreme for 65 days this summer
+- BC experienced a prolonged a severe seasonal drought in 2023
+- Locally, fire danger was rated high or extreme for 95 days this summer
 - Provincially, the area burned in the province more than doubled the previous record
-- Metro Vancouver issued air quality advisories in late August due to wildfire smoke
 - Carbon emissions from wildfire smoke in Canada have more than tripled the previous record
 +++
 Check out the [](crossover.ipynb) section for more information

@@ -172,9 +172,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Current Conditions</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="air-temp.html">Air Temperature and Precipitation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="crossover.html">Drought and Wildfire Situation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="water_supply.html">Water Supply Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="air-temp.html">Weather Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snowpack.html">Snowpack Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drought.html">Drought</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wildfire.html">Wildfire Season Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Outlook</span></p>
 <ul class="nav bd-sidenav">
@@ -385,8 +386,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperatures">Air Temperatures</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-surface-temperatures">Sea Surface Temperatures</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-ice-extent">Sea Ice Extent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#world-extreme-weather-events-in-2023">World Extreme Weather Events in 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-ice-extent">Sea Ice Extent</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-extreme-weather-events-in-2023">World Extreme Weather Events in 2023</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -406,14 +409,14 @@ document.write(`
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">A line of Atlantic hurricanes tracking towards North America (NOAA)</span><a class="headerlink" href="#globe" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>Weather and climate-related disasters have made headlines around the world this year. This section takes a closer look at global climate conditions and significant weather events.</p>
+<p>The plots below will be updated each month. At the bottom of this page you will also find a map showing the locations of some of the most extreme weather events of the year.</p>
 <section id="air-temperatures">
 <h2>Air Temperatures<a class="headerlink" href="#air-temperatures" title="Permalink to this headline">#</a></h2>
 <div class="danger admonition">
-<p class="admonition-title"><strong>Off the Charts Heat</strong> </p>
-<p>Summer 2023 was the hottest in history with exceptionally warm global temperatures since June</p>
+<p class="admonition-title">Off the Charts Heat!</p>
+<p>Summer 2023 was the hottest in history. <a class="reference external" href="https://climate.copernicus.eu/summer-2023-hottest-record">Copernicus</a></p>
 </div>
-<p>Heat has grabbed headlines around the world in 2023. Many parts of the world have experienced intense and prolonged heat waves so far this year. NASA has announced that <a class="reference external" href="https://www.nasa.gov/press-release/nasa-announces-summer-2023-hottest-on-record">summer 2023 was the hottest since records began</a> in the late 1800’s. Global temperatures have been consistently in record-breaking territory since June. July was the <a class="reference external" href="https://public.wmo.int/en/media/press-release/july-2023-set-be-hottest-month-record">hottest month ever on recorded history</a>, and the temperature anomaly has actually increased moving into September. These warm temperatures have had led to massive and deadly wildfires, a dramatic loss of Arctic and Antarctic sea ice, and has fueled intense storm systems around the world.</p>
-<p>The chart below shows the global average temperature from 1979 to present. The bold black line represents 2023, while the orange line highlights 2022. Prior to 2023, the record global high temperature was 16.92 C, set on August 14, 2016. The new hottest day on record is July 6, 2023 with a global temperature of 17.23 C. It looks almost certain that 2023 will set a new annual global heat record.</p>
 <figure class="align-default" id="temp-world">
 <img alt="_images/cfsr_world.png" src="_images/cfsr_world.png" />
 <figcaption>
@@ -423,7 +426,10 @@ document.write(`
 </section>
 <section id="sea-surface-temperatures">
 <h2>Sea Surface Temperatures<a class="headerlink" href="#sea-surface-temperatures" title="Permalink to this headline">#</a></h2>
-<p>Sea surface temperatures have been in completely new territory for most of 2023. The chart below is absolutely shocking! This means there is significant heat (energy) at the surface of the ocean to interact with the atmosphere. As a result, we are seeing hotter average air temperatures and more intense storms. Hot waters in the Atlantic and Gulf of Mexico have fueled hurricanes, causing some to intensify rapidly and become monster storms (E.g. Hurricane Lee).</p>
+<div class="danger admonition">
+<p class="admonition-title">New Record High Sea Surface Temperature </p>
+<p>Sea surface temperatures broke records in August. <a class="reference external" href="https://climate.copernicus.eu/global-sea-surface-temperature-reaches-record-high">Copernicus</a></p>
+</div>
 <figure class="align-default" id="temp-sea">
 <img alt="_images/world_sst.png" src="_images/world_sst.png" />
 <figcaption>
@@ -433,18 +439,19 @@ document.write(`
 </section>
 <section id="sea-ice-extent">
 <h2>Sea Ice Extent<a class="headerlink" href="#sea-ice-extent" title="Permalink to this headline">#</a></h2>
-<p>Antarctic sea ice extent has been well below the previous record-low level throughout 2023. The National Snow and Ice Data Center (NSIDC) just announced that the <a class="reference external" href="https://nsidc.org/news-analyses/news-stories/antarctic-sea-ice-hits-record-low-maximum-extent-2023">2023 maximum Antarctic sea ice extent is the lowest observed</a>(preliminary report). The ice extent is substantially lower than the previous mark set in 1986. Arctic sea ice extent is also below normal this summer. Again, the chart below is very alarming.</p>
-<figure class="align-default" id="sea-ice">
+<div class="danger admonition">
+<p class="admonition-title">Tough Year for Sea Ice  </p>
+<p>Antarctic sea ice extent reaches record low minimum and maximum levels in 2023. <a class="reference external" href="https://nsidc.org/news-analyses/news-stories/antarctic-sea-ice-hits-record-low-maximum-extent-2023">NSIDC</a></p>
+</div>
+<figure class="align-default">
 <img alt="_images/seaice_extent.png" src="_images/seaice_extent.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Antarctic sea ice extent, 1978-2023 (NSIDC). <a class="reference external" href="https://climatereanalyzer.org/clim/seaice/">Climate Reanalyzer</a></span><a class="headerlink" href="#sea-ice" title="Permalink to this image">#</a></p>
-</figcaption>
 </figure>
-</section>
+<figure class="align-default">
+<img alt="_images/seaice_north.png" src="_images/seaice_north.png" />
+</figure>
 <section id="world-extreme-weather-events-in-2023">
-<h2>World Extreme Weather Events in 2023<a class="headerlink" href="#world-extreme-weather-events-in-2023" title="Permalink to this headline">#</a></h2>
+<h3>World Extreme Weather Events in 2023<a class="headerlink" href="#world-extreme-weather-events-in-2023" title="Permalink to this headline">#</a></h3>
 <p>Below is a map highlighting some of the most extreme weather events so far this year. This includes extreme heatwaves, powerful storms, flooding, and large intense wildfires. Combined, these events have resulted in thousands of lives lost and homes destroyed, and have cost billions in response and recovery.</p>
-<p>August alone was packed with devastating weather events. South America experienced extreme mid-winter heat with temperatures 20-25 degrees warmer than average. This is considered to be one of the <strong>most extreme weather events ever</strong>. Heat and wildfires simultaneously struck North America and Europe. Greece is currently battling the <strong>largest wildfire ever in Europe</strong>. The town of Lahaina on Maui was almost completely destroyed on August 8th. 115 people were killed in this fire, with hundreds still missing. Finally, category 3 Hurricane Idalia struck Florida’s Big Bend region on August 29. This storm brought catastrophic storm surge and destructive winds, and is considered to be the <strong>strongest storm to strike this part of Florida in the past 130 years</strong>.</p>
 <p>You can hover over the icons on the map to see the name and date of the event, and click on the icons for more information.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -475,7 +482,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5881a8abb493801251599e1fab747f81 {
+                #map_15d0e841d84e91d9568269ef14369c7b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -489,14 +496,14 @@ document.write(`
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5881a8abb493801251599e1fab747f81&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_15d0e841d84e91d9568269ef14369c7b&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_5881a8abb493801251599e1fab747f81 = L.map(
-                &quot;map_5881a8abb493801251599e1fab747f81&quot;,
+            var map_15d0e841d84e91d9568269ef14369c7b = L.map(
+                &quot;map_15d0e841d84e91d9568269ef14369c7b&quot;,
                 {
                     center: [35.42518, -50.95],
                     crs: L.CRS.EPSG3857,
@@ -510,40 +517,40 @@ document.write(`
 
         
     
-            var tile_layer_3089df5809f9ddf8385c420bae664310 = L.tileLayer(
+            var tile_layer_776c07d40a4aa33134257fe0a051af65 = L.tileLayer(
                 &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var marker_35f2fd06ac97092742e11f3c343c3669 = L.marker(
+            var marker_703f8061698bce8b46260d39d55b0a5c = L.marker(
                 [49.95, -119.6],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_9e3afebf32870ceec7ab790d305fbda2 = L.AwesomeMarkers.icon(
+            var icon_ffb85055bf081367c700598d1220966d = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_35f2fd06ac97092742e11f3c343c3669.setIcon(icon_9e3afebf32870ceec7ab790d305fbda2);
+            marker_703f8061698bce8b46260d39d55b0a5c.setIcon(icon_ffb85055bf081367c700598d1220966d);
         
     
-        var popup_86694a80dd6768618e16ff91d63c3762 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_f3808ba2f8fef2534e31685a8abc92e0 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_c6fca750e426e9a75b84be054783536f = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5CQyBkZWNsYXJlcyBhIHN0YXRlIG9mIGVtZXJnZW5jeSBhcyB3aWxkZmlyZXMgdGhyZWF0ZW4gc2V2ZXJhbCBpbnRlcmlvciBjb21tdW5pdGllcy4gSHVuZHJlZHMgb2YgcHJvcGVydGllcyB3ZXJlIGRlc3Ryb3llZCBpbiB0aGUgU2h1c3dhcCBhbmQgT2thbmFnYW4gYXMgZmlyZXMgZmxhcmVkIHVwIHdpdGggdGhlIHBhc3NhZ2Ugb2YgYSBkcnkgY29sZCBmcm9udC48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_86694a80dd6768618e16ff91d63c3762.setContent(i_frame_c6fca750e426e9a75b84be054783536f);
+                var i_frame_e5e2d4c78f24cc6750c2415cebcd1124 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5CQyBkZWNsYXJlcyBhIHN0YXRlIG9mIGVtZXJnZW5jeSBhcyB3aWxkZmlyZXMgdGhyZWF0ZW4gc2V2ZXJhbCBpbnRlcmlvciBjb21tdW5pdGllcy4gSHVuZHJlZHMgb2YgcHJvcGVydGllcyB3ZXJlIGRlc3Ryb3llZCBpbiB0aGUgU2h1c3dhcCBhbmQgT2thbmFnYW4gYXMgZmlyZXMgZmxhcmVkIHVwIHdpdGggdGhlIHBhc3NhZ2Ugb2YgYSBkcnkgY29sZCBmcm9udC48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_f3808ba2f8fef2534e31685a8abc92e0.setContent(i_frame_e5e2d4c78f24cc6750c2415cebcd1124);
             
         
 
-        marker_35f2fd06ac97092742e11f3c343c3669.bindPopup(popup_86694a80dd6768618e16ff91d63c3762)
+        marker_703f8061698bce8b46260d39d55b0a5c.bindPopup(popup_f3808ba2f8fef2534e31685a8abc92e0)
         ;
 
         
     
     
-            marker_35f2fd06ac97092742e11f3c343c3669.bindTooltip(
+            marker_703f8061698bce8b46260d39d55b0a5c.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;BC Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -551,34 +558,34 @@ document.write(`
             );
         
     
-            var marker_055f939c4ed0419cec0f0f99b9f2af7f = L.marker(
+            var marker_b5774ff41d536e62c75f5480bdbb7f87 = L.marker(
                 [57.53, -122.6],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_17102964cf024ca44047fe9aff1ac7cd = L.AwesomeMarkers.icon(
+            var icon_0cfd78ab051a47f5836d82c161a63873 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_055f939c4ed0419cec0f0f99b9f2af7f.setIcon(icon_17102964cf024ca44047fe9aff1ac7cd);
+            marker_b5774ff41d536e62c75f5480bdbb7f87.setIcon(icon_0cfd78ab051a47f5836d82c161a63873);
         
     
-        var popup_dd4de4f8642c3cd615798ce9a6cac111 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_f6ed7f4c43a5f11fcba0ed3a02809f4e = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_13a715c7dc88fbd17c4b1c06a52da128 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgRG9ubmllIENyZWVrIGZpcmUgaWduaXRlcyBvbiBNYXkgMTIgYW5kIGJlY29tZXMgdGhlIGxhcmdlc3Qgd2lsZGZpcmUgaW4gdGhlIHByb3ZpbmNlcyBoaXN0b3J5IGF0IGNsb3NlIHRvIDYwMCwwMDAgaGVjdGFyZXMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_dd4de4f8642c3cd615798ce9a6cac111.setContent(i_frame_13a715c7dc88fbd17c4b1c06a52da128);
+                var i_frame_b1f4081d128dc0b62b63f1acd395dff5 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgRG9ubmllIENyZWVrIGZpcmUgaWduaXRlcyBvbiBNYXkgMTIgYW5kIGJlY29tZXMgdGhlIGxhcmdlc3Qgd2lsZGZpcmUgaW4gdGhlIHByb3ZpbmNlcyBoaXN0b3J5IGF0IGNsb3NlIHRvIDYwMCwwMDAgaGVjdGFyZXMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_f6ed7f4c43a5f11fcba0ed3a02809f4e.setContent(i_frame_b1f4081d128dc0b62b63f1acd395dff5);
             
         
 
-        marker_055f939c4ed0419cec0f0f99b9f2af7f.bindPopup(popup_dd4de4f8642c3cd615798ce9a6cac111)
+        marker_b5774ff41d536e62c75f5480bdbb7f87.bindPopup(popup_f6ed7f4c43a5f11fcba0ed3a02809f4e)
         ;
 
         
     
     
-            marker_055f939c4ed0419cec0f0f99b9f2af7f.bindTooltip(
+            marker_b5774ff41d536e62c75f5480bdbb7f87.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Donnie Creek Wildfire&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -586,34 +593,34 @@ document.write(`
             );
         
     
-            var marker_773d0eefca754242c89f00cd2a842557 = L.marker(
+            var marker_5eb20f100b8d87b0f1dbd5223e5a79d8 = L.marker(
                 [62.48, -114.33],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_04680694c1f3273e09c07a0111025186 = L.AwesomeMarkers.icon(
+            var icon_3218433bc57d5e86b3c42f533e52908a = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_773d0eefca754242c89f00cd2a842557.setIcon(icon_04680694c1f3273e09c07a0111025186);
+            marker_5eb20f100b8d87b0f1dbd5223e5a79d8.setIcon(icon_3218433bc57d5e86b3c42f533e52908a);
         
     
-        var popup_fa02ad0c371f20a633b4ae3f862dd9c3 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_73b4e1fcae0ee84534aca6dc29874295 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_95fb6555cc76c3aaa245c6b582311408 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD4yMCwwMDAgcGVyb3BsZSBhcmUgZXZhY3VhdGVkIGZyb20gV2hpdGVob3JzZSBkdWUgdG8gd2lsZGZpcmUgdGhyZWF0LiBOb3J0aGVybiBDYW5hZGEgaGFzIGV4cGVyaWVuY2VkIGEgdmVyeSBjaGFsbGVuZ2luZyBmaXJlIHNlYXNvbi48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_fa02ad0c371f20a633b4ae3f862dd9c3.setContent(i_frame_95fb6555cc76c3aaa245c6b582311408);
+                var i_frame_5f232964aefc64ea43aa8539f5536e0c = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD4yMCwwMDAgcGVyb3BsZSBhcmUgZXZhY3VhdGVkIGZyb20gV2hpdGVob3JzZSBkdWUgdG8gd2lsZGZpcmUgdGhyZWF0LiBOb3J0aGVybiBDYW5hZGEgaGFzIGV4cGVyaWVuY2VkIGEgdmVyeSBjaGFsbGVuZ2luZyBmaXJlIHNlYXNvbi48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_73b4e1fcae0ee84534aca6dc29874295.setContent(i_frame_5f232964aefc64ea43aa8539f5536e0c);
             
         
 
-        marker_773d0eefca754242c89f00cd2a842557.bindPopup(popup_fa02ad0c371f20a633b4ae3f862dd9c3)
+        marker_5eb20f100b8d87b0f1dbd5223e5a79d8.bindPopup(popup_73b4e1fcae0ee84534aca6dc29874295)
         ;
 
         
     
     
-            marker_773d0eefca754242c89f00cd2a842557.bindTooltip(
+            marker_5eb20f100b8d87b0f1dbd5223e5a79d8.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;NWT Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -621,34 +628,34 @@ document.write(`
             );
         
     
-            var marker_bef4095e7325d93bad27ee6bbd502731 = L.marker(
+            var marker_5b59756391224faed9bf49fe3789162f = L.marker(
                 [20.9, -156.68],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_fc5742b2e36e42004522ba865ff4a68c = L.AwesomeMarkers.icon(
+            var icon_83b675054e51f25e167f3b05b596238e = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_bef4095e7325d93bad27ee6bbd502731.setIcon(icon_fc5742b2e36e42004522ba865ff4a68c);
+            marker_5b59756391224faed9bf49fe3789162f.setIcon(icon_83b675054e51f25e167f3b05b596238e);
         
     
-        var popup_9e2fed061561517ff754a262fec4efcd = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_914263fa5bbee3b2377f3259997b6e8d = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_9e7b626b4f60c6db6dfb63ac5a527791 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgdG93biBvZiBMYWhhaW5hIGlzIGFsbW9zdCBjb21wbGV0ZWx5IGRlc3Ryb3llZCBieSBmaXJlLiBPdmVyIDEwMCBwZW9wbGUgYXJlIGNvbmZpcm1lZCBkZWFkIHdpdGggb3ZlciAxMDAwIHN0aWxsIG1pc3NpbmcuIFRoaXMgaXMgdGhlIGRlYWRsaWVzdCB3aWxkZmlyZSBpbiBtb2Rlcm4gVVMgaGlzdG9yeS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_9e2fed061561517ff754a262fec4efcd.setContent(i_frame_9e7b626b4f60c6db6dfb63ac5a527791);
+                var i_frame_cdca15324263525b239966a22429b01d = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgdG93biBvZiBMYWhhaW5hIGlzIGFsbW9zdCBjb21wbGV0ZWx5IGRlc3Ryb3llZCBieSBmaXJlLiBPdmVyIDEwMCBwZW9wbGUgYXJlIGNvbmZpcm1lZCBkZWFkIHdpdGggb3ZlciAxMDAwIHN0aWxsIG1pc3NpbmcuIFRoaXMgaXMgdGhlIGRlYWRsaWVzdCB3aWxkZmlyZSBpbiBtb2Rlcm4gVVMgaGlzdG9yeS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_914263fa5bbee3b2377f3259997b6e8d.setContent(i_frame_cdca15324263525b239966a22429b01d);
             
         
 
-        marker_bef4095e7325d93bad27ee6bbd502731.bindPopup(popup_9e2fed061561517ff754a262fec4efcd)
+        marker_5b59756391224faed9bf49fe3789162f.bindPopup(popup_914263fa5bbee3b2377f3259997b6e8d)
         ;
 
         
     
     
-            marker_bef4095e7325d93bad27ee6bbd502731.bindTooltip(
+            marker_5b59756391224faed9bf49fe3789162f.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Maui Wildfires&lt;/b&gt;&lt;br&gt;2023.08.08
                  &lt;/div&gt;`,
@@ -656,34 +663,34 @@ document.write(`
             );
         
     
-            var marker_25b3d2dfaae36463ed52e611d405ecd8 = L.marker(
+            var marker_fe76ae95c8dee2203d8441f8e9f59c6d = L.marker(
                 [39.115, 21.74],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_fd7703d073333953d8d174f77ae5254a = L.AwesomeMarkers.icon(
+            var icon_3a941aa963a920500563bc313a43716a = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_25b3d2dfaae36463ed52e611d405ecd8.setIcon(icon_fd7703d073333953d8d174f77ae5254a);
+            marker_fe76ae95c8dee2203d8441f8e9f59c6d.setIcon(icon_3a941aa963a920500563bc313a43716a);
         
     
-        var popup_6b6f99a9374d7df9760c2f201f51ea4a = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_54a2f9d611d31b2e2b3aa19097e18855 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_29abbba42d6fbcee3a6e5f957633a35d = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TdHJvbmcgd2luZHMgYW5kIGhvdCwgZHJ5IGNvbmRpdGlvbnMgaGF2ZSBmYW5uZWQgdGhlIGZsYW1lcyBvZiBtdWx0aXBsZSB3aWxkaWZyZXMgaW4gR3JlZWNlLiBPbmUgZmlyZSBpcyBjb25zaWRlcmVkIHRoZSBsYXJnZXN0IGV2ZXIgd2lsZGZpcmUgaW4gdGhlIEVVLiBBdCBsZWFzdCAxOCBwZW9wbGUgaGF2ZSBsb3N0IHRoZWlyIGxpdmVzLjwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_6b6f99a9374d7df9760c2f201f51ea4a.setContent(i_frame_29abbba42d6fbcee3a6e5f957633a35d);
+                var i_frame_9691f99c1d1e34b0357b1ef6c09e208b = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TdHJvbmcgd2luZHMgYW5kIGhvdCwgZHJ5IGNvbmRpdGlvbnMgaGF2ZSBmYW5uZWQgdGhlIGZsYW1lcyBvZiBtdWx0aXBsZSB3aWxkaWZyZXMgaW4gR3JlZWNlLiBPbmUgZmlyZSBpcyBjb25zaWRlcmVkIHRoZSBsYXJnZXN0IGV2ZXIgd2lsZGZpcmUgaW4gdGhlIEVVLiBBdCBsZWFzdCAxOCBwZW9wbGUgaGF2ZSBsb3N0IHRoZWlyIGxpdmVzLjwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_54a2f9d611d31b2e2b3aa19097e18855.setContent(i_frame_9691f99c1d1e34b0357b1ef6c09e208b);
             
         
 
-        marker_25b3d2dfaae36463ed52e611d405ecd8.bindPopup(popup_6b6f99a9374d7df9760c2f201f51ea4a)
+        marker_fe76ae95c8dee2203d8441f8e9f59c6d.bindPopup(popup_54a2f9d611d31b2e2b3aa19097e18855)
         ;
 
         
     
     
-            marker_25b3d2dfaae36463ed52e611d405ecd8.bindTooltip(
+            marker_fe76ae95c8dee2203d8441f8e9f59c6d.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Greek Wildfires&lt;/b&gt;&lt;br&gt;2023.08.15
                  &lt;/div&gt;`,
@@ -691,34 +698,34 @@ document.write(`
             );
         
     
-            var marker_9b3809f430163311553ac12dc8e42339 = L.marker(
+            var marker_63fbdd54a42552d9a763814210b3c182 = L.marker(
                 [-37.86, -72.05],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_48970f06252705acc08bedbadb52b4e1 = L.AwesomeMarkers.icon(
+            var icon_6e8399f01fa1a9b874264a6e44bb8314 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_9b3809f430163311553ac12dc8e42339.setIcon(icon_48970f06252705acc08bedbadb52b4e1);
+            marker_63fbdd54a42552d9a763814210b3c182.setIcon(icon_6e8399f01fa1a9b874264a6e44bb8314);
         
     
-        var popup_0875522f21c58111c9f86817e8a61f8d = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_29286345ec78ff09772ce33ac0fcdeaa = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_e39ecfd046b99d6e01219f65e087d54b = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5DaGlsZSBzdHJ1Z2dsZWQgdGhyb3VnaCBhIHZlcnkgZGlmZmljdWx0IGZpcmUgc2Vhc29uIGFzIGEgcmVzdWx0IG9mIGhlYXQgYW5kIG1lZ2EtZHJvdWdodC4gRmlyZXMgYnVybmVkIG1vcmUgdGhhbiA0MzAsMDAwIGhlY3RhcmVzIGFuZCAyNCBwZW9wbGUgbG9zdCB0aGllciBsaXZlcy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_0875522f21c58111c9f86817e8a61f8d.setContent(i_frame_e39ecfd046b99d6e01219f65e087d54b);
+                var i_frame_ed61212307aff77b0b454668f6584ed8 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5DaGlsZSBzdHJ1Z2dsZWQgdGhyb3VnaCBhIHZlcnkgZGlmZmljdWx0IGZpcmUgc2Vhc29uIGFzIGEgcmVzdWx0IG9mIGhlYXQgYW5kIG1lZ2EtZHJvdWdodC4gRmlyZXMgYnVybmVkIG1vcmUgdGhhbiA0MzAsMDAwIGhlY3RhcmVzIGFuZCAyNCBwZW9wbGUgbG9zdCB0aGllciBsaXZlcy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_29286345ec78ff09772ce33ac0fcdeaa.setContent(i_frame_ed61212307aff77b0b454668f6584ed8);
             
         
 
-        marker_9b3809f430163311553ac12dc8e42339.bindPopup(popup_0875522f21c58111c9f86817e8a61f8d)
+        marker_63fbdd54a42552d9a763814210b3c182.bindPopup(popup_29286345ec78ff09772ce33ac0fcdeaa)
         ;
 
         
     
     
-            marker_9b3809f430163311553ac12dc8e42339.bindTooltip(
+            marker_63fbdd54a42552d9a763814210b3c182.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Chilean Wildfires&lt;/b&gt;&lt;br&gt;2023.02.01
                  &lt;/div&gt;`,
@@ -726,34 +733,34 @@ document.write(`
             );
         
     
-            var marker_58ff5ffd14cda8aecbe63179a8983ce3 = L.marker(
+            var marker_232aa2d107a2ed3005de83a93c4e6954 = L.marker(
                 [44.11, -72.667],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_ba545d87bf8112027df18bad6ed6a0e6 = L.AwesomeMarkers.icon(
+            var icon_f28d238aedca6e604552a23f87d7f8ae = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_58ff5ffd14cda8aecbe63179a8983ce3.setIcon(icon_ba545d87bf8112027df18bad6ed6a0e6);
+            marker_232aa2d107a2ed3005de83a93c4e6954.setIcon(icon_f28d238aedca6e604552a23f87d7f8ae);
         
     
-        var popup_c6af8076ce0b79e09d37d6ab82831f16 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_b322e0400de5e449eb057e00e1ccaed3 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_26099b0356aa3028c46675a1ff735bf5 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BbiBpbnRlbnNlIHN0b3JtIHN5c3RlbSBjYXVzZWQgY2F0YXNyb3BoaWMgZmxvb2RpbmcgaW4gVmVybW9udC4gU29tZSBhcmVhcyByZWNvcmRlZCAyMzAgbW0gb2YgcmFpbiBhcyB3YXRlciBsZXZlbHMgcm9zZSB0byByZWNvcmQgaGlnaCBsZXZlbHMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_c6af8076ce0b79e09d37d6ab82831f16.setContent(i_frame_26099b0356aa3028c46675a1ff735bf5);
+                var i_frame_b7d081e50dd50ccccd7fb5a8c2170d86 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BbiBpbnRlbnNlIHN0b3JtIHN5c3RlbSBjYXVzZWQgY2F0YXNyb3BoaWMgZmxvb2RpbmcgaW4gVmVybW9udC4gU29tZSBhcmVhcyByZWNvcmRlZCAyMzAgbW0gb2YgcmFpbiBhcyB3YXRlciBsZXZlbHMgcm9zZSB0byByZWNvcmQgaGlnaCBsZXZlbHMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_b322e0400de5e449eb057e00e1ccaed3.setContent(i_frame_b7d081e50dd50ccccd7fb5a8c2170d86);
             
         
 
-        marker_58ff5ffd14cda8aecbe63179a8983ce3.bindPopup(popup_c6af8076ce0b79e09d37d6ab82831f16)
+        marker_232aa2d107a2ed3005de83a93c4e6954.bindPopup(popup_b322e0400de5e449eb057e00e1ccaed3)
         ;
 
         
     
     
-            marker_58ff5ffd14cda8aecbe63179a8983ce3.bindTooltip(
+            marker_232aa2d107a2ed3005de83a93c4e6954.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Vermont Flooding&lt;/b&gt;&lt;br&gt;2023.07.10
                  &lt;/div&gt;`,
@@ -761,34 +768,34 @@ document.write(`
             );
         
     
-            var marker_bae53a4162303c388ea4d7d26ea1201c = L.marker(
+            var marker_443a0ad4a99648bb69f2fe02ebba96bd = L.marker(
                 [32.665, 131.1],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_94d73bc5095b59e7058c66d09df1f2e2 = L.AwesomeMarkers.icon(
+            var icon_5faadec446b9e078a7aa49da7ffa13dc = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_bae53a4162303c388ea4d7d26ea1201c.setIcon(icon_94d73bc5095b59e7058c66d09df1f2e2);
+            marker_443a0ad4a99648bb69f2fe02ebba96bd.setIcon(icon_5faadec446b9e078a7aa49da7ffa13dc);
         
     
-        var popup_7f4ba6541b59050dc42b16a75d7e3710 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_9e4f0e3add1a269d55dec1f676e88dbd = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_e9778a086926f5c1826fa3236962a786 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TaXggcGVvcGxlIGRpZWQgYW5kIG90aGVycyB3ZXJlIHJlcG9ydGVkIG1pc3NpbmcgYWZ0ZXIgSmFwYW4gZXhwZXJpZW5jZWQgdGhlICJoZWF2aWVzdCByYWluIGV2ZXIiIHdpdGggd2lkZXNwcmVhZCBmbG9vZGluZyBhbmQgbGFuZHNsaWRlcyBpbiB0aGUgS3l1c2h1IGFyZWEuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_7f4ba6541b59050dc42b16a75d7e3710.setContent(i_frame_e9778a086926f5c1826fa3236962a786);
+                var i_frame_8a48fc36e01bdef42b2c2e013266adae = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TaXggcGVvcGxlIGRpZWQgYW5kIG90aGVycyB3ZXJlIHJlcG9ydGVkIG1pc3NpbmcgYWZ0ZXIgSmFwYW4gZXhwZXJpZW5jZWQgdGhlICJoZWF2aWVzdCByYWluIGV2ZXIiIHdpdGggd2lkZXNwcmVhZCBmbG9vZGluZyBhbmQgbGFuZHNsaWRlcyBpbiB0aGUgS3l1c2h1IGFyZWEuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_9e4f0e3add1a269d55dec1f676e88dbd.setContent(i_frame_8a48fc36e01bdef42b2c2e013266adae);
             
         
 
-        marker_bae53a4162303c388ea4d7d26ea1201c.bindPopup(popup_7f4ba6541b59050dc42b16a75d7e3710)
+        marker_443a0ad4a99648bb69f2fe02ebba96bd.bindPopup(popup_9e4f0e3add1a269d55dec1f676e88dbd)
         ;
 
         
     
     
-            marker_bae53a4162303c388ea4d7d26ea1201c.bindTooltip(
+            marker_443a0ad4a99648bb69f2fe02ebba96bd.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Japan Flooding&lt;/b&gt;&lt;br&gt;2023.07.11
                  &lt;/div&gt;`,
@@ -796,34 +803,34 @@ document.write(`
             );
         
     
-            var marker_c3aa80ebe784bb24f177acdc6ae0d4d9 = L.marker(
+            var marker_29111fb1be33605bc5e1272320d770df = L.marker(
                 [33.8, -116.4],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_4ffa773b316f676354bab05b3197da4c = L.AwesomeMarkers.icon(
+            var icon_1450c87cf571358117322068ad9582df = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;hurricane&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_c3aa80ebe784bb24f177acdc6ae0d4d9.setIcon(icon_4ffa773b316f676354bab05b3197da4c);
+            marker_29111fb1be33605bc5e1272320d770df.setIcon(icon_1450c87cf571358117322068ad9582df);
         
     
-        var popup_ca3b1c8e20787baf5892a2abc3acff83 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_cf43fb8db4fd0d5956527e3e19564006 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_34406b1c0357d9a17a7805b26cfe87b6 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgSGlsbGFyeSBzdHJ1Y2sgcGFydHMgb2YgQ2FsaWZvcm5pYSBhbmQgdGhlIFVTIFNvdXRod2VzdCBhcyBhIHRyb3BpY2FsIHN0b3JtLCBkcm9wcGluZyBhbG1vc3QgYSB5ZWFycyB3b3J0aCBvZiByYWluIGluIHNvbWUgcGxhY2VzLiBUaGlzIHN0b3JtIHJlc3VsdGVkIGluIHNpZ25pZmljYW50IGZsb29kaW5nLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_ca3b1c8e20787baf5892a2abc3acff83.setContent(i_frame_34406b1c0357d9a17a7805b26cfe87b6);
+                var i_frame_9ac0895e4d64bba3ecbec040e7809855 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgSGlsbGFyeSBzdHJ1Y2sgcGFydHMgb2YgQ2FsaWZvcm5pYSBhbmQgdGhlIFVTIFNvdXRod2VzdCBhcyBhIHRyb3BpY2FsIHN0b3JtLCBkcm9wcGluZyBhbG1vc3QgYSB5ZWFycyB3b3J0aCBvZiByYWluIGluIHNvbWUgcGxhY2VzLiBUaGlzIHN0b3JtIHJlc3VsdGVkIGluIHNpZ25pZmljYW50IGZsb29kaW5nLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_cf43fb8db4fd0d5956527e3e19564006.setContent(i_frame_9ac0895e4d64bba3ecbec040e7809855);
             
         
 
-        marker_c3aa80ebe784bb24f177acdc6ae0d4d9.bindPopup(popup_ca3b1c8e20787baf5892a2abc3acff83)
+        marker_29111fb1be33605bc5e1272320d770df.bindPopup(popup_cf43fb8db4fd0d5956527e3e19564006)
         ;
 
         
     
     
-            marker_c3aa80ebe784bb24f177acdc6ae0d4d9.bindTooltip(
+            marker_29111fb1be33605bc5e1272320d770df.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;US Southwest Floods&lt;/b&gt;&lt;br&gt;2023.08.20
                  &lt;/div&gt;`,
@@ -831,34 +838,34 @@ document.write(`
             );
         
     
-            var marker_30948f5475258608cbd855998e2ce0a7 = L.marker(
+            var marker_e8eeca564af0356e57a001031593b8b5 = L.marker(
                 [44.335, 11.2],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_ea2469a8082cbc7ddfd2968dfe9736d6 = L.AwesomeMarkers.icon(
+            var icon_1403ee4c6ba862d6e32667d78093a0b7 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_30948f5475258608cbd855998e2ce0a7.setIcon(icon_ea2469a8082cbc7ddfd2968dfe9736d6);
+            marker_e8eeca564af0356e57a001031593b8b5.setIcon(icon_1403ee4c6ba862d6e32667d78093a0b7);
         
     
-        var popup_b5213e1e57e90a838a66c70e973e50cb = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_6f97cbaa9c8f3d82e5afaba39a0ec819 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_5b907e23ffcafd6993765d94efe5fa72 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5NYXkgd2FzIGEgZGlmZmljdWx0IG1vbnRoIGluIG5vcnRoZXJuIEl0YWx5IGFzIGEgc2VyaWVzIG9mIHN0b3JtcyByZXN1bHRlZCBpbiBmbG9vZGluZyBhbmQgbGFuZHNsaWRlcy4gQWxtb3N0IDIwIHBlb3BsZSBsb3N0IHRoZWlyIGxpdmVzIGluIHRoZXNlIGV2ZW50cy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_b5213e1e57e90a838a66c70e973e50cb.setContent(i_frame_5b907e23ffcafd6993765d94efe5fa72);
+                var i_frame_96b217db5b09f337632ff6e295228a0b = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5NYXkgd2FzIGEgZGlmZmljdWx0IG1vbnRoIGluIG5vcnRoZXJuIEl0YWx5IGFzIGEgc2VyaWVzIG9mIHN0b3JtcyByZXN1bHRlZCBpbiBmbG9vZGluZyBhbmQgbGFuZHNsaWRlcy4gQWxtb3N0IDIwIHBlb3BsZSBsb3N0IHRoZWlyIGxpdmVzIGluIHRoZXNlIGV2ZW50cy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_6f97cbaa9c8f3d82e5afaba39a0ec819.setContent(i_frame_96b217db5b09f337632ff6e295228a0b);
             
         
 
-        marker_30948f5475258608cbd855998e2ce0a7.bindPopup(popup_b5213e1e57e90a838a66c70e973e50cb)
+        marker_e8eeca564af0356e57a001031593b8b5.bindPopup(popup_6f97cbaa9c8f3d82e5afaba39a0ec819)
         ;
 
         
     
     
-            marker_30948f5475258608cbd855998e2ce0a7.bindTooltip(
+            marker_e8eeca564af0356e57a001031593b8b5.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Italy Floods&lt;/b&gt;&lt;br&gt;2023.05.17
                  &lt;/div&gt;`,
@@ -866,34 +873,34 @@ document.write(`
             );
         
     
-            var marker_4e793eff15174a63799191efd99e333f = L.marker(
+            var marker_64900511e83345a60aa6cc33c3ab55ec = L.marker(
                 [11.99, 30.88],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_6513ef814187b0c132b344578fab5d06 = L.AwesomeMarkers.icon(
+            var icon_1dc7ca515ddc9580088727fb9ac50aea = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_4e793eff15174a63799191efd99e333f.setIcon(icon_6513ef814187b0c132b344578fab5d06);
+            marker_64900511e83345a60aa6cc33c3ab55ec.setIcon(icon_1dc7ca515ddc9580088727fb9ac50aea);
         
     
-        var popup_21a0cb39bc6c019e70174fae2d06e432 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_e5813956ba154a79218d0e054a171b1a = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_02e6a36cb5ebbe47e6ae1f5a88d271da = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Tb3V0aCBTdWRhbiBoYXMgYmVlbiBwbGFndWVkIGJ5IGZsb29kcyBmb3IgZm91ciBjb25zZWN1dGl2ZSB5ZWFycywgd2hpY2ggaXMgY29uc2lkZXJlZCB0byBiZSB1bnByZXNjZWRlbnRlZCBhbmQgYWxtb3N0IGNlcnRhaW5seSBsaW5rZWQgdG8gY2xpbWF0ZSBjaGFuZ2UuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_21a0cb39bc6c019e70174fae2d06e432.setContent(i_frame_02e6a36cb5ebbe47e6ae1f5a88d271da);
+                var i_frame_eac1288299acc546d7bb2d06d2f63707 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Tb3V0aCBTdWRhbiBoYXMgYmVlbiBwbGFndWVkIGJ5IGZsb29kcyBmb3IgZm91ciBjb25zZWN1dGl2ZSB5ZWFycywgd2hpY2ggaXMgY29uc2lkZXJlZCB0byBiZSB1bnByZXNjZWRlbnRlZCBhbmQgYWxtb3N0IGNlcnRhaW5seSBsaW5rZWQgdG8gY2xpbWF0ZSBjaGFuZ2UuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_e5813956ba154a79218d0e054a171b1a.setContent(i_frame_eac1288299acc546d7bb2d06d2f63707);
             
         
 
-        marker_4e793eff15174a63799191efd99e333f.bindPopup(popup_21a0cb39bc6c019e70174fae2d06e432)
+        marker_64900511e83345a60aa6cc33c3ab55ec.bindPopup(popup_e5813956ba154a79218d0e054a171b1a)
         ;
 
         
     
     
-            marker_4e793eff15174a63799191efd99e333f.bindTooltip(
+            marker_64900511e83345a60aa6cc33c3ab55ec.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;South Sudan Floods&lt;/b&gt;&lt;br&gt;2023.02.01
                  &lt;/div&gt;`,
@@ -901,34 +908,34 @@ document.write(`
             );
         
     
-            var marker_3770e5c698e64d36b3ad8bbbde0553de = L.marker(
+            var marker_fc78b3d397e481b441dfc9db6536b218 = L.marker(
                 [-15.91, 38.088],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_be35e1d936537b3bf1efa224d2f4d47b = L.AwesomeMarkers.icon(
+            var icon_a4821b6fd0e4783921fadcac1363f0b8 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_3770e5c698e64d36b3ad8bbbde0553de.setIcon(icon_be35e1d936537b3bf1efa224d2f4d47b);
+            marker_fc78b3d397e481b441dfc9db6536b218.setIcon(icon_a4821b6fd0e4783921fadcac1363f0b8);
         
     
-        var popup_96cc325f59064e23e7bb5530c2eb1566 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_3e787b1c48eee9e63dd16855048baa92 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_4be1b3515b147b9480cb439841390758 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5DeWNsb25lIEZyZWRkeSB3YXMgYW4gZXhjZXB0aW9uYWxseSBwb3dlcmZ1bCBhbmQgbG9uZy1saXZlZCBzdG9ybSB0aGF0IGltcGFjdGVkIHNvdXRoZWFzdCBBZnJpY2EgYW5kIE1hZGFnYXNjYXIgb3ZlciB0aGUgY291cnNlIG9mIGZpdmUgd2Vla3MuIEl0IHdhcyB0aGUgbG9uZ2VzdCBsYXN0aW5nIGN5Y2xvbmUgZXZlciByZWNvcmRlZC4gVGhpcyBjeWNsb25lIGlzIGxpbmtlZCB0byAxNDM0IGRlYXRocy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_96cc325f59064e23e7bb5530c2eb1566.setContent(i_frame_4be1b3515b147b9480cb439841390758);
+                var i_frame_77f2cae1555a8beeb6b4c08b515cc7a8 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5DeWNsb25lIEZyZWRkeSB3YXMgYW4gZXhjZXB0aW9uYWxseSBwb3dlcmZ1bCBhbmQgbG9uZy1saXZlZCBzdG9ybSB0aGF0IGltcGFjdGVkIHNvdXRoZWFzdCBBZnJpY2EgYW5kIE1hZGFnYXNjYXIgb3ZlciB0aGUgY291cnNlIG9mIGZpdmUgd2Vla3MuIEl0IHdhcyB0aGUgbG9uZ2VzdCBsYXN0aW5nIGN5Y2xvbmUgZXZlciByZWNvcmRlZC4gVGhpcyBjeWNsb25lIGlzIGxpbmtlZCB0byAxNDM0IGRlYXRocy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_3e787b1c48eee9e63dd16855048baa92.setContent(i_frame_77f2cae1555a8beeb6b4c08b515cc7a8);
             
         
 
-        marker_3770e5c698e64d36b3ad8bbbde0553de.bindPopup(popup_96cc325f59064e23e7bb5530c2eb1566)
+        marker_fc78b3d397e481b441dfc9db6536b218.bindPopup(popup_3e787b1c48eee9e63dd16855048baa92)
         ;
 
         
     
     
-            marker_3770e5c698e64d36b3ad8bbbde0553de.bindTooltip(
+            marker_fc78b3d397e481b441dfc9db6536b218.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Cyclone Freddy&lt;/b&gt;&lt;br&gt;2023.02.20
                  &lt;/div&gt;`,
@@ -936,34 +943,34 @@ document.write(`
             );
         
     
-            var marker_6b7b4e0ea7d2d187c88e3c0398688923 = L.marker(
+            var marker_9b479606e2c73a7505e32f4d21a9c792 = L.marker(
                 [24.0, 108.5],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_6a10fa96790a4a098a679397c7571a74 = L.AwesomeMarkers.icon(
+            var icon_759bd2229311de72b7817afe580cf12e = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_6b7b4e0ea7d2d187c88e3c0398688923.setIcon(icon_6a10fa96790a4a098a679397c7571a74);
+            marker_9b479606e2c73a7505e32f4d21a9c792.setIcon(icon_759bd2229311de72b7817afe580cf12e);
         
     
-        var popup_b1f8a6400e05d453ea55d67b907521b9 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_9d94ec1d3be06541f10eb287fd551d7e = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_1f1ef51529092556c2fbbc0bb10ec5be = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BIHJlY29yZC1icmVha2luZyBoZWF0d2F2ZSBhZmZlY3RlZCBtYW55IEFzaWFuIGNvdW50cmllcyBpbiBBcHJpbCwgcmVzdWx0aW5nIGluIG51bWVyb3VzIHJlZ2lvbmFsIHRlbXBlcmF0dXJlIHJlY29yZHMuIEFyb3VuZCAyMDAgZGVhdGhzIGFyZSBsaW5rZWQgdG8gdGhpcyBoZWF0d2F2ZS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_b1f8a6400e05d453ea55d67b907521b9.setContent(i_frame_1f1ef51529092556c2fbbc0bb10ec5be);
+                var i_frame_78323a7e67fcb2b3e78765ddc6d0de83 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BIHJlY29yZC1icmVha2luZyBoZWF0d2F2ZSBhZmZlY3RlZCBtYW55IEFzaWFuIGNvdW50cmllcyBpbiBBcHJpbCwgcmVzdWx0aW5nIGluIG51bWVyb3VzIHJlZ2lvbmFsIHRlbXBlcmF0dXJlIHJlY29yZHMuIEFyb3VuZCAyMDAgZGVhdGhzIGFyZSBsaW5rZWQgdG8gdGhpcyBoZWF0d2F2ZS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_9d94ec1d3be06541f10eb287fd551d7e.setContent(i_frame_78323a7e67fcb2b3e78765ddc6d0de83);
             
         
 
-        marker_6b7b4e0ea7d2d187c88e3c0398688923.bindPopup(popup_b1f8a6400e05d453ea55d67b907521b9)
+        marker_9b479606e2c73a7505e32f4d21a9c792.bindPopup(popup_9d94ec1d3be06541f10eb287fd551d7e)
         ;
 
         
     
     
-            marker_6b7b4e0ea7d2d187c88e3c0398688923.bindTooltip(
+            marker_9b479606e2c73a7505e32f4d21a9c792.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Asian Heatwave&lt;/b&gt;&lt;br&gt;2023.04.15
                  &lt;/div&gt;`,
@@ -971,34 +978,34 @@ document.write(`
             );
         
     
-            var marker_61bc35b1f65b686aa14b6e50c5e71cce = L.marker(
+            var marker_c7347478b7e0567e2745cd497b03643c = L.marker(
                 [27.27, -79.06],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_6eea6c65b2e5af4c20e1ce578e4c6c9b = L.AwesomeMarkers.icon(
+            var icon_003c9e62dbb47d232a940ac58c562709 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_61bc35b1f65b686aa14b6e50c5e71cce.setIcon(icon_6eea6c65b2e5af4c20e1ce578e4c6c9b);
+            marker_c7347478b7e0567e2745cd497b03643c.setIcon(icon_003c9e62dbb47d232a940ac58c562709);
         
     
-        var popup_d54733e3feac2a0a9ba6a55f3315edf2 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_c0b8df6835030cf974f896535f9c5362 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_2dd7238cf56e67520deb2909df9d8697 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5PY2VhbiB0ZW1wZXJhdHVyZXMgaGF2ZSBiZWVuIGluIHJlY29yZC1icmVha2luZyB0ZXJyaXRvcnkgZm9yIG1vc3Qgb2YgMjAyMywgcGFydGx5IGR1ZSB0byB0aGUgYXJyaXZhbCBvZiBFbCBOaW5vLiBIb3QgdGVtcGVyYXR1cmVzIGFyZSBoYXZpbmcgYSBkZWFkbHkgaW1wYWN0IG9uIGNvcmFscyBhbmQgb3RoZXIgbWFyaW5lIGxpZmUuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_d54733e3feac2a0a9ba6a55f3315edf2.setContent(i_frame_2dd7238cf56e67520deb2909df9d8697);
+                var i_frame_408d40a8d5aca16e8d52f0682ce347b9 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5PY2VhbiB0ZW1wZXJhdHVyZXMgaGF2ZSBiZWVuIGluIHJlY29yZC1icmVha2luZyB0ZXJyaXRvcnkgZm9yIG1vc3Qgb2YgMjAyMywgcGFydGx5IGR1ZSB0byB0aGUgYXJyaXZhbCBvZiBFbCBOaW5vLiBIb3QgdGVtcGVyYXR1cmVzIGFyZSBoYXZpbmcgYSBkZWFkbHkgaW1wYWN0IG9uIGNvcmFscyBhbmQgb3RoZXIgbWFyaW5lIGxpZmUuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_c0b8df6835030cf974f896535f9c5362.setContent(i_frame_408d40a8d5aca16e8d52f0682ce347b9);
             
         
 
-        marker_61bc35b1f65b686aa14b6e50c5e71cce.bindPopup(popup_d54733e3feac2a0a9ba6a55f3315edf2)
+        marker_c7347478b7e0567e2745cd497b03643c.bindPopup(popup_c0b8df6835030cf974f896535f9c5362)
         ;
 
         
     
     
-            marker_61bc35b1f65b686aa14b6e50c5e71cce.bindTooltip(
+            marker_c7347478b7e0567e2745cd497b03643c.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Marine Heatwave&lt;/b&gt;&lt;br&gt;2023.08.15
                  &lt;/div&gt;`,
@@ -1006,34 +1013,34 @@ document.write(`
             );
         
     
-            var marker_43c8f669ad79badcdc33fd40ed0d5714 = L.marker(
+            var marker_7a3287969bcd4f90b3c9926fa7b70c61 = L.marker(
                 [61.1, 99.25],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_ebad8bb92a924d9ac5588fc838b04a14 = L.AwesomeMarkers.icon(
+            var icon_16aa832da726be7004fc8c3f2699a339 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_43c8f669ad79badcdc33fd40ed0d5714.setIcon(icon_ebad8bb92a924d9ac5588fc838b04a14);
+            marker_7a3287969bcd4f90b3c9926fa7b70c61.setIcon(icon_16aa832da726be7004fc8c3f2699a339);
         
     
-        var popup_f29f97e24f5e1b46bb5764f6ce8b31a7 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_8372aa3eeac9b94d73c04d3259d4f317 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_f7618d245ea44dd954f8319b331d48d4 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TaWJlcmlhIGVuZHVyZWQgYW4gdW5wcmVjZWRlbnRlZCBoZWF0d2F2ZSBpbiBKdW5lLiBOdW1lcm91cyB0ZW1wZXJhdHVyZSByZWNvcmRzIHdlcmUgYnJva2VuIHdpdGggb25lIHRvd24gcmVjb3JkaW5nIGEgaGlnaCBvZiAzNy45IEMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_f29f97e24f5e1b46bb5764f6ce8b31a7.setContent(i_frame_f7618d245ea44dd954f8319b331d48d4);
+                var i_frame_b5a435839c0bfe429c79e20ed387722c = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TaWJlcmlhIGVuZHVyZWQgYW4gdW5wcmVjZWRlbnRlZCBoZWF0d2F2ZSBpbiBKdW5lLiBOdW1lcm91cyB0ZW1wZXJhdHVyZSByZWNvcmRzIHdlcmUgYnJva2VuIHdpdGggb25lIHRvd24gcmVjb3JkaW5nIGEgaGlnaCBvZiAzNy45IEMuPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_8372aa3eeac9b94d73c04d3259d4f317.setContent(i_frame_b5a435839c0bfe429c79e20ed387722c);
             
         
 
-        marker_43c8f669ad79badcdc33fd40ed0d5714.bindPopup(popup_f29f97e24f5e1b46bb5764f6ce8b31a7)
+        marker_7a3287969bcd4f90b3c9926fa7b70c61.bindPopup(popup_8372aa3eeac9b94d73c04d3259d4f317)
         ;
 
         
     
     
-            marker_43c8f669ad79badcdc33fd40ed0d5714.bindTooltip(
+            marker_7a3287969bcd4f90b3c9926fa7b70c61.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Siberian Heatwave&lt;/b&gt;&lt;br&gt;2023.06.06
                  &lt;/div&gt;`,
@@ -1041,34 +1048,34 @@ document.write(`
             );
         
     
-            var marker_04e43c6a36b5d6a8ac9552c0911a628f = L.marker(
+            var marker_d536bcf184b40399e7a7a317d31062b2 = L.marker(
                 [40.155, 9.03],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_ed3c1e7098111d7f4f149862975e2d7c = L.AwesomeMarkers.icon(
+            var icon_3da4df5613e36482c5b0991aa019c452 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_04e43c6a36b5d6a8ac9552c0911a628f.setIcon(icon_ed3c1e7098111d7f4f149862975e2d7c);
+            marker_d536bcf184b40399e7a7a317d31062b2.setIcon(icon_3da4df5613e36482c5b0991aa019c452);
         
     
-        var popup_afc0c5cced4d0efdce7de9283aeade42 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_6423d9d2253ddd33470863921a0a02b9 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_8b323f9172247e6ed3e602c3b12e8c2b = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgQ2VyYmVydXMgSGVhdHdhdmUgKG9uZSBmbyB0aGUgZmlyc3QgbmFtZWQgaGVhdHdhdmVzKSByZXN1bHRlZCBpbiB0aGUgaG90dGVzdCB0ZW1wZXJhdHVyZXMgZXZlciByZWNvcmRlZCBpbiBFdXJvcGUgaW4gSnVseS4gVGVtcGVyYXR1cmVzIHJlYWNoZWQgdGhlIG1pZC1mb3J0aWVzIGluIHBhcnRzIG9mIHNvdXRoZXJuIEV1cm9wZSwgd2l0aCBhIGhpZ2ggb2YgNDggQyByZWNvcmRlZCBpbiBTYXJkaW5pYS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_afc0c5cced4d0efdce7de9283aeade42.setContent(i_frame_8b323f9172247e6ed3e602c3b12e8c2b);
+                var i_frame_143446971efbe5c658c2bfd8920d0d0e = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgQ2VyYmVydXMgSGVhdHdhdmUgKG9uZSBmbyB0aGUgZmlyc3QgbmFtZWQgaGVhdHdhdmVzKSByZXN1bHRlZCBpbiB0aGUgaG90dGVzdCB0ZW1wZXJhdHVyZXMgZXZlciByZWNvcmRlZCBpbiBFdXJvcGUgaW4gSnVseS4gVGVtcGVyYXR1cmVzIHJlYWNoZWQgdGhlIG1pZC1mb3J0aWVzIGluIHBhcnRzIG9mIHNvdXRoZXJuIEV1cm9wZSwgd2l0aCBhIGhpZ2ggb2YgNDggQyByZWNvcmRlZCBpbiBTYXJkaW5pYS48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_6423d9d2253ddd33470863921a0a02b9.setContent(i_frame_143446971efbe5c658c2bfd8920d0d0e);
             
         
 
-        marker_04e43c6a36b5d6a8ac9552c0911a628f.bindPopup(popup_afc0c5cced4d0efdce7de9283aeade42)
+        marker_d536bcf184b40399e7a7a317d31062b2.bindPopup(popup_6423d9d2253ddd33470863921a0a02b9)
         ;
 
         
     
     
-            marker_04e43c6a36b5d6a8ac9552c0911a628f.bindTooltip(
+            marker_d536bcf184b40399e7a7a317d31062b2.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;European Heatwave&lt;/b&gt;&lt;br&gt;2023.07.18
                  &lt;/div&gt;`,
@@ -1076,34 +1083,34 @@ document.write(`
             );
         
     
-            var marker_e5690150bbc1e967179f2f9be3684261 = L.marker(
+            var marker_411631ec31a1de147fa617fce6ace629 = L.marker(
                 [65.28, -126.83],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_2d3add7607d77ad747a92fdac76b4524 = L.AwesomeMarkers.icon(
+            var icon_077a00ef576f9c334d1b0b6b9f7d1e07 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_e5690150bbc1e967179f2f9be3684261.setIcon(icon_2d3add7607d77ad747a92fdac76b4524);
+            marker_411631ec31a1de147fa617fce6ace629.setIcon(icon_077a00ef576f9c334d1b0b6b9f7d1e07);
         
     
-        var popup_c86f76cc6c04a7dbe2d11cc8b271df48 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_b9825cb442cc2eeb8f6bc2d410d6ff85 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_493d058eff5dc06ebc2d448beafc9e2e = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgdG93biBvZiBOb3JtYWwgV2VsbHMgaW4gdGhlIE5vcnRod2VzdCBUZXJyaXRvcmllcyByZWNvcmRzIGEgaGlnaCB0ZW1wZXJhdHVyZSBvZiAzNy45IEMsIHdoaWNoIGlzIHRoZSBob3R0ZXN0IGV2ZXIgdGVtcGVyYXR1cmUgdGhpcyBmYXIgbm9ydGguIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_c86f76cc6c04a7dbe2d11cc8b271df48.setContent(i_frame_493d058eff5dc06ebc2d448beafc9e2e);
+                var i_frame_76939ee217f2c84386d88f9741a8c587 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgdG93biBvZiBOb3JtYWwgV2VsbHMgaW4gdGhlIE5vcnRod2VzdCBUZXJyaXRvcmllcyByZWNvcmRzIGEgaGlnaCB0ZW1wZXJhdHVyZSBvZiAzNy45IEMsIHdoaWNoIGlzIHRoZSBob3R0ZXN0IGV2ZXIgdGVtcGVyYXR1cmUgdGhpcyBmYXIgbm9ydGguIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_b9825cb442cc2eeb8f6bc2d410d6ff85.setContent(i_frame_76939ee217f2c84386d88f9741a8c587);
             
         
 
-        marker_e5690150bbc1e967179f2f9be3684261.bindPopup(popup_c86f76cc6c04a7dbe2d11cc8b271df48)
+        marker_411631ec31a1de147fa617fce6ace629.bindPopup(popup_b9825cb442cc2eeb8f6bc2d410d6ff85)
         ;
 
         
     
     
-            marker_e5690150bbc1e967179f2f9be3684261.bindTooltip(
+            marker_411631ec31a1de147fa617fce6ace629.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;NWT Record Heat&lt;/b&gt;&lt;br&gt;2023.04.15
                  &lt;/div&gt;`,
@@ -1111,34 +1118,34 @@ document.write(`
             );
         
     
-            var marker_b84766ffda70df2c38c204fc3969f6ed = L.marker(
+            var marker_bcd25149a066dfae5163108951ac3d56 = L.marker(
                 [33.444, -112.08],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_26855796db0fbafd581a04f7108d7045 = L.AwesomeMarkers.icon(
+            var icon_a1959de1aa1cf4cbe324c15a51e13b2a = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_b84766ffda70df2c38c204fc3969f6ed.setIcon(icon_26855796db0fbafd581a04f7108d7045);
+            marker_bcd25149a066dfae5163108951ac3d56.setIcon(icon_a1959de1aa1cf4cbe324c15a51e13b2a);
         
     
-        var popup_2249575f46fe8acca43b25368eb5ad8e = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_0445428f7fc99412509f61a376e0984f = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_9acf16fa5e949a8ddd9a6802c2e0b070 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgVVMgc291dGh3ZXN0IGdyYXBwbGVzIHdpdGggYW4gaW50ZW5zZSBtaWQtc3VtbWVyIGhlYXR3YXZlLiBQaG9lbml4IChBWikgc2V0cyBhIG5ldyByZWNvcmQgd2l0aCAzMSBjb25zZWN1dGl2ZSBkYXlzIHdpdGggZGF5dGltZSBoaWdoIHRlbXBlcmF0dXJlcyBleGNlZWRpbmcgNDMgQy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_2249575f46fe8acca43b25368eb5ad8e.setContent(i_frame_9acf16fa5e949a8ddd9a6802c2e0b070);
+                var i_frame_552f1bfd72d80905ab4810158f8d631d = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5UaGUgVVMgc291dGh3ZXN0IGdyYXBwbGVzIHdpdGggYW4gaW50ZW5zZSBtaWQtc3VtbWVyIGhlYXR3YXZlLiBQaG9lbml4IChBWikgc2V0cyBhIG5ldyByZWNvcmQgd2l0aCAzMSBjb25zZWN1dGl2ZSBkYXlzIHdpdGggZGF5dGltZSBoaWdoIHRlbXBlcmF0dXJlcyBleGNlZWRpbmcgNDMgQy48L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_0445428f7fc99412509f61a376e0984f.setContent(i_frame_552f1bfd72d80905ab4810158f8d631d);
             
         
 
-        marker_b84766ffda70df2c38c204fc3969f6ed.bindPopup(popup_2249575f46fe8acca43b25368eb5ad8e)
+        marker_bcd25149a066dfae5163108951ac3d56.bindPopup(popup_0445428f7fc99412509f61a376e0984f)
         ;
 
         
     
     
-            marker_b84766ffda70df2c38c204fc3969f6ed.bindTooltip(
+            marker_bcd25149a066dfae5163108951ac3d56.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;US Southwest Heatwave&lt;/b&gt;&lt;br&gt;2023.07.20
                  &lt;/div&gt;`,
@@ -1146,34 +1153,34 @@ document.write(`
             );
         
     
-            var marker_da04358797616aa8d1bbd86c71326910 = L.marker(
+            var marker_d324dad4f6cb5ace943d47a3dc6433fc = L.marker(
                 [-25.43, -60.75],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_6abb5428c6876a7aaf1ec6259efbfcce = L.AwesomeMarkers.icon(
+            var icon_fc08753aae4fc58bcb540af156bdd6f1 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_da04358797616aa8d1bbd86c71326910.setIcon(icon_6abb5428c6876a7aaf1ec6259efbfcce);
+            marker_d324dad4f6cb5ace943d47a3dc6433fc.setIcon(icon_fc08753aae4fc58bcb540af156bdd6f1);
         
     
-        var popup_383fc9c1c78b11a5480c4daf66992b85 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_f8a82c29861a9f2f36bd99ac1f5e66d0 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_cb6c248fba4cc8a963515814e2da7078 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BIG1pZC13aW50ZXIgaGVhdHdhdmUgc3RydWNrIG11Y2ggb2YgU291dGggQW1lcmljYSBpbiBKdWx5IGFuZCBBdWd1c3QuIE1hbnkgYXJlYXMgc2F3IHRlbXBlcmF0dXJlcyAxMC0yMCBDIGFib3ZlIGF2ZXJhZ2UsIHdpdGggc29tZSBhcmVhcyBleGNlZWRpbmcgMzAgQyBhYm92ZSBhdmVyYWdlLiBUaGlzIGV2ZW50IGlzIGNvbnNpZGVyZWQgdG8gYmUgb25lIG9mIHRoZSBtb3N0IGV4dHJlbWUgd2VhdGhlciBldmVudHMgdGhlIHdvcmxkIGhhcyBldmVyIHNlZW4uPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_383fc9c1c78b11a5480c4daf66992b85.setContent(i_frame_cb6c248fba4cc8a963515814e2da7078);
+                var i_frame_175e8824644fa574ece5c1013c03c4c4 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BIG1pZC13aW50ZXIgaGVhdHdhdmUgc3RydWNrIG11Y2ggb2YgU291dGggQW1lcmljYSBpbiBKdWx5IGFuZCBBdWd1c3QuIE1hbnkgYXJlYXMgc2F3IHRlbXBlcmF0dXJlcyAxMC0yMCBDIGFib3ZlIGF2ZXJhZ2UsIHdpdGggc29tZSBhcmVhcyBleGNlZWRpbmcgMzAgQyBhYm92ZSBhdmVyYWdlLiBUaGlzIGV2ZW50IGlzIGNvbnNpZGVyZWQgdG8gYmUgb25lIG9mIHRoZSBtb3N0IGV4dHJlbWUgd2VhdGhlciBldmVudHMgdGhlIHdvcmxkIGhhcyBldmVyIHNlZW4uPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_f8a82c29861a9f2f36bd99ac1f5e66d0.setContent(i_frame_175e8824644fa574ece5c1013c03c4c4);
             
         
 
-        marker_da04358797616aa8d1bbd86c71326910.bindPopup(popup_383fc9c1c78b11a5480c4daf66992b85)
+        marker_d324dad4f6cb5ace943d47a3dc6433fc.bindPopup(popup_f8a82c29861a9f2f36bd99ac1f5e66d0)
         ;
 
         
     
     
-            marker_da04358797616aa8d1bbd86c71326910.bindTooltip(
+            marker_d324dad4f6cb5ace943d47a3dc6433fc.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;South American Winter Heatwave&lt;/b&gt;&lt;br&gt;2023.08.02
                  &lt;/div&gt;`,
@@ -1181,34 +1188,34 @@ document.write(`
             );
         
     
-            var marker_c12178715a0fe3fb26c8e15cd272a9ab = L.marker(
+            var marker_c1091514a2061669e692d8330163a8a9 = L.marker(
                 [-65.43, -70.0],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_e034eb711507148e0b56610423eb730b = L.AwesomeMarkers.icon(
+            var icon_c7feb98fcde96b4772de8801c5207990 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;snowflake&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;lightblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_c12178715a0fe3fb26c8e15cd272a9ab.setIcon(icon_e034eb711507148e0b56610423eb730b);
+            marker_c1091514a2061669e692d8330163a8a9.setIcon(icon_c7feb98fcde96b4772de8801c5207990);
         
     
-        var popup_9298cce5594d6dd4b1b4487d24dd3270 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_1e51d63217707a4c1fcf6a26eebe247b = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_1b6415146d096bef5991a1a165248499 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BbnRhcmN0aWMgc2VhIGljZSBleHRlbnQgaXMgaW4gdW5jaGFydGVkIHRlcnJpdG9yeSBpbiAyMDIzIGZvbGxvd2luZyByZWNvcmQtbG93IGxldmVscyBpbiAyMDIxIGFuZCAyMDIyLiBUaGlzIGljZSBsb3NzIGhhcyBoYWQgYSBwcm9mb3VuZCBpbXBhY3Qgb24gb3VyIHdlYXRoZXIgYW5kIGNsaW1hdGUsIGJ1dCBhbHNvIEVtcGVyb3IgUGVuZ3VpbnMgYW5kIG90aGVyIGFuaW1hbHMuIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_9298cce5594d6dd4b1b4487d24dd3270.setContent(i_frame_1b6415146d096bef5991a1a165248499);
+                var i_frame_4b910d4a3b501e398fe0575728f4218f = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5BbnRhcmN0aWMgc2VhIGljZSBleHRlbnQgaXMgaW4gdW5jaGFydGVkIHRlcnJpdG9yeSBpbiAyMDIzIGZvbGxvd2luZyByZWNvcmQtbG93IGxldmVscyBpbiAyMDIxIGFuZCAyMDIyLiBUaGlzIGljZSBsb3NzIGhhcyBoYWQgYSBwcm9mb3VuZCBpbXBhY3Qgb24gb3VyIHdlYXRoZXIgYW5kIGNsaW1hdGUsIGJ1dCBhbHNvIEVtcGVyb3IgUGVuZ3VpbnMgYW5kIG90aGVyIGFuaW1hbHMuIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_1e51d63217707a4c1fcf6a26eebe247b.setContent(i_frame_4b910d4a3b501e398fe0575728f4218f);
             
         
 
-        marker_c12178715a0fe3fb26c8e15cd272a9ab.bindPopup(popup_9298cce5594d6dd4b1b4487d24dd3270)
+        marker_c1091514a2061669e692d8330163a8a9.bindPopup(popup_1e51d63217707a4c1fcf6a26eebe247b)
         ;
 
         
     
     
-            marker_c12178715a0fe3fb26c8e15cd272a9ab.bindTooltip(
+            marker_c1091514a2061669e692d8330163a8a9.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Antarctic Sea Ice Extent&lt;/b&gt;&lt;br&gt;2023.09.25
                  &lt;/div&gt;`,
@@ -1216,34 +1223,34 @@ document.write(`
             );
         
     
-            var marker_e58831abb3ea4a19a66035743d62204b = L.marker(
+            var marker_b48c76e557da84085b044cddd7bda277 = L.marker(
                 [45.229, -62.629],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_728837fdb0fa59a1f708fb1aa03d2a6e = L.AwesomeMarkers.icon(
+            var icon_07f9de78bf23d35e810ff203d1b38049 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_e58831abb3ea4a19a66035743d62204b.setIcon(icon_728837fdb0fa59a1f708fb1aa03d2a6e);
+            marker_b48c76e557da84085b044cddd7bda277.setIcon(icon_07f9de78bf23d35e810ff203d1b38049);
         
     
-        var popup_90dacce5eb6c967a6d18c8799c79abab = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_5d5c0b74d10b3155dc00f00490de3ab7 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_4a3927bf229bec33760de82f920e8f14 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Ob3ZhIFNjb3RpYSBzZWVzIGV4dGVuc2l2ZSBmbG9vZGluZyB3aXRoIDE1MC0zMDAgbW0gb2YgcmFpbiBpbiAyNCBob3Vycy4gVGhlIGZsb29kcyByZXN1bHRlZCBpbiA0IGRlYXRocy4gVGhlc2UgZmxvb2RzIGNhbWUgb25seSBhIG1vbnRoIGFmdGVyIHRoZSBwcm92aW5jZSB3aXRoIGJhdHRsZWQgd2lsZGZpcmVzLjwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_90dacce5eb6c967a6d18c8799c79abab.setContent(i_frame_4a3927bf229bec33760de82f920e8f14);
+                var i_frame_ffafcf55dd4ce6ac08fecd78bd9578f3 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Ob3ZhIFNjb3RpYSBzZWVzIGV4dGVuc2l2ZSBmbG9vZGluZyB3aXRoIDE1MC0zMDAgbW0gb2YgcmFpbiBpbiAyNCBob3Vycy4gVGhlIGZsb29kcyByZXN1bHRlZCBpbiA0IGRlYXRocy4gVGhlc2UgZmxvb2RzIGNhbWUgb25seSBhIG1vbnRoIGFmdGVyIHRoZSBwcm92aW5jZSB3aXRoIGJhdHRsZWQgd2lsZGZpcmVzLjwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_5d5c0b74d10b3155dc00f00490de3ab7.setContent(i_frame_ffafcf55dd4ce6ac08fecd78bd9578f3);
             
         
 
-        marker_e58831abb3ea4a19a66035743d62204b.bindPopup(popup_90dacce5eb6c967a6d18c8799c79abab)
+        marker_b48c76e557da84085b044cddd7bda277.bindPopup(popup_5d5c0b74d10b3155dc00f00490de3ab7)
         ;
 
         
     
     
-            marker_e58831abb3ea4a19a66035743d62204b.bindTooltip(
+            marker_b48c76e557da84085b044cddd7bda277.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Nova Scotia Floods&lt;/b&gt;&lt;br&gt;2023.07.23
                  &lt;/div&gt;`,
@@ -1251,34 +1258,34 @@ document.write(`
             );
         
     
-            var marker_20594179381b6e89e526d9d76f7258d8 = L.marker(
+            var marker_d9e51195cfe47aac70adc9c7fcc6ca2f = L.marker(
                 [29.75, -83.5],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_eb62498b367dc79f91b6e3f2fee603fb = L.AwesomeMarkers.icon(
+            var icon_840add21d0da25f2dcb73eed48b05b95 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;hurricane&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_20594179381b6e89e526d9d76f7258d8.setIcon(icon_eb62498b367dc79f91b6e3f2fee603fb);
+            marker_d9e51195cfe47aac70adc9c7fcc6ca2f.setIcon(icon_840add21d0da25f2dcb73eed48b05b95);
         
     
-        var popup_678d8f8fa35370b6170ef4c0ef05231a = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_9cf2b8bb1cdcde479d95dfcde200c1bc = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_cc06ff2722042147473a6351019c782d = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgSWRhbGlhIHN0cnVjayBGbG9yaWRhIGFzIHRoZSBzdHJvbmdlc3Qgc3Rvcm0gdG8gaGl0IHRoZSBhcmVhIGluIG92ZXIgMTMwIHllYXJzLiBJdCBoYXMgaW1wYWN0ZWQgRmxvcmlkYSwgR2VvcmdpYSBhbmQgdGhlIENhcm9saW5hcyBhbmQgYnJvdWdodCByZWNvcmQtbGV2ZWwgc3Rvcm0gc3VyZ2UsIHBvd2VyZnVsIHdpbmRzLCBhbmQgZXh0ZW5zaXZlIGZsb29kaW5nLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_678d8f8fa35370b6170ef4c0ef05231a.setContent(i_frame_cc06ff2722042147473a6351019c782d);
+                var i_frame_2d50002ab042e1c86b8dae05ccd0e885 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgSWRhbGlhIHN0cnVjayBGbG9yaWRhIGFzIHRoZSBzdHJvbmdlc3Qgc3Rvcm0gdG8gaGl0IHRoZSBhcmVhIGluIG92ZXIgMTMwIHllYXJzLiBJdCBoYXMgaW1wYWN0ZWQgRmxvcmlkYSwgR2VvcmdpYSBhbmQgdGhlIENhcm9saW5hcyBhbmQgYnJvdWdodCByZWNvcmQtbGV2ZWwgc3Rvcm0gc3VyZ2UsIHBvd2VyZnVsIHdpbmRzLCBhbmQgZXh0ZW5zaXZlIGZsb29kaW5nLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_9cf2b8bb1cdcde479d95dfcde200c1bc.setContent(i_frame_2d50002ab042e1c86b8dae05ccd0e885);
             
         
 
-        marker_20594179381b6e89e526d9d76f7258d8.bindPopup(popup_678d8f8fa35370b6170ef4c0ef05231a)
+        marker_d9e51195cfe47aac70adc9c7fcc6ca2f.bindPopup(popup_9cf2b8bb1cdcde479d95dfcde200c1bc)
         ;
 
         
     
     
-            marker_20594179381b6e89e526d9d76f7258d8.bindTooltip(
+            marker_d9e51195cfe47aac70adc9c7fcc6ca2f.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Hurricane Idalia&lt;/b&gt;&lt;br&gt;2023.08.30
                  &lt;/div&gt;`,
@@ -1286,34 +1293,34 @@ document.write(`
             );
         
     
-            var marker_d814a95d8bc561759f472d300ff905d5 = L.marker(
+            var marker_c34be52e0ff167ca806a15f116535921 = L.marker(
                 [32.75, 22.64],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_7ddbdcae927c9d4afcc13606a6e677c2 = L.AwesomeMarkers.icon(
+            var icon_e89b8cde56c04c0b3c6cb7a24f0c211e = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_d814a95d8bc561759f472d300ff905d5.setIcon(icon_7ddbdcae927c9d4afcc13606a6e677c2);
+            marker_c34be52e0ff167ca806a15f116535921.setIcon(icon_e89b8cde56c04c0b3c6cb7a24f0c211e);
         
     
-        var popup_cca033e2884580dffd8805c3c3d80913 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_a5f1d5399a3caee3e494e3ac4c456feb = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_17816f561c8f140715da45902fbfe1ce = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5MaWJ5YSB3YXMgc3RydWNrIGJ5IFN0b3JtIERhbmllbCwgdGhlIHN0cm9uZ2VzdCB0cm9waWNhbC1saWtlIGN5Y2xvbmUgdG8gaGl0IEFmcmljYSBldmVyLCBiZWdpbm5pbmcgb24gU2VwdGVtYmVyIDEwLiBJdCBjYXVzZWQgZmxvb2RpbmcgdGhyb3VnaG91dCBMaWJ5YSwgYW5kIGNhdGFzcm9waGljIGZsb29kaW5nIGluIHRoZSBjaXR5IG9mIERlcm5hIHdoZW4gdHdvIGRhbXMgY29sbGFwc2VkLiBNb3JlIHRoYW4gNDAwMCBwZW9wbGUgd2VyZSBraWxsZWQuIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_cca033e2884580dffd8805c3c3d80913.setContent(i_frame_17816f561c8f140715da45902fbfe1ce);
+                var i_frame_86f140bb79112ab67fb9006c52964af0 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5MaWJ5YSB3YXMgc3RydWNrIGJ5IFN0b3JtIERhbmllbCwgdGhlIHN0cm9uZ2VzdCB0cm9waWNhbC1saWtlIGN5Y2xvbmUgdG8gaGl0IEFmcmljYSBldmVyLCBiZWdpbm5pbmcgb24gU2VwdGVtYmVyIDEwLiBJdCBjYXVzZWQgZmxvb2RpbmcgdGhyb3VnaG91dCBMaWJ5YSwgYW5kIGNhdGFzcm9waGljIGZsb29kaW5nIGluIHRoZSBjaXR5IG9mIERlcm5hIHdoZW4gdHdvIGRhbXMgY29sbGFwc2VkLiBNb3JlIHRoYW4gNDAwMCBwZW9wbGUgd2VyZSBraWxsZWQuIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_a5f1d5399a3caee3e494e3ac4c456feb.setContent(i_frame_86f140bb79112ab67fb9006c52964af0);
             
         
 
-        marker_d814a95d8bc561759f472d300ff905d5.bindPopup(popup_cca033e2884580dffd8805c3c3d80913)
+        marker_c34be52e0ff167ca806a15f116535921.bindPopup(popup_a5f1d5399a3caee3e494e3ac4c456feb)
         ;
 
         
     
     
-            marker_d814a95d8bc561759f472d300ff905d5.bindTooltip(
+            marker_c34be52e0ff167ca806a15f116535921.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Flooding in Libya&lt;/b&gt;&lt;br&gt;2023.09.10
                  &lt;/div&gt;`,
@@ -1321,34 +1328,34 @@ document.write(`
             );
         
     
-            var marker_730806b8dbd50f053465004c0bb68185 = L.marker(
+            var marker_eb63f61e14992619fcd05319802658e6 = L.marker(
                 [31.0, -71.8],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_06342b88f0b162f2a0c828d2d228245f = L.AwesomeMarkers.icon(
+            var icon_b1603aeaf50a0d151867ea0676430802 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;hurricane&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_730806b8dbd50f053465004c0bb68185.setIcon(icon_06342b88f0b162f2a0c828d2d228245f);
+            marker_eb63f61e14992619fcd05319802658e6.setIcon(icon_b1603aeaf50a0d151867ea0676430802);
         
     
-        var popup_d92239048ec5278050188cb089c037db = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_8d87b40eda1e09eaeb3f3cb4e1651012 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_2589ca4d125c147235c295a46ee22704 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgTGVlIGZvcm1lZCBpbiB0aGUgQXRsYW50aWMgb24gU2VwIDUuIFRoaXMgY2F0ZWdvcnkgNSBodXJyaWNhbmUgd2FzIHRoZSBzdHJvbmdlc3Qgb2YgdGhlIHNlYXNvbiBzbyBmYXIgd2l0aCB3aW5kcyByZWFjaGluZyAyNzAga20vaCBhbmQgYSBsb3dlc3QgcHJlc3N1cmUgb2YgOTI2IG1iYXIuIEl0IGhpdCB0aGUgZWFzdCBjb2FzdCBvZiBOb3J0aCBBbWVyaWNhIGluIG1pZC1TZXAgYXMgYW4gZXh0cmF0cm9waWNhbCBjeWNsb25lLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_d92239048ec5278050188cb089c037db.setContent(i_frame_2589ca4d125c147235c295a46ee22704);
+                var i_frame_5d6b25d8c83ce07678c667a4d6e5b22d = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgTGVlIGZvcm1lZCBpbiB0aGUgQXRsYW50aWMgb24gU2VwIDUuIFRoaXMgY2F0ZWdvcnkgNSBodXJyaWNhbmUgd2FzIHRoZSBzdHJvbmdlc3Qgb2YgdGhlIHNlYXNvbiBzbyBmYXIgd2l0aCB3aW5kcyByZWFjaGluZyAyNzAga20vaCBhbmQgYSBsb3dlc3QgcHJlc3N1cmUgb2YgOTI2IG1iYXIuIEl0IGhpdCB0aGUgZWFzdCBjb2FzdCBvZiBOb3J0aCBBbWVyaWNhIGluIG1pZC1TZXAgYXMgYW4gZXh0cmF0cm9waWNhbCBjeWNsb25lLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_8d87b40eda1e09eaeb3f3cb4e1651012.setContent(i_frame_5d6b25d8c83ce07678c667a4d6e5b22d);
             
         
 
-        marker_730806b8dbd50f053465004c0bb68185.bindPopup(popup_d92239048ec5278050188cb089c037db)
+        marker_eb63f61e14992619fcd05319802658e6.bindPopup(popup_8d87b40eda1e09eaeb3f3cb4e1651012)
         ;
 
         
     
     
-            marker_730806b8dbd50f053465004c0bb68185.bindTooltip(
+            marker_eb63f61e14992619fcd05319802658e6.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Hurricane Lee&lt;/b&gt;&lt;br&gt;2023.09.15
                  &lt;/div&gt;`,
@@ -1356,34 +1363,34 @@ document.write(`
             );
         
     
-            var marker_1b4e3b72e98807fea687816084783539 = L.marker(
+            var marker_55b7e9afbf9ca1edcd7ab1d0053ac42a = L.marker(
                 [-15.5, -55.7],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_fa04f0c6986f9408dc699d0ce820d1a7 = L.AwesomeMarkers.icon(
+            var icon_3a4ac1f9201de097bc94b84df10dbbe2 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_1b4e3b72e98807fea687816084783539.setIcon(icon_fa04f0c6986f9408dc699d0ce820d1a7);
+            marker_55b7e9afbf9ca1edcd7ab1d0053ac42a.setIcon(icon_3a4ac1f9201de097bc94b84df10dbbe2);
         
     
-        var popup_a9a76428060ab6250771c8533ebc89ed = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_cda470a4b7e5f173b979c59aa2e25db5 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_446bba10062f1e009f5ca900c7c7b073 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Tb3V0aCBBbWVyaWNhIHdhcyBvbmNlIGFnYWluIHNjb3J0Y2hlZCBieSBob3QgdGVtcGVyYXR1cmVzIGluIFNlcHRlbWJlciBhdCB0aGUgc3RhcnQgb2YgdGhlIHNwcmluZy4gUGFydHMgb2YgUGVydSwgQm9saXZpYSwgUGFyYWd1YXksIEJyYXppbCwgYW5kIEFyZ2VudGluYSBzYXcgdGVtcGVyYXR1cmVzIGFib3ZlIDQwIGRlZ3JlZXMgQ2VsY2l1cy4gPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_a9a76428060ab6250771c8533ebc89ed.setContent(i_frame_446bba10062f1e009f5ca900c7c7b073);
+                var i_frame_7bbebc6ee04a3a48a66d224a6f1aec6c = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Tb3V0aCBBbWVyaWNhIHdhcyBvbmNlIGFnYWluIHNjb3J0Y2hlZCBieSBob3QgdGVtcGVyYXR1cmVzIGluIFNlcHRlbWJlciBhdCB0aGUgc3RhcnQgb2YgdGhlIHNwcmluZy4gUGFydHMgb2YgUGVydSwgQm9saXZpYSwgUGFyYWd1YXksIEJyYXppbCwgYW5kIEFyZ2VudGluYSBzYXcgdGVtcGVyYXR1cmVzIGFib3ZlIDQwIGRlZ3JlZXMgQ2VsY2l1cy4gPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_cda470a4b7e5f173b979c59aa2e25db5.setContent(i_frame_7bbebc6ee04a3a48a66d224a6f1aec6c);
             
         
 
-        marker_1b4e3b72e98807fea687816084783539.bindPopup(popup_a9a76428060ab6250771c8533ebc89ed)
+        marker_55b7e9afbf9ca1edcd7ab1d0053ac42a.bindPopup(popup_cda470a4b7e5f173b979c59aa2e25db5)
         ;
 
         
     
     
-            marker_1b4e3b72e98807fea687816084783539.bindTooltip(
+            marker_55b7e9afbf9ca1edcd7ab1d0053ac42a.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;September Heat Dome&lt;/b&gt;&lt;br&gt;2023.09.25
                  &lt;/div&gt;`,
@@ -1391,34 +1398,34 @@ document.write(`
             );
         
     
-            var marker_3425632a9aa259a59e9298597ed25a11 = L.marker(
+            var marker_6dbb2f4a00ec91d918e9ddbcf67a0686 = L.marker(
                 [30.68, -91.4],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_05c027865ad91ce6020cf2a93f699a9e = L.AwesomeMarkers.icon(
+            var icon_a4d02f599acc667fcef0e14ae73ba768 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;sun-plant-wilt&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkred&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_3425632a9aa259a59e9298597ed25a11.setIcon(icon_05c027865ad91ce6020cf2a93f699a9e);
+            marker_6dbb2f4a00ec91d918e9ddbcf67a0686.setIcon(icon_a4d02f599acc667fcef0e14ae73ba768);
         
     
-        var popup_24bdf4fd03880715c1b1d56f98e11a7c = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_06d702d590177b40a4d76152e8ab1742 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_a32c96daf767a71877f22a9e71c349a9 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TZXZlcmUgdG8gZXhjZXB0aW9uYWwgZHJvdWdodCBpbiB0aGUgVVMgTWlkd2VzdCBhbmQgU291dGguIFRoZSBNaXNzaXNzaXBwaSBSaXZlciBpcyBhcHByb2FjaGluZyBoaXN0b3JpYyBsb3cgbGV2ZWxzIGZvciB0aGUgc2Vjb25kIHllYXIgaW4gYSByb3cuIExvdyByaXZlciBmbG93cyBoYXZlIGFsbG93ZWQgc2FsdCB3YXRlciB0byBtb3ZlIHVwIHRoZSBNaXNzaXNzaXBwaSBSaXZlciwgY29udGFtaW5hdGluZyBkcmlua2luZyB3YXRlciBzb3VyY2VzLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_24bdf4fd03880715c1b1d56f98e11a7c.setContent(i_frame_a32c96daf767a71877f22a9e71c349a9);
+                var i_frame_1b9b2cbed3c12242076513109253749e = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5TZXZlcmUgdG8gZXhjZXB0aW9uYWwgZHJvdWdodCBpbiB0aGUgVVMgTWlkd2VzdCBhbmQgU291dGguIFRoZSBNaXNzaXNzaXBwaSBSaXZlciBpcyBhcHByb2FjaGluZyBoaXN0b3JpYyBsb3cgbGV2ZWxzIGZvciB0aGUgc2Vjb25kIHllYXIgaW4gYSByb3cuIExvdyByaXZlciBmbG93cyBoYXZlIGFsbG93ZWQgc2FsdCB3YXRlciB0byBtb3ZlIHVwIHRoZSBNaXNzaXNzaXBwaSBSaXZlciwgY29udGFtaW5hdGluZyBkcmlua2luZyB3YXRlciBzb3VyY2VzLiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_06d702d590177b40a4d76152e8ab1742.setContent(i_frame_1b9b2cbed3c12242076513109253749e);
             
         
 
-        marker_3425632a9aa259a59e9298597ed25a11.bindPopup(popup_24bdf4fd03880715c1b1d56f98e11a7c)
+        marker_6dbb2f4a00ec91d918e9ddbcf67a0686.bindPopup(popup_06d702d590177b40a4d76152e8ab1742)
         ;
 
         
     
     
-            marker_3425632a9aa259a59e9298597ed25a11.bindTooltip(
+            marker_6dbb2f4a00ec91d918e9ddbcf67a0686.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Extreme Drought in the US South&lt;/b&gt;&lt;br&gt;2023.09.25
                  &lt;/div&gt;`,
@@ -1426,36 +1433,106 @@ document.write(`
             );
         
     
-            var marker_38f56e2a3d49903d5910b07742556ad0 = L.marker(
+            var marker_9c651fbe7384a557c5d47fa27643a13d = L.marker(
                 [40.71, -74.001],
                 {}
-            ).addTo(map_5881a8abb493801251599e1fab747f81);
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
         
     
-            var icon_8e8b79cbb086fdd4a698e6f6bde47e7c = L.AwesomeMarkers.icon(
+            var icon_ebc86ad5d19e0c43dc62969d3f940d73 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_38f56e2a3d49903d5910b07742556ad0.setIcon(icon_8e8b79cbb086fdd4a698e6f6bde47e7c);
+            marker_9c651fbe7384a557c5d47fa27643a13d.setIcon(icon_ebc86ad5d19e0c43dc62969d3f940d73);
         
     
-        var popup_83eb9f5b03969d5189df33214cb86451 = L.popup({&quot;maxWidth&quot;: 250});
+        var popup_c10194b023743335c84d29d5d3395813 = L.popup({&quot;maxWidth&quot;: 250});
 
         
             
-                var i_frame_0ab93aba023184e69c58a229a5ada464 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Qb3N0LXRyb3BpY2FsIHN0b3JtIE9waGVsaWEgZ2VuZXJhdGVkIGhlYXZ5IHJhaW4gb24gdGhlIFVTIGVhc3QgY29hc3QgYW5kIHJlc3VsdGVkIGluIGZsYXNoIGZsb29kaW5nIGluIE5ldyBZb3JrLiBTb21lIGFyZWFzIHNhdyB0aGUgbW9zdCByYWluIGluIGEgc2luZ2xlIGRheSBzaW5jZSAxOTQ4LiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
-                popup_83eb9f5b03969d5189df33214cb86451.setContent(i_frame_0ab93aba023184e69c58a229a5ada464);
+                var i_frame_7574c271377c8a51447afbdbd45931a0 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5Qb3N0LXRyb3BpY2FsIHN0b3JtIE9waGVsaWEgZ2VuZXJhdGVkIGhlYXZ5IHJhaW4gb24gdGhlIFVTIGVhc3QgY29hc3QgYW5kIHJlc3VsdGVkIGluIGZsYXNoIGZsb29kaW5nIGluIE5ldyBZb3JrLiBTb21lIGFyZWFzIHNhdyB0aGUgbW9zdCByYWluIGluIGEgc2luZ2xlIGRheSBzaW5jZSAxOTQ4LiA8L3A+&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_c10194b023743335c84d29d5d3395813.setContent(i_frame_7574c271377c8a51447afbdbd45931a0);
             
         
 
-        marker_38f56e2a3d49903d5910b07742556ad0.bindPopup(popup_83eb9f5b03969d5189df33214cb86451)
+        marker_9c651fbe7384a557c5d47fa27643a13d.bindPopup(popup_c10194b023743335c84d29d5d3395813)
         ;
 
         
     
     
-            marker_38f56e2a3d49903d5910b07742556ad0.bindTooltip(
+            marker_9c651fbe7384a557c5d47fa27643a13d.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Flash Flooding in New York&lt;/b&gt;&lt;br&gt;2023.09.27
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_d1b63ff31627a0b9460d917a6bf5496e = L.marker(
+                [-3.1019, -60.025],
+                {}
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
+        
+    
+            var icon_2efa18a5160e60832caa0312217d9fd1 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;sun-plant-wilt&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkred&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_d1b63ff31627a0b9460d917a6bf5496e.setIcon(icon_2efa18a5160e60832caa0312217d9fd1);
+        
+    
+        var popup_f9d6104f72bbfb09e4be0b84291fcd5d = L.popup({&quot;maxWidth&quot;: 250});
+
+        
+            
+                var i_frame_bfb9d22559e91e8fdb8cfbfc9ae49b5b = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5FeHRyZW1lIGRyb3VnaHQgaW4gcGFydHMgb2YgQnJhemlsIGFuZCBuZWlnaGJvdXJpbmcgY291bnRyaWVzIGhhcyBkcm9wcGVkIHRoZSBBbWF6b24gUml2ZXJzIHRvIHRoZWlyIGxvd2VzdCBsZXZlbHMgaW4gb3ZlciAxMjAgeWVhcnMuIDwvcD4=&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_f9d6104f72bbfb09e4be0b84291fcd5d.setContent(i_frame_bfb9d22559e91e8fdb8cfbfc9ae49b5b);
+            
+        
+
+        marker_d1b63ff31627a0b9460d917a6bf5496e.bindPopup(popup_f9d6104f72bbfb09e4be0b84291fcd5d)
+        ;
+
+        
+    
+    
+            marker_d1b63ff31627a0b9460d917a6bf5496e.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Extreme drought in the Amazon&lt;/b&gt;&lt;br&gt;2023.10.21
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_6731c7bd1366b65aaa98577ff9daa89b = L.marker(
+                [16.85, -99.91],
+                {}
+            ).addTo(map_15d0e841d84e91d9568269ef14369c7b);
+        
+    
+            var icon_47992a43f97bd201fc84b86531448df2 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;hurricane&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_6731c7bd1366b65aaa98577ff9daa89b.setIcon(icon_47992a43f97bd201fc84b86531448df2);
+        
+    
+        var popup_700ba4dc5dc3be2b930721e484524f3e = L.popup({&quot;maxWidth&quot;: 250});
+
+        
+            
+                var i_frame_f7188964babfe1dd5e596ef3e9ff0b27 = $(`&lt;iframe src=&quot;data:text/html;charset=utf-8;base64,CiAgICA8cD5IdXJyaWNhbmUgT3RpcywgYSByYXBpZGx5IGludGVuc2lmeWluZyBjYXRlZ29yeSA1IGh1cnJpY2FuZSwgcmlwcGVkIHRocm91Z2ggQWNhcHVsY28gKE1leGljbykgb24gb24gT2N0b2JlciAyNSwgbGVhdmluZyA0OCBwZW9wbGUgZGVhZC4gPC9wPg==&quot; width=&quot;250&quot; style=&quot;border:none !important;&quot; height=&quot;125&quot;&gt;&lt;/iframe&gt;`)[0];
+                popup_700ba4dc5dc3be2b930721e484524f3e.setContent(i_frame_f7188964babfe1dd5e596ef3e9ff0b27);
+            
+        
+
+        marker_6731c7bd1366b65aaa98577ff9daa89b.bindPopup(popup_700ba4dc5dc3be2b930721e484524f3e)
+        ;
+
+        
+    
+    
+            marker_6731c7bd1366b65aaa98577ff9daa89b.bindTooltip(
+                `&lt;div&gt;
+                     &lt;b&gt;Hurricane Otis strikes Acapulco&lt;/b&gt;&lt;br&gt;2023.10.25
                  &lt;/div&gt;`,
                 {&quot;sticky&quot;: true}
             );
@@ -1463,6 +1540,7 @@ document.write(`
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
 </div>
+</section>
 </section>
 </section>
 
@@ -1535,8 +1613,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#air-temperatures">Air Temperatures</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-surface-temperatures">Sea Surface Temperatures</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-ice-extent">Sea Ice Extent</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#world-extreme-weather-events-in-2023">World Extreme Weather Events in 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sea-ice-extent">Sea Ice Extent</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#world-extreme-weather-events-in-2023">World Extreme Weather Events in 2023</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

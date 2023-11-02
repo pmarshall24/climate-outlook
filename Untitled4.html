@@ -170,9 +170,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Current Conditions</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="air-temp.html">Air Temperature and Precipitation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="crossover.html">Drought and Wildfire Situation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="water_supply.html">Water Supply Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="air-temp.html">Weather Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snowpack.html">Snowpack Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drought.html">Drought</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wildfire.html">Wildfire Season Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Outlook</span></p>
 <ul class="nav bd-sidenav">
@@ -597,7 +598,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_aef7795dc08ae5f6fa6fa1e68449e25e {
+                #map_78d1d017cf35a5a2f7323946ed0c65b2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -611,14 +612,14 @@ document.write(`
 &lt;body&gt;
     
     
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_aef7795dc08ae5f6fa6fa1e68449e25e&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_78d1d017cf35a5a2f7323946ed0c65b2&quot; &gt;&lt;/div&gt;
         
 &lt;/body&gt;
 &lt;script&gt;
     
     
-            var map_aef7795dc08ae5f6fa6fa1e68449e25e = L.map(
-                &quot;map_aef7795dc08ae5f6fa6fa1e68449e25e&quot;,
+            var map_78d1d017cf35a5a2f7323946ed0c65b2 = L.map(
+                &quot;map_78d1d017cf35a5a2f7323946ed0c65b2&quot;,
                 {
                     center: [35.42518, -50.95],
                     crs: L.CRS.EPSG3857,
@@ -632,40 +633,40 @@ document.write(`
 
         
     
-            var tile_layer_9eaae0ec61f3ca275e76b3bc2ee507b1 = L.tileLayer(
+            var tile_layer_98f354f0666df94bde639faefb17cc16 = L.tileLayer(
                 &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var marker_631365a0a74f5baffd84b8b084f1da1c = L.marker(
+            var marker_bf8f7674585ba5d5246611198cb3191b = L.marker(
                 [49.95, -119.6],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_7d5b6c33164979513525ce4d466515a7 = L.AwesomeMarkers.icon(
+            var icon_26450adb5ec987820ba14c2ae3b33044 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_631365a0a74f5baffd84b8b084f1da1c.setIcon(icon_7d5b6c33164979513525ce4d466515a7);
+            marker_bf8f7674585ba5d5246611198cb3191b.setIcon(icon_26450adb5ec987820ba14c2ae3b33044);
         
     
-        var popup_bec06f00f197ff00124158cfef20d76f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2e65c77fe533ca314c4150f8dc51e0db = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_b7c48e07917ef26be97ba7cabcebb505 = $(`&lt;div id=&quot;html_b7c48e07917ef26be97ba7cabcebb505&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;BC declares a state of emergency as wildfires threaten several interior communities&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_bec06f00f197ff00124158cfef20d76f.setContent(html_b7c48e07917ef26be97ba7cabcebb505);
+                var html_df82dec7ca15c0d85799e0e4158613ed = $(`&lt;div id=&quot;html_df82dec7ca15c0d85799e0e4158613ed&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;BC declares a state of emergency as wildfires threaten several interior communities&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_2e65c77fe533ca314c4150f8dc51e0db.setContent(html_df82dec7ca15c0d85799e0e4158613ed);
             
         
 
-        marker_631365a0a74f5baffd84b8b084f1da1c.bindPopup(popup_bec06f00f197ff00124158cfef20d76f)
+        marker_bf8f7674585ba5d5246611198cb3191b.bindPopup(popup_2e65c77fe533ca314c4150f8dc51e0db)
         ;
 
         
     
     
-            marker_631365a0a74f5baffd84b8b084f1da1c.bindTooltip(
+            marker_bf8f7674585ba5d5246611198cb3191b.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;BC Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -673,34 +674,34 @@ document.write(`
             );
         
     
-            var marker_ac8d9bdf7f3285ee66262a14e362e3ce = L.marker(
+            var marker_2b0492733c322adda5562ea2c7cbdfeb = L.marker(
                 [57.53, -122.6],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_1f991f1607d8b8900eceed7e7a6df4fb = L.AwesomeMarkers.icon(
+            var icon_33d516c71b35edc39e590493b5b292c7 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_ac8d9bdf7f3285ee66262a14e362e3ce.setIcon(icon_1f991f1607d8b8900eceed7e7a6df4fb);
+            marker_2b0492733c322adda5562ea2c7cbdfeb.setIcon(icon_33d516c71b35edc39e590493b5b292c7);
         
     
-        var popup_72bbf8f26fd15bfbd4eec3b02900c6ad = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_5a5acdfd13d953051b0b3e3919e1023f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f5060780ee4d4cbd87b3ea421eb26e8f = $(`&lt;div id=&quot;html_f5060780ee4d4cbd87b3ea421eb26e8f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Donnie Creek Wildfire&lt;/h5&gt;&lt;p&gt;Donnie Creek fire ignites on May 12 and becomes the largest wildfire in the provinces history&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_72bbf8f26fd15bfbd4eec3b02900c6ad.setContent(html_f5060780ee4d4cbd87b3ea421eb26e8f);
+                var html_9d9ee703b8923294948528c8d60c7a72 = $(`&lt;div id=&quot;html_9d9ee703b8923294948528c8d60c7a72&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Donnie Creek Wildfire&lt;/h5&gt;&lt;p&gt;Donnie Creek fire ignites on May 12 and becomes the largest wildfire in the provinces history&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_5a5acdfd13d953051b0b3e3919e1023f.setContent(html_9d9ee703b8923294948528c8d60c7a72);
             
         
 
-        marker_ac8d9bdf7f3285ee66262a14e362e3ce.bindPopup(popup_72bbf8f26fd15bfbd4eec3b02900c6ad)
+        marker_2b0492733c322adda5562ea2c7cbdfeb.bindPopup(popup_5a5acdfd13d953051b0b3e3919e1023f)
         ;
 
         
     
     
-            marker_ac8d9bdf7f3285ee66262a14e362e3ce.bindTooltip(
+            marker_2b0492733c322adda5562ea2c7cbdfeb.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Donnie Creek Wildfire&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -708,34 +709,34 @@ document.write(`
             );
         
     
-            var marker_736a1d77a02dda66a10280640131a005 = L.marker(
+            var marker_23edc9d657ef00a6f391e97c99040d3f = L.marker(
                 [62.48, -114.33],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_d755056ee34561664af7dc94efbcadfb = L.AwesomeMarkers.icon(
+            var icon_c7e5dea1585f3c5221541c0d0edaa684 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_736a1d77a02dda66a10280640131a005.setIcon(icon_d755056ee34561664af7dc94efbcadfb);
+            marker_23edc9d657ef00a6f391e97c99040d3f.setIcon(icon_c7e5dea1585f3c5221541c0d0edaa684);
         
     
-        var popup_03cbdd0d0ae1d1ff6a2eae039d6a2a91 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_984dd2823c046068cb7c5a79d2a4b9d3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_0689dfdbe21f7faca4a65eeb241e1ad8 = $(`&lt;div id=&quot;html_0689dfdbe21f7faca4a65eeb241e1ad8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;NWT Wildfires&lt;/h5&gt;&lt;p&gt;Whitehorse is evacuated due to wildfire threat&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_03cbdd0d0ae1d1ff6a2eae039d6a2a91.setContent(html_0689dfdbe21f7faca4a65eeb241e1ad8);
+                var html_fd43ae2c387c090045489f4f2bac0140 = $(`&lt;div id=&quot;html_fd43ae2c387c090045489f4f2bac0140&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;NWT Wildfires&lt;/h5&gt;&lt;p&gt;Whitehorse is evacuated due to wildfire threat&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_984dd2823c046068cb7c5a79d2a4b9d3.setContent(html_fd43ae2c387c090045489f4f2bac0140);
             
         
 
-        marker_736a1d77a02dda66a10280640131a005.bindPopup(popup_03cbdd0d0ae1d1ff6a2eae039d6a2a91)
+        marker_23edc9d657ef00a6f391e97c99040d3f.bindPopup(popup_984dd2823c046068cb7c5a79d2a4b9d3)
         ;
 
         
     
     
-            marker_736a1d77a02dda66a10280640131a005.bindTooltip(
+            marker_23edc9d657ef00a6f391e97c99040d3f.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;NWT Wildfires&lt;/b&gt;&lt;br&gt;2023.08.17
                  &lt;/div&gt;`,
@@ -743,34 +744,34 @@ document.write(`
             );
         
     
-            var marker_4a18f0bbebf9c2e8c6a851ab4f3e50c0 = L.marker(
+            var marker_0a265ce494b18ef858fbf201b75c0f02 = L.marker(
                 [20.9, -156.68],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_757e8bffc8998e614f0009e23ad3778a = L.AwesomeMarkers.icon(
+            var icon_73b9fe8298e5defe319f79dbbfd7dfc9 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_4a18f0bbebf9c2e8c6a851ab4f3e50c0.setIcon(icon_757e8bffc8998e614f0009e23ad3778a);
+            marker_0a265ce494b18ef858fbf201b75c0f02.setIcon(icon_73b9fe8298e5defe319f79dbbfd7dfc9);
         
     
-        var popup_4fb71aac910469daf75bd5cf5951511d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_d4ead97b771d7d563c4f4736b7b6e8ec = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_05eb3a3dd55bf82116c1a356ce2df51f = $(`&lt;div id=&quot;html_05eb3a3dd55bf82116c1a356ce2df51f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Maui Wildfires&lt;/h5&gt;&lt;p&gt;The town of Lahaina is almost completely destroyed by fire, killing hundreds&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_4fb71aac910469daf75bd5cf5951511d.setContent(html_05eb3a3dd55bf82116c1a356ce2df51f);
+                var html_1a4ca042be94058b5592fb7e8f2cc774 = $(`&lt;div id=&quot;html_1a4ca042be94058b5592fb7e8f2cc774&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Maui Wildfires&lt;/h5&gt;&lt;p&gt;The town of Lahaina is almost completely destroyed by fire, killing hundreds&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d4ead97b771d7d563c4f4736b7b6e8ec.setContent(html_1a4ca042be94058b5592fb7e8f2cc774);
             
         
 
-        marker_4a18f0bbebf9c2e8c6a851ab4f3e50c0.bindPopup(popup_4fb71aac910469daf75bd5cf5951511d)
+        marker_0a265ce494b18ef858fbf201b75c0f02.bindPopup(popup_d4ead97b771d7d563c4f4736b7b6e8ec)
         ;
 
         
     
     
-            marker_4a18f0bbebf9c2e8c6a851ab4f3e50c0.bindTooltip(
+            marker_0a265ce494b18ef858fbf201b75c0f02.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Maui Wildfires&lt;/b&gt;&lt;br&gt;2023.08.08
                  &lt;/div&gt;`,
@@ -778,34 +779,34 @@ document.write(`
             );
         
     
-            var marker_abfa7aa8157afa53279f04d7835c7d0d = L.marker(
+            var marker_f36427e42ff26839821cfbc1624579a1 = L.marker(
                 [39.115, 21.74],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_1bbecfcf0d4770af912ca87cca3bb70d = L.AwesomeMarkers.icon(
+            var icon_8e64b525e4cbb6203476a8a1a36ff0cb = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_abfa7aa8157afa53279f04d7835c7d0d.setIcon(icon_1bbecfcf0d4770af912ca87cca3bb70d);
+            marker_f36427e42ff26839821cfbc1624579a1.setIcon(icon_8e64b525e4cbb6203476a8a1a36ff0cb);
         
     
-        var popup_068f3f08e1ee6fd897c519d8c18e5fc3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_7cda9c667c292a5a0d76094c373e213d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_849fb88e683ad187d863f7c6668e8ee0 = $(`&lt;div id=&quot;html_849fb88e683ad187d863f7c6668e8ee0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;Wildfires ravage Greece and many other European countries. Largest ever EU fire in Greece&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_068f3f08e1ee6fd897c519d8c18e5fc3.setContent(html_849fb88e683ad187d863f7c6668e8ee0);
+                var html_7faa217f0b6a62293b7e6044e4f09ff8 = $(`&lt;div id=&quot;html_7faa217f0b6a62293b7e6044e4f09ff8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Explosive growth in BC Wildfires&lt;/h5&gt;&lt;p&gt;Wildfires ravage Greece and many other European countries. Largest ever EU fire in Greece&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_7cda9c667c292a5a0d76094c373e213d.setContent(html_7faa217f0b6a62293b7e6044e4f09ff8);
             
         
 
-        marker_abfa7aa8157afa53279f04d7835c7d0d.bindPopup(popup_068f3f08e1ee6fd897c519d8c18e5fc3)
+        marker_f36427e42ff26839821cfbc1624579a1.bindPopup(popup_7cda9c667c292a5a0d76094c373e213d)
         ;
 
         
     
     
-            marker_abfa7aa8157afa53279f04d7835c7d0d.bindTooltip(
+            marker_f36427e42ff26839821cfbc1624579a1.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Greek Wildfires&lt;/b&gt;&lt;br&gt;2023.08.15
                  &lt;/div&gt;`,
@@ -813,34 +814,34 @@ document.write(`
             );
         
     
-            var marker_ce71d92b558e5e94b29e221e814347c8 = L.marker(
+            var marker_ffcf11fb93ac7aa1718e03d6e54a3f88 = L.marker(
                 [-37.86, -72.05],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_d591ba28c283c9d08b57c67113ef8118 = L.AwesomeMarkers.icon(
+            var icon_687f4b861fbdb6f34f79322f72c847cf = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;fire-flame-curved&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_ce71d92b558e5e94b29e221e814347c8.setIcon(icon_d591ba28c283c9d08b57c67113ef8118);
+            marker_ffcf11fb93ac7aa1718e03d6e54a3f88.setIcon(icon_687f4b861fbdb6f34f79322f72c847cf);
         
     
-        var popup_1732e8c84fad7ce26f2f342d696a3878 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_d8f965ee19326aa2051c6e83ed542090 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_a245934b49470a23b7dbfff7d54cde63 = $(`&lt;div id=&quot;html_a245934b49470a23b7dbfff7d54cde63&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Chilean Wildfires&lt;/h5&gt;&lt;p&gt;Chile experiences a difficult fire season as a result of heat and mega-drought&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_1732e8c84fad7ce26f2f342d696a3878.setContent(html_a245934b49470a23b7dbfff7d54cde63);
+                var html_729d03177b4679deef7a641f388859dd = $(`&lt;div id=&quot;html_729d03177b4679deef7a641f388859dd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Chilean Wildfires&lt;/h5&gt;&lt;p&gt;Chile experiences a difficult fire season as a result of heat and mega-drought&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d8f965ee19326aa2051c6e83ed542090.setContent(html_729d03177b4679deef7a641f388859dd);
             
         
 
-        marker_ce71d92b558e5e94b29e221e814347c8.bindPopup(popup_1732e8c84fad7ce26f2f342d696a3878)
+        marker_ffcf11fb93ac7aa1718e03d6e54a3f88.bindPopup(popup_d8f965ee19326aa2051c6e83ed542090)
         ;
 
         
     
     
-            marker_ce71d92b558e5e94b29e221e814347c8.bindTooltip(
+            marker_ffcf11fb93ac7aa1718e03d6e54a3f88.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Chilean Wildfires&lt;/b&gt;&lt;br&gt;2023.02.01
                  &lt;/div&gt;`,
@@ -848,34 +849,34 @@ document.write(`
             );
         
     
-            var marker_41bd7eb9cdbae15bfe1b366e5e50d38c = L.marker(
+            var marker_b8391c1084fafeb5876901e7303b044b = L.marker(
                 [44.11, -72.667],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_8195a7c3e3b6ac4bf86b2ecde96d322f = L.AwesomeMarkers.icon(
+            var icon_cc243839fa66559330a4e2d9e4b44a3d = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_41bd7eb9cdbae15bfe1b366e5e50d38c.setIcon(icon_8195a7c3e3b6ac4bf86b2ecde96d322f);
+            marker_b8391c1084fafeb5876901e7303b044b.setIcon(icon_cc243839fa66559330a4e2d9e4b44a3d);
         
     
-        var popup_e66d5d9335baab0017547370db7bb1bd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_561ab343363bfab4a42666f861ff8741 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_4b7e8e07707401c09a3bcebdb4bf528b = $(`&lt;div id=&quot;html_4b7e8e07707401c09a3bcebdb4bf528b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Vermont Flooding&lt;/h5&gt;&lt;p&gt;Vermont and other eastern US states experience extensive flooding&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_e66d5d9335baab0017547370db7bb1bd.setContent(html_4b7e8e07707401c09a3bcebdb4bf528b);
+                var html_8da15dcd27a3941de29c6103158129c9 = $(`&lt;div id=&quot;html_8da15dcd27a3941de29c6103158129c9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Vermont Flooding&lt;/h5&gt;&lt;p&gt;Vermont and other eastern US states experience extensive flooding&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_561ab343363bfab4a42666f861ff8741.setContent(html_8da15dcd27a3941de29c6103158129c9);
             
         
 
-        marker_41bd7eb9cdbae15bfe1b366e5e50d38c.bindPopup(popup_e66d5d9335baab0017547370db7bb1bd)
+        marker_b8391c1084fafeb5876901e7303b044b.bindPopup(popup_561ab343363bfab4a42666f861ff8741)
         ;
 
         
     
     
-            marker_41bd7eb9cdbae15bfe1b366e5e50d38c.bindTooltip(
+            marker_b8391c1084fafeb5876901e7303b044b.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Vermont Flooding&lt;/b&gt;&lt;br&gt;2023.07.10
                  &lt;/div&gt;`,
@@ -883,34 +884,34 @@ document.write(`
             );
         
     
-            var marker_67adc4ae871149eb44ffbf0037f5df1e = L.marker(
+            var marker_fbb8c746f372d8644d58b7bb95234a48 = L.marker(
                 [32.665, 131.1],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_1f0ccbdecd06c529dd42200cbf510201 = L.AwesomeMarkers.icon(
+            var icon_5ab3569063761286e63586fb00959c13 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_67adc4ae871149eb44ffbf0037f5df1e.setIcon(icon_1f0ccbdecd06c529dd42200cbf510201);
+            marker_fbb8c746f372d8644d58b7bb95234a48.setIcon(icon_5ab3569063761286e63586fb00959c13);
         
     
-        var popup_5ade21442972a3cb51a4dcced462f149 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_2883a35b9399a74d754dbacb90d8a15d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_1b18ac68b044345b8ce5f18270404c38 = $(`&lt;div id=&quot;html_1b18ac68b044345b8ce5f18270404c38&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Japan Flooding&lt;/h5&gt;&lt;p&gt;&quot;Heaviest rains ever&quot; hit southwest Japan&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_5ade21442972a3cb51a4dcced462f149.setContent(html_1b18ac68b044345b8ce5f18270404c38);
+                var html_1467babdc417163cd13308393c175ddb = $(`&lt;div id=&quot;html_1467babdc417163cd13308393c175ddb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Japan Flooding&lt;/h5&gt;&lt;p&gt;&quot;Heaviest rains ever&quot; hit southwest Japan&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_2883a35b9399a74d754dbacb90d8a15d.setContent(html_1467babdc417163cd13308393c175ddb);
             
         
 
-        marker_67adc4ae871149eb44ffbf0037f5df1e.bindPopup(popup_5ade21442972a3cb51a4dcced462f149)
+        marker_fbb8c746f372d8644d58b7bb95234a48.bindPopup(popup_2883a35b9399a74d754dbacb90d8a15d)
         ;
 
         
     
     
-            marker_67adc4ae871149eb44ffbf0037f5df1e.bindTooltip(
+            marker_fbb8c746f372d8644d58b7bb95234a48.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Japan Flooding&lt;/b&gt;&lt;br&gt;2023.07.11
                  &lt;/div&gt;`,
@@ -918,34 +919,34 @@ document.write(`
             );
         
     
-            var marker_9ce995071d84dc70eab048eb8acf55f8 = L.marker(
+            var marker_c47bd88e0a37a0f9cf58ed73e813592d = L.marker(
                 [33.8, -116.4],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_35eb26a174bbf209566b7f9dbb0df5ce = L.AwesomeMarkers.icon(
+            var icon_0249bd7ab7b5db8efa8131c064fb37ef = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_9ce995071d84dc70eab048eb8acf55f8.setIcon(icon_35eb26a174bbf209566b7f9dbb0df5ce);
+            marker_c47bd88e0a37a0f9cf58ed73e813592d.setIcon(icon_0249bd7ab7b5db8efa8131c064fb37ef);
         
     
-        var popup_48ce9400a23ea68be005b0b4732eaf13 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_d4cc483fcf7ed658be043ade4f00e8cc = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_b45c24be79074e13145e191c8d7326aa = $(`&lt;div id=&quot;html_b45c24be79074e13145e191c8d7326aa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Floods&lt;/h5&gt;&lt;p&gt;Palm Springs receives a years worth of rain in one storm&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_48ce9400a23ea68be005b0b4732eaf13.setContent(html_b45c24be79074e13145e191c8d7326aa);
+                var html_511e768183387864c3487be2e554a3c9 = $(`&lt;div id=&quot;html_511e768183387864c3487be2e554a3c9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Floods&lt;/h5&gt;&lt;p&gt;Palm Springs receives a years worth of rain in one storm&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d4cc483fcf7ed658be043ade4f00e8cc.setContent(html_511e768183387864c3487be2e554a3c9);
             
         
 
-        marker_9ce995071d84dc70eab048eb8acf55f8.bindPopup(popup_48ce9400a23ea68be005b0b4732eaf13)
+        marker_c47bd88e0a37a0f9cf58ed73e813592d.bindPopup(popup_d4cc483fcf7ed658be043ade4f00e8cc)
         ;
 
         
     
     
-            marker_9ce995071d84dc70eab048eb8acf55f8.bindTooltip(
+            marker_c47bd88e0a37a0f9cf58ed73e813592d.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;US Southwest Floods&lt;/b&gt;&lt;br&gt;2023.08.20
                  &lt;/div&gt;`,
@@ -953,34 +954,34 @@ document.write(`
             );
         
     
-            var marker_81a3a3391709894628694194c673905f = L.marker(
+            var marker_227625978965a246e50b5ed5f0d58df5 = L.marker(
                 [44.335, 11.2],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_d95c721ea404935613761f7074caaf54 = L.AwesomeMarkers.icon(
+            var icon_a4d6bdeb5f46f91e9605fb38a127c9e3 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_81a3a3391709894628694194c673905f.setIcon(icon_d95c721ea404935613761f7074caaf54);
+            marker_227625978965a246e50b5ed5f0d58df5.setIcon(icon_a4d6bdeb5f46f91e9605fb38a127c9e3);
         
     
-        var popup_ebf39edf65421ae2bb1d4f46b551a9c2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_47c415fe0f939f7a03e4565a1d44f94b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_aaeb63ca65248319b11a93364514787c = $(`&lt;div id=&quot;html_aaeb63ca65248319b11a93364514787c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Italy Floods&lt;/h5&gt;&lt;p&gt;Torrential rainfall results in flooding and landslides in northern Italy&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_ebf39edf65421ae2bb1d4f46b551a9c2.setContent(html_aaeb63ca65248319b11a93364514787c);
+                var html_90baf512aa053a0d318f22601588e689 = $(`&lt;div id=&quot;html_90baf512aa053a0d318f22601588e689&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Italy Floods&lt;/h5&gt;&lt;p&gt;Torrential rainfall results in flooding and landslides in northern Italy&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_47c415fe0f939f7a03e4565a1d44f94b.setContent(html_90baf512aa053a0d318f22601588e689);
             
         
 
-        marker_81a3a3391709894628694194c673905f.bindPopup(popup_ebf39edf65421ae2bb1d4f46b551a9c2)
+        marker_227625978965a246e50b5ed5f0d58df5.bindPopup(popup_47c415fe0f939f7a03e4565a1d44f94b)
         ;
 
         
     
     
-            marker_81a3a3391709894628694194c673905f.bindTooltip(
+            marker_227625978965a246e50b5ed5f0d58df5.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Italy Floods&lt;/b&gt;&lt;br&gt;2023.05.17
                  &lt;/div&gt;`,
@@ -988,34 +989,34 @@ document.write(`
             );
         
     
-            var marker_6702684c030b3c159eb26bdf75059199 = L.marker(
+            var marker_85781e807c43075188065aeaa70d6eb4 = L.marker(
                 [11.99, 30.88],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_1ab14d5067b2fae23b14d428273d6d5f = L.AwesomeMarkers.icon(
+            var icon_8edfb782a70e3c51ca83b2439ddd300d = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_6702684c030b3c159eb26bdf75059199.setIcon(icon_1ab14d5067b2fae23b14d428273d6d5f);
+            marker_85781e807c43075188065aeaa70d6eb4.setIcon(icon_8edfb782a70e3c51ca83b2439ddd300d);
         
     
-        var popup_493fae38a13b713f882f52de5044efe4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_3fa27221787cf72abd9d2f77829cebc5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_9bdef776a370c71e8745e273f561b9c8 = $(`&lt;div id=&quot;html_9bdef776a370c71e8745e273f561b9c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;South Sudan Floods&lt;/h5&gt;&lt;p&gt;South Sudan experiences widespread flooding for the fourth consecutive year&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_493fae38a13b713f882f52de5044efe4.setContent(html_9bdef776a370c71e8745e273f561b9c8);
+                var html_69af93bc4b0e76f495d1b7fbdc3ad128 = $(`&lt;div id=&quot;html_69af93bc4b0e76f495d1b7fbdc3ad128&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;South Sudan Floods&lt;/h5&gt;&lt;p&gt;South Sudan experiences widespread flooding for the fourth consecutive year&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_3fa27221787cf72abd9d2f77829cebc5.setContent(html_69af93bc4b0e76f495d1b7fbdc3ad128);
             
         
 
-        marker_6702684c030b3c159eb26bdf75059199.bindPopup(popup_493fae38a13b713f882f52de5044efe4)
+        marker_85781e807c43075188065aeaa70d6eb4.bindPopup(popup_3fa27221787cf72abd9d2f77829cebc5)
         ;
 
         
     
     
-            marker_6702684c030b3c159eb26bdf75059199.bindTooltip(
+            marker_85781e807c43075188065aeaa70d6eb4.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;South Sudan Floods&lt;/b&gt;&lt;br&gt;2023.02.01
                  &lt;/div&gt;`,
@@ -1023,34 +1024,34 @@ document.write(`
             );
         
     
-            var marker_fb5589d163e23476e06495eebc9c76e8 = L.marker(
+            var marker_6c7f9bb94607d0af9065fae357dac2f5 = L.marker(
                 [-15.91, 38.088],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_ee83a0a11d003f00c4a88fb028a4e82b = L.AwesomeMarkers.icon(
+            var icon_47f63bcf2de3c282325a17cfeeced755 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;house-flood-water&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_fb5589d163e23476e06495eebc9c76e8.setIcon(icon_ee83a0a11d003f00c4a88fb028a4e82b);
+            marker_6c7f9bb94607d0af9065fae357dac2f5.setIcon(icon_47f63bcf2de3c282325a17cfeeced755);
         
     
-        var popup_9a3349b65455688e4e96111c852a4279 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_266f2fa056abb31d6ee1a3f1cff162c0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_62793388100ca35be178090b269be1f7 = $(`&lt;div id=&quot;html_62793388100ca35be178090b269be1f7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Cyclone Freddy&lt;/h5&gt;&lt;p&gt;Southeast Africa and Madagascar are pummelled by Cyclone Freddy for one month&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_9a3349b65455688e4e96111c852a4279.setContent(html_62793388100ca35be178090b269be1f7);
+                var html_b87815a8c510d32c3037feb1d9055d5a = $(`&lt;div id=&quot;html_b87815a8c510d32c3037feb1d9055d5a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Cyclone Freddy&lt;/h5&gt;&lt;p&gt;Southeast Africa and Madagascar are pummelled by Cyclone Freddy for one month&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_266f2fa056abb31d6ee1a3f1cff162c0.setContent(html_b87815a8c510d32c3037feb1d9055d5a);
             
         
 
-        marker_fb5589d163e23476e06495eebc9c76e8.bindPopup(popup_9a3349b65455688e4e96111c852a4279)
+        marker_6c7f9bb94607d0af9065fae357dac2f5.bindPopup(popup_266f2fa056abb31d6ee1a3f1cff162c0)
         ;
 
         
     
     
-            marker_fb5589d163e23476e06495eebc9c76e8.bindTooltip(
+            marker_6c7f9bb94607d0af9065fae357dac2f5.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Cyclone Freddy&lt;/b&gt;&lt;br&gt;2023.02.20
                  &lt;/div&gt;`,
@@ -1058,34 +1059,34 @@ document.write(`
             );
         
     
-            var marker_08029b30a3755e610fb4547146465c8b = L.marker(
+            var marker_6b04cdd842550a9951733efb18344f84 = L.marker(
                 [24.0, 108.5],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_8137cb6d788ddaf3cdc493069f3de8b9 = L.AwesomeMarkers.icon(
+            var icon_2cf844cd5c2507961c7cb116ea78fb9b = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_08029b30a3755e610fb4547146465c8b.setIcon(icon_8137cb6d788ddaf3cdc493069f3de8b9);
+            marker_6b04cdd842550a9951733efb18344f84.setIcon(icon_2cf844cd5c2507961c7cb116ea78fb9b);
         
     
-        var popup_c5f4f8fa26827021f4bb4c7f341963fe = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_d0927059d159b81cca6f44e9c358b541 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_f1c0bd15b16ca3982ff4408da2b26334 = $(`&lt;div id=&quot;html_f1c0bd15b16ca3982ff4408da2b26334&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Asian Heatwave&lt;/h5&gt;&lt;p&gt;Asia records its strongest ever April heatwave&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_c5f4f8fa26827021f4bb4c7f341963fe.setContent(html_f1c0bd15b16ca3982ff4408da2b26334);
+                var html_fbafebb3b96304468acbceed35a4d882 = $(`&lt;div id=&quot;html_fbafebb3b96304468acbceed35a4d882&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Asian Heatwave&lt;/h5&gt;&lt;p&gt;Asia records its strongest ever April heatwave&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_d0927059d159b81cca6f44e9c358b541.setContent(html_fbafebb3b96304468acbceed35a4d882);
             
         
 
-        marker_08029b30a3755e610fb4547146465c8b.bindPopup(popup_c5f4f8fa26827021f4bb4c7f341963fe)
+        marker_6b04cdd842550a9951733efb18344f84.bindPopup(popup_d0927059d159b81cca6f44e9c358b541)
         ;
 
         
     
     
-            marker_08029b30a3755e610fb4547146465c8b.bindTooltip(
+            marker_6b04cdd842550a9951733efb18344f84.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Asian Heatwave&lt;/b&gt;&lt;br&gt;2023.04.15
                  &lt;/div&gt;`,
@@ -1093,34 +1094,34 @@ document.write(`
             );
         
     
-            var marker_141646b5423290265726c3ff63b5fd20 = L.marker(
+            var marker_4bdf9b9f0838680c18187fe7782a0ede = L.marker(
                 [27.27, -79.06],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_26764abe3a7b97029bca69788da085c8 = L.AwesomeMarkers.icon(
+            var icon_93d728ae206b8074e7987546a82812e7 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_141646b5423290265726c3ff63b5fd20.setIcon(icon_26764abe3a7b97029bca69788da085c8);
+            marker_4bdf9b9f0838680c18187fe7782a0ede.setIcon(icon_93d728ae206b8074e7987546a82812e7);
         
     
-        var popup_2fa2fa343c326717dfd44413e154717e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_4b8af5f19307d69c57feb15b804a4399 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_74340aa99bed54fb779e8a42a950be8f = $(`&lt;div id=&quot;html_74340aa99bed54fb779e8a42a950be8f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Marine Heatwave&lt;/h5&gt;&lt;p&gt;Oceans are the hottest on record in 2023, threatening coral reefs and other marine life&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_2fa2fa343c326717dfd44413e154717e.setContent(html_74340aa99bed54fb779e8a42a950be8f);
+                var html_43f0f644b92f05e9a32e69d082717f91 = $(`&lt;div id=&quot;html_43f0f644b92f05e9a32e69d082717f91&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Marine Heatwave&lt;/h5&gt;&lt;p&gt;Oceans are the hottest on record in 2023, threatening coral reefs and other marine life&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_4b8af5f19307d69c57feb15b804a4399.setContent(html_43f0f644b92f05e9a32e69d082717f91);
             
         
 
-        marker_141646b5423290265726c3ff63b5fd20.bindPopup(popup_2fa2fa343c326717dfd44413e154717e)
+        marker_4bdf9b9f0838680c18187fe7782a0ede.bindPopup(popup_4b8af5f19307d69c57feb15b804a4399)
         ;
 
         
     
     
-            marker_141646b5423290265726c3ff63b5fd20.bindTooltip(
+            marker_4bdf9b9f0838680c18187fe7782a0ede.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Marine Heatwave&lt;/b&gt;&lt;br&gt;2023.08.15
                  &lt;/div&gt;`,
@@ -1128,34 +1129,34 @@ document.write(`
             );
         
     
-            var marker_6ff95b4df08d9854d0cb6d11cc2093c2 = L.marker(
+            var marker_9ad5934dc94e500800d601724b65637a = L.marker(
                 [67.68, 66.136],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_13d9e751022bcd7b4379d77f5cb18e9a = L.AwesomeMarkers.icon(
+            var icon_6d74d52735e8c86ad66f0fab6cee22e9 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_6ff95b4df08d9854d0cb6d11cc2093c2.setIcon(icon_13d9e751022bcd7b4379d77f5cb18e9a);
+            marker_9ad5934dc94e500800d601724b65637a.setIcon(icon_6d74d52735e8c86ad66f0fab6cee22e9);
         
     
-        var popup_9e74ee741ad605dc9ae488dc51f72946 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_af2a155cb1ff6ccb7f8391e70118b491 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_5b053f51c0aff48ae9a938e696108d6e = $(`&lt;div id=&quot;html_5b053f51c0aff48ae9a938e696108d6e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Siberian Heatwave&lt;/h5&gt;&lt;p&gt;Extreme heatwave hits northern Russia&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_9e74ee741ad605dc9ae488dc51f72946.setContent(html_5b053f51c0aff48ae9a938e696108d6e);
+                var html_c8a11b83372d4d26fd98589db4baac64 = $(`&lt;div id=&quot;html_c8a11b83372d4d26fd98589db4baac64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Siberian Heatwave&lt;/h5&gt;&lt;p&gt;Extreme heatwave hits northern Russia&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_af2a155cb1ff6ccb7f8391e70118b491.setContent(html_c8a11b83372d4d26fd98589db4baac64);
             
         
 
-        marker_6ff95b4df08d9854d0cb6d11cc2093c2.bindPopup(popup_9e74ee741ad605dc9ae488dc51f72946)
+        marker_9ad5934dc94e500800d601724b65637a.bindPopup(popup_af2a155cb1ff6ccb7f8391e70118b491)
         ;
 
         
     
     
-            marker_6ff95b4df08d9854d0cb6d11cc2093c2.bindTooltip(
+            marker_9ad5934dc94e500800d601724b65637a.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Siberian Heatwave&lt;/b&gt;&lt;br&gt;2023.06.06
                  &lt;/div&gt;`,
@@ -1163,34 +1164,34 @@ document.write(`
             );
         
     
-            var marker_d0931d54fde6f2e31f7a264d07a6acdd = L.marker(
+            var marker_eb218cede37c67bc8080633408bf1aeb = L.marker(
                 [40.155, 9.03],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_bf1eaf2c60f0c11856d9c9f295b2f675 = L.AwesomeMarkers.icon(
+            var icon_e0ee92701ca307f353ac2f350b6f6ea9 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_d0931d54fde6f2e31f7a264d07a6acdd.setIcon(icon_bf1eaf2c60f0c11856d9c9f295b2f675);
+            marker_eb218cede37c67bc8080633408bf1aeb.setIcon(icon_e0ee92701ca307f353ac2f350b6f6ea9);
         
     
-        var popup_57bc68f86f826ee6731139ef98fdd04b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e64ecdb2102aad3c59176e81f4fc8131 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_96080526706244b3b7007624cc7ea289 = $(`&lt;div id=&quot;html_96080526706244b3b7007624cc7ea289&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;European Heatwave&lt;/h5&gt;&lt;p&gt;Summer 2023 will be remembered for extended heatwaves throughout Europe&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_57bc68f86f826ee6731139ef98fdd04b.setContent(html_96080526706244b3b7007624cc7ea289);
+                var html_05dd56d15036f6cad9a83472d84d3b7c = $(`&lt;div id=&quot;html_05dd56d15036f6cad9a83472d84d3b7c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;European Heatwave&lt;/h5&gt;&lt;p&gt;Summer 2023 will be remembered for extended heatwaves throughout Europe&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_e64ecdb2102aad3c59176e81f4fc8131.setContent(html_05dd56d15036f6cad9a83472d84d3b7c);
             
         
 
-        marker_d0931d54fde6f2e31f7a264d07a6acdd.bindPopup(popup_57bc68f86f826ee6731139ef98fdd04b)
+        marker_eb218cede37c67bc8080633408bf1aeb.bindPopup(popup_e64ecdb2102aad3c59176e81f4fc8131)
         ;
 
         
     
     
-            marker_d0931d54fde6f2e31f7a264d07a6acdd.bindTooltip(
+            marker_eb218cede37c67bc8080633408bf1aeb.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;European Heatwave&lt;/b&gt;&lt;br&gt;2023.07.18
                  &lt;/div&gt;`,
@@ -1198,34 +1199,34 @@ document.write(`
             );
         
     
-            var marker_c018b30277320678da03246c47591863 = L.marker(
+            var marker_a93d079ff9dc155cce7e59b561f18fda = L.marker(
                 [65.28, -126.83],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_54aa996e787a09d8ed4a2f424ecc52cf = L.AwesomeMarkers.icon(
+            var icon_ccf1783cddd5f3c6e3cd7314939a58a8 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_c018b30277320678da03246c47591863.setIcon(icon_54aa996e787a09d8ed4a2f424ecc52cf);
+            marker_a93d079ff9dc155cce7e59b561f18fda.setIcon(icon_ccf1783cddd5f3c6e3cd7314939a58a8);
         
     
-        var popup_6ca4f5b75636514bd4bee1bee7746bf8 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_3096fdc04ac631766590342e9870b4dd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_103aa4a6661d0221e1d2a155d4119d78 = $(`&lt;div id=&quot;html_103aa4a6661d0221e1d2a155d4119d78&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Normal Wells Record Heat&lt;/h5&gt;&lt;p&gt;The town of Normal Wells (NWT) sets a northern latitude record with a high of 38 C&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_6ca4f5b75636514bd4bee1bee7746bf8.setContent(html_103aa4a6661d0221e1d2a155d4119d78);
+                var html_dce104a6f36e99f7dc8f19489b90d545 = $(`&lt;div id=&quot;html_dce104a6f36e99f7dc8f19489b90d545&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Normal Wells Record Heat&lt;/h5&gt;&lt;p&gt;The town of Normal Wells (NWT) sets a northern latitude record with a high of 38 C&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_3096fdc04ac631766590342e9870b4dd.setContent(html_dce104a6f36e99f7dc8f19489b90d545);
             
         
 
-        marker_c018b30277320678da03246c47591863.bindPopup(popup_6ca4f5b75636514bd4bee1bee7746bf8)
+        marker_a93d079ff9dc155cce7e59b561f18fda.bindPopup(popup_3096fdc04ac631766590342e9870b4dd)
         ;
 
         
     
     
-            marker_c018b30277320678da03246c47591863.bindTooltip(
+            marker_a93d079ff9dc155cce7e59b561f18fda.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;NWT Record Heat&lt;/b&gt;&lt;br&gt;2023.04.15
                  &lt;/div&gt;`,
@@ -1233,34 +1234,34 @@ document.write(`
             );
         
     
-            var marker_669e8970520a8b0d8314c298528c56a0 = L.marker(
+            var marker_8450f51ed84cbbb1e8577b5d9c4ca645 = L.marker(
                 [32.77, -104.6],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_02f122a388bbdf11f1d8a5121e095c31 = L.AwesomeMarkers.icon(
+            var icon_f986a5c715d993f5c825bc91f14b696f = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;temperature-arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;orange&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_669e8970520a8b0d8314c298528c56a0.setIcon(icon_02f122a388bbdf11f1d8a5121e095c31);
+            marker_8450f51ed84cbbb1e8577b5d9c4ca645.setIcon(icon_f986a5c715d993f5c825bc91f14b696f);
         
     
-        var popup_bfab05c5295f1468e4e267228a645aea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_7482ec2b559ada5f8f63ae654d4a0554 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_6aaf47858c80aa66cf35653dd5271b6a = $(`&lt;div id=&quot;html_6aaf47858c80aa66cf35653dd5271b6a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Heatwave&lt;/h5&gt;&lt;p&gt;Phoenix sets a record with 31 consecutive days over 43 C&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_bfab05c5295f1468e4e267228a645aea.setContent(html_6aaf47858c80aa66cf35653dd5271b6a);
+                var html_44265a7559e8b5bd7ea354aea9b43911 = $(`&lt;div id=&quot;html_44265a7559e8b5bd7ea354aea9b43911&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;US Southwest Heatwave&lt;/h5&gt;&lt;p&gt;Phoenix sets a record with 31 consecutive days over 43 C&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_7482ec2b559ada5f8f63ae654d4a0554.setContent(html_44265a7559e8b5bd7ea354aea9b43911);
             
         
 
-        marker_669e8970520a8b0d8314c298528c56a0.bindPopup(popup_bfab05c5295f1468e4e267228a645aea)
+        marker_8450f51ed84cbbb1e8577b5d9c4ca645.bindPopup(popup_7482ec2b559ada5f8f63ae654d4a0554)
         ;
 
         
     
     
-            marker_669e8970520a8b0d8314c298528c56a0.bindTooltip(
+            marker_8450f51ed84cbbb1e8577b5d9c4ca645.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;US Southwest Heatwave&lt;/b&gt;&lt;br&gt;2023.07.20
                  &lt;/div&gt;`,
@@ -1268,34 +1269,34 @@ document.write(`
             );
         
     
-            var marker_7a9769e72931f7bb5af4d2fa541f66d3 = L.marker(
+            var marker_351952468e6f49103cb622f2271cb5f2 = L.marker(
                 [-77.43, 168.86],
                 {}
-            ).addTo(map_aef7795dc08ae5f6fa6fa1e68449e25e);
+            ).addTo(map_78d1d017cf35a5a2f7323946ed0c65b2);
         
     
-            var icon_c6ed81fef436550f96b9edb9a7c47196 = L.AwesomeMarkers.icon(
+            var icon_3f086f17f9900ca27d220d705fb5752c = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;snowflake&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;lightblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_7a9769e72931f7bb5af4d2fa541f66d3.setIcon(icon_c6ed81fef436550f96b9edb9a7c47196);
+            marker_351952468e6f49103cb622f2271cb5f2.setIcon(icon_3f086f17f9900ca27d220d705fb5752c);
         
     
-        var popup_e2952ba462ec7e262ce0d16542fa39de = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_76da8ff147ac306efeba6dbcffd5d8b9 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_62f992baf3100348c6f25ddbbf5c65a3 = $(`&lt;div id=&quot;html_62f992baf3100348c6f25ddbbf5c65a3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Antarctic Sea Ice&lt;/h5&gt;&lt;p&gt;Antarctic sea ice extent is at its lowest in recorded history&lt;/p&gt;&lt;/div&gt;`)[0];
-                popup_e2952ba462ec7e262ce0d16542fa39de.setContent(html_62f992baf3100348c6f25ddbbf5c65a3);
+                var html_3fa33f661e6013a589829199cc102964 = $(`&lt;div id=&quot;html_3fa33f661e6013a589829199cc102964&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;h5&gt;Antarctic Sea Ice&lt;/h5&gt;&lt;p&gt;Antarctic sea ice extent is at its lowest in recorded history&lt;/p&gt;&lt;/div&gt;`)[0];
+                popup_76da8ff147ac306efeba6dbcffd5d8b9.setContent(html_3fa33f661e6013a589829199cc102964);
             
         
 
-        marker_7a9769e72931f7bb5af4d2fa541f66d3.bindPopup(popup_e2952ba462ec7e262ce0d16542fa39de)
+        marker_351952468e6f49103cb622f2271cb5f2.bindPopup(popup_76da8ff147ac306efeba6dbcffd5d8b9)
         ;
 
         
     
     
-            marker_7a9769e72931f7bb5af4d2fa541f66d3.bindTooltip(
+            marker_351952468e6f49103cb622f2271cb5f2.bindTooltip(
                 `&lt;div&gt;
                      &lt;b&gt;Antarctic Sea Ice&lt;/b&gt;&lt;br&gt;2023.08.02
                  &lt;/div&gt;`,
