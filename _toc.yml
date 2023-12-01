@@ -4,27 +4,19 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Summary
+  - caption: Overview
     chapters:
     - file: overview_map.ipynb
     - file: watershed_conditions.md
-    - file: global.ipynb
-    - file: outlook_summary.md
-  - caption: Current Conditions
+  - caption: Conditions Summaries
     chapters:
-    - file: air-temp.ipynb
+    - file: air-temps.ipynb
+    - file: precip.ipynb
     - file: snowpack.ipynb
-    - file: drought.ipynb
-    - file: wildfire.ipynb
+    - file: streamflow.ipynb
   - caption: Outlook
     chapters:
-    - file: drivers.md
-    - file: analog.md
-    - file: outlook.ipynb
-  - caption: Other Climate-related Topics
-    chapters:
-    - file: forest_health.md
-    - file: glacier.md
+    - file: outlook-new.ipynb
   - caption: Resources
     chapters:
     - file: links.md

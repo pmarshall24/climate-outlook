@@ -1,6 +1,6 @@
 # Watershed Conditions
 
-This section summarizes recent weather conditions in Metro Vancouver's water supply areas. Please refer to the [](outlook.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
+This section summarizes recent weather conditions in Metro Vancouver's water supply areas. Please refer to the [](outlook-new.md) section for information on how these key parameters are expected to change in the coming weeks and months. 
 
 ::::{grid} 1 1 2 2
 :class-container: text-left
@@ -17,12 +17,11 @@ This section summarizes recent weather conditions in Metro Vancouver's water sup
 :align: center
 ```
 
-- May saw record-breaking heat, averaging 3.5 degrees warmer than normal
-- June, July and August averaged over 1 degree warmer than normal
-- September and October were both slightly warmer than normal
-- Globally, 2023 is almost certain to be the warmest year on record
+- November was the seventh consecutive month with above normal air temperatures
+- Mild conditions have resulted in a below normal early season snowpack
+- Globally, 2023 is on track to be the warmest year on record
 +++
-Check out the [](air-temp.ipynb) section for more information
+Check out the [](air-temps.ipynb) section for more information
 
 :::
 
@@ -37,11 +36,11 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- Total precipitation was 50% of normal between May 1 and Sep 30
-- Atmospheric Rivers delivered heavy rainfall in mid-October and early November. 
-- The Lower Capilano Watershed received over 100 mm of rain on Oct 18
+- The first half of November was very wet, but the month ended with a long dry spell
+- Heaviest rainfall came on the Remembrance Day long weekend
+- 2023 will be among the driest of the past 20 years (even with heavy rain in Dec.)
 +++
-Check out the [](air-temp.ipynb) section for more information
+Check out the [](precip.ipynb) section for more information
 
 :::
 
@@ -56,11 +55,11 @@ Check out the [](air-temp.ipynb) section for more information
 :align: center
 ```
 
-- The first snowfall of the year occurred on Oct. 25-26
-- This early snow disappeared by the beginning of November
-- Analog years saw below, or near-normal spring snowpacks
+- The first snowfall of the year occurred on Oct. 25-26, but this quickly melted
+- The snow depth was approximately 40-60% of normal on November 30
+- The local snowpack is typically below average during El Nino winters
 +++
-Check out the [](water_supply.ipynb) section for more information
+Check out the [](snowpack.ipynb) section for more information
 
 :::
 
@@ -68,19 +67,17 @@ Check out the [](water_supply.ipynb) section for more information
 :class-body: text-left
 :class-header: bg-light text-center
 
-**Wildfires and Drought**
+**Streamflow**
 ^^^
-```{image} img/wildfire-icon.jpg
+```{image} img/discharge.png
 :height: 100
 :align: center
 ```
 
-- BC experienced a prolonged and severe seasonal drought in 2023
-- Locally, fire danger was rated high or extreme for 95 days this summer
-- Provincially, the area burned in the province more than doubled the previous record
-- Carbon emissions from wildfire smoke in Canada have more than tripled the previous record
+- Cumulative river inflows during the 2023 water year (Oct 1 - Sep 30) were well below average
+- Average and cumulative inflows were also below normal for October and November
 +++
-Check out the [](crossover.ipynb) section for more information
+Check out the [](streamflow.ipynb) section for more information
 
 :::
 ::::
