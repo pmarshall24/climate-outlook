@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd92a315758fbf44721859feabe549c2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd92a315758fbf44721859feabe549c2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd92a315758fbf44721859feabe549c2 = L.map(
+                "map_dd92a315758fbf44721859feabe549c2",
+                {
+                    center: [49.3898411111111, -122.99792666666667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df20aaccfa7addb2cff0465f80c1e442 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dd92a315758fbf44721859feabe549c2);
+        
+    
+            var marker_cluster_0e8da0b9daf740a1c3cd9608c2291762 = L.markerClusterGroup(
+                {}
+            );
+            map_dd92a315758fbf44721859feabe549c2.addLayer(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+            var marker_726e31c44dd3e5284f7cc1707ba60bf8 = L.marker(
+                [49.1825, -123.1872],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_d70539cb5b169d66b09d85c08b7217a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a800cb645d6b76ecbbf4c9362743a87 = $(`<div id="html_1a800cb645d6b76ecbbf4c9362743a87" style="width: 100.0%; height: 100.0%;">Site: Vancouver Sea Island<br>Precipitation: 822.0 mm</div>`)[0];
+                popup_d70539cb5b169d66b09d85c08b7217a8.setContent(html_1a800cb645d6b76ecbbf4c9362743a87);
+            
+        
+
+        marker_726e31c44dd3e5284f7cc1707ba60bf8.bindPopup(popup_d70539cb5b169d66b09d85c08b7217a8)
+        ;
+
+        
+    
+    
+            var marker_f51a91f4a617ea04f8a1b390dc65481d = L.marker(
+                [49.347, -123.0022],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_b2f1ef506826fc3ab5606fa3e9a8fbbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c96ac662f1db828b40117cc64f72a33 = $(`<div id="html_2c96ac662f1db828b40117cc64f72a33" style="width: 100.0%; height: 100.0%;">Site: Burns Bog<br>Precipitation: 876.0 mm</div>`)[0];
+                popup_b2f1ef506826fc3ab5606fa3e9a8fbbc.setContent(html_2c96ac662f1db828b40117cc64f72a33);
+            
+        
+
+        marker_f51a91f4a617ea04f8a1b390dc65481d.bindPopup(popup_b2f1ef506826fc3ab5606fa3e9a8fbbc)
+        ;
+
+        
+    
+    
+            var marker_e6633731da510f723746af6124d6c219 = L.marker(
+                [49.38, -123.1219],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_ec85ddcf6e8f4805c5aef96ce74fa064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f799825c3df5cd7a093808c44331538 = $(`<div id="html_5f799825c3df5cd7a093808c44331538" style="width: 100.0%; height: 100.0%;">Site: Vancouver Harbour<br>Precipitation: 1161.0 mm</div>`)[0];
+                popup_ec85ddcf6e8f4805c5aef96ce74fa064.setContent(html_5f799825c3df5cd7a093808c44331538);
+            
+        
+
+        marker_e6633731da510f723746af6124d6c219.bindPopup(popup_ec85ddcf6e8f4805c5aef96ce74fa064)
+        ;
+
+        
+    
+    
+            var marker_0fad55becc179abe23fcd73e616d8808 = L.marker(
+                [49.22541, -123.01327],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_68c10a1009be5d382cce4599b98a8b57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d7faef9ddcb9cfc136a3610a3ec41be = $(`<div id="html_9d7faef9ddcb9cfc136a3610a3ec41be" style="width: 100.0%; height: 100.0%;">Site: Central Park Reservoir<br>Precipitation: 1224.0 mm</div>`)[0];
+                popup_68c10a1009be5d382cce4599b98a8b57.setContent(html_9d7faef9ddcb9cfc136a3610a3ec41be);
+            
+        
+
+        marker_0fad55becc179abe23fcd73e616d8808.bindPopup(popup_68c10a1009be5d382cce4599b98a8b57)
+        ;
+
+        
+    
+    
+            var marker_fc9b9e5e46166e955b1512aa860b4017 = L.marker(
+                [49.2207, -122.53886],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_64f83be8abf5e55f920058737895eec2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd5d3c0c7d10da8f48369b28c80d7198 = $(`<div id="html_dd5d3c0c7d10da8f48369b28c80d7198" style="width: 100.0%; height: 100.0%;">Site: Maple Ridge Reservoir<br>Precipitation: 1230.0 mm</div>`)[0];
+                popup_64f83be8abf5e55f920058737895eec2.setContent(html_dd5d3c0c7d10da8f48369b28c80d7198);
+            
+        
+
+        marker_fc9b9e5e46166e955b1512aa860b4017.bindPopup(popup_64f83be8abf5e55f920058737895eec2)
+        ;
+
+        
+    
+    
+            var marker_7e2272a55916f71b9e3d0f47dd832028 = L.marker(
+                [49.372, -122.69],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_28b4917a9ea5834c59bb08e22e12b598 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbcd3023bca7f5a1c55a01ddd66fcb1b = $(`<div id="html_cbcd3023bca7f5a1c55a01ddd66fcb1b" style="width: 100.0%; height: 100.0%;">Site: Pitt Meadows<br>Precipitation: 1259.0 mm</div>`)[0];
+                popup_28b4917a9ea5834c59bb08e22e12b598.setContent(html_cbcd3023bca7f5a1c55a01ddd66fcb1b);
+            
+        
+
+        marker_7e2272a55916f71b9e3d0f47dd832028.bindPopup(popup_28b4917a9ea5834c59bb08e22e12b598)
+        ;
+
+        
+    
+    
+            var marker_b55f2f8b6e8b597b994753cf9ff3e654 = L.marker(
+                [49.37186, -123.26969],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_7e7d6be25f8d0f78b094e408d5083a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ecdca2f570c9e83bffdef2f1b21aeae = $(`<div id="html_7ecdca2f570c9e83bffdef2f1b21aeae" style="width: 100.0%; height: 100.0%;">Site: Eagle Ridge - West Van<br>Precipitation: 1426.0 mm</div>`)[0];
+                popup_7e7d6be25f8d0f78b094e408d5083a05.setContent(html_7ecdca2f570c9e83bffdef2f1b21aeae);
+            
+        
+
+        marker_b55f2f8b6e8b597b994753cf9ff3e654.bindPopup(popup_7e7d6be25f8d0f78b094e408d5083a05)
+        ;
+
+        
+    
+    
+            var marker_9434b448a0937a1b8aac479ba4003ed7 = L.marker(
+                [49.33123, -123.15971],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_9fdd6f76dddb07f04f5aa86d2cedd1ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eae2fa5919f6f1fc94ecae1dc1682663 = $(`<div id="html_eae2fa5919f6f1fc94ecae1dc1682663" style="width: 100.0%; height: 100.0%;">Site: West Van Municipal Hall<br>Precipitation: 1450.0 mm</div>`)[0];
+                popup_9fdd6f76dddb07f04f5aa86d2cedd1ca.setContent(html_eae2fa5919f6f1fc94ecae1dc1682663);
+            
+        
+
+        marker_9434b448a0937a1b8aac479ba4003ed7.bindPopup(popup_9fdd6f76dddb07f04f5aa86d2cedd1ca)
+        ;
+
+        
+    
+    
+            var marker_b90a7cf067eca2c0478a7a4db73fb332 = L.marker(
+                [49.29529, -122.7426],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_1e34836abf7eba0e70a780a522f32543 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d47d80b6bcb974e293b1b02c42c7ce7f = $(`<div id="html_d47d80b6bcb974e293b1b02c42c7ce7f" style="width: 100.0%; height: 100.0%;">Site: Burke Mountain Firehall<br>Precipitation: 1514.0 mm</div>`)[0];
+                popup_1e34836abf7eba0e70a780a522f32543.setContent(html_d47d80b6bcb974e293b1b02c42c7ce7f);
+            
+        
+
+        marker_b90a7cf067eca2c0478a7a4db73fb332.bindPopup(popup_1e34836abf7eba0e70a780a522f32543)
+        ;
+
+        
+    
+    
+            var marker_654923c6332f0eb5a20bd650aa420658 = L.marker(
+                [49.28021, -122.83411],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_de89d88239f1f85f1ba2da1e510493b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_182a65fdafacbb5a44f375f14ba31587 = $(`<div id="html_182a65fdafacbb5a44f375f14ba31587" style="width: 100.0%; height: 100.0%;">Site: Port Moody Pump Station<br>Precipitation: 1537.0 mm</div>`)[0];
+                popup_de89d88239f1f85f1ba2da1e510493b5.setContent(html_182a65fdafacbb5a44f375f14ba31587);
+            
+        
+
+        marker_654923c6332f0eb5a20bd650aa420658.bindPopup(popup_de89d88239f1f85f1ba2da1e510493b5)
+        ;
+
+        
+    
+    
+            var marker_74dae2cc31e1933ecb9e7a65771d463d = L.marker(
+                [49.34704, -123.19331],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_83be393a5a001de3ff8a3cc40b2c1009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4708947fa5e95f69802cfafbda1beeb9 = $(`<div id="html_4708947fa5e95f69802cfafbda1beeb9" style="width: 100.0%; height: 100.0%;">Site: West Van Auto<br>Precipitation: 1586.0 mm</div>`)[0];
+                popup_83be393a5a001de3ff8a3cc40b2c1009.setContent(html_4708947fa5e95f69802cfafbda1beeb9);
+            
+        
+
+        marker_74dae2cc31e1933ecb9e7a65771d463d.bindPopup(popup_83be393a5a001de3ff8a3cc40b2c1009)
+        ;
+
+        
+    
+    
+            var marker_aaf324c32e9e4f8a54bc88d9b7f5dd17 = L.marker(
+                [49.3362, -123.07815],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_8a7e868527514972b85c0dbb8722592d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7eba1d35b8fc61ae7a9b76452e4d8c87 = $(`<div id="html_7eba1d35b8fc61ae7a9b76452e4d8c87" style="width: 100.0%; height: 100.0%;">Site: DNV Municipal Hall<br>Precipitation: 1645.0 mm</div>`)[0];
+                popup_8a7e868527514972b85c0dbb8722592d.setContent(html_7eba1d35b8fc61ae7a9b76452e4d8c87);
+            
+        
+
+        marker_aaf324c32e9e4f8a54bc88d9b7f5dd17.bindPopup(popup_8a7e868527514972b85c0dbb8722592d)
+        ;
+
+        
+    
+    
+            var marker_fc60ce1eba2dc805487d731dac8372c3 = L.marker(
+                [49.36032, -123.11064],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_1d5b0c22e718c91609204e0bc126dc6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ff7710851562f2756ad2f6a7edd9c8d = $(`<div id="html_8ff7710851562f2756ad2f6a7edd9c8d" style="width: 100.0%; height: 100.0%;">Site: Cleveland Dam<br>Precipitation: 1686.6 mm</div>`)[0];
+                popup_1d5b0c22e718c91609204e0bc126dc6a.setContent(html_8ff7710851562f2756ad2f6a7edd9c8d);
+            
+        
+
+        marker_fc60ce1eba2dc805487d731dac8372c3.bindPopup(popup_1d5b0c22e718c91609204e0bc126dc6a)
+        ;
+
+        
+    
+    
+            var marker_793ded663bb5a2d8b037b38be8e80754 = L.marker(
+                [49.3347, -123.04354],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_f565e30924c8534d43c9c65b3f6ce8b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a4be4aeeeec82ce5eade793924df427 = $(`<div id="html_5a4be4aeeeec82ce5eade793924df427" style="width: 100.0%; height: 100.0%;">Site: Lynn Valley Firehall<br>Precipitation: 1687.0 mm</div>`)[0];
+                popup_f565e30924c8534d43c9c65b3f6ce8b6.setContent(html_5a4be4aeeeec82ce5eade793924df427);
+            
+        
+
+        marker_793ded663bb5a2d8b037b38be8e80754.bindPopup(popup_f565e30924c8534d43c9c65b3f6ce8b6)
+        ;
+
+        
+    
+    
+            var marker_2ddb70e9c44a6f307dc9c3237409e5d6 = L.marker(
+                [49.31067, -122.8086],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_4d89f8719a0203aeb7474e57fcf2d3af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e280d3b58c442862d0f6dfef1101e500 = $(`<div id="html_e280d3b58c442862d0f6dfef1101e500" style="width: 100.0%; height: 100.0%;">Site: Westwood Plateau<br>Precipitation: 1704.0 mm</div>`)[0];
+                popup_4d89f8719a0203aeb7474e57fcf2d3af.setContent(html_e280d3b58c442862d0f6dfef1101e500);
+            
+        
+
+        marker_2ddb70e9c44a6f307dc9c3237409e5d6.bindPopup(popup_4d89f8719a0203aeb7474e57fcf2d3af)
+        ;
+
+        
+    
+    
+            var marker_f8eca373e31ec710f8caf8b496d08907 = L.marker(
+                [49.31557, -122.96305],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_13c2f0eeed2edd522a2272ffca53ec0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56006c883ecb350816c9cacbca437cb9 = $(`<div id="html_56006c883ecb350816c9cacbca437cb9" style="width: 100.0%; height: 100.0%;">Site: DNV Fire Hall 4<br>Precipitation: 1742.0 mm</div>`)[0];
+                popup_13c2f0eeed2edd522a2272ffca53ec0d.setContent(html_56006c883ecb350816c9cacbca437cb9);
+            
+        
+
+        marker_f8eca373e31ec710f8caf8b496d08907.bindPopup(popup_13c2f0eeed2edd522a2272ffca53ec0d)
+        ;
+
+        
+    
+    
+            var marker_f4a68daba13d3f62bafee3e4440c6e48 = L.marker(
+                [49.78321, -123.16119],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_479f2458fe2599355ae34f1bc19fcaac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ba6c4f3645f8dcb993d9c76ddae409d = $(`<div id="html_1ba6c4f3645f8dcb993d9c76ddae409d" style="width: 100.0%; height: 100.0%;">Site: Squamish<br>Precipitation: 1747.0 mm</div>`)[0];
+                popup_479f2458fe2599355ae34f1bc19fcaac.setContent(html_1ba6c4f3645f8dcb993d9c76ddae409d);
+            
+        
+
+        marker_f4a68daba13d3f62bafee3e4440c6e48.bindPopup(popup_479f2458fe2599355ae34f1bc19fcaac)
+        ;
+
+        
+    
+    
+            var marker_faee40f718c445433e9c3d4ae9af65bf = L.marker(
+                [49.33192, -122.9396],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_ef8766322f90ed6c6456b6c8269566c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e55944b0f8eb8312258db0cc70fd5c = $(`<div id="html_04e55944b0f8eb8312258db0cc70fd5c" style="width: 100.0%; height: 100.0%;">Site: Seycove Marina<br>Precipitation: 1776.0 mm</div>`)[0];
+                popup_ef8766322f90ed6c6456b6c8269566c7.setContent(html_04e55944b0f8eb8312258db0cc70fd5c);
+            
+        
+
+        marker_faee40f718c445433e9c3d4ae9af65bf.bindPopup(popup_ef8766322f90ed6c6456b6c8269566c7)
+        ;
+
+        
+    
+    
+            var marker_977e5143375966b3b5018299961b3830 = L.marker(
+                [49.5467, -123.23985],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_0d530424b27587d408245ae76f491c40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d3e92a501c5e0f7fe0e7458f027bf2c = $(`<div id="html_2d3e92a501c5e0f7fe0e7458f027bf2c" style="width: 100.0%; height: 100.0%;">Site: Porteau Cove<br>Precipitation: 1986.0 mm</div>`)[0];
+                popup_0d530424b27587d408245ae76f491c40.setContent(html_2d3e92a501c5e0f7fe0e7458f027bf2c);
+            
+        
+
+        marker_977e5143375966b3b5018299961b3830.bindPopup(popup_0d530424b27587d408245ae76f491c40)
+        ;
+
+        
+    
+    
+            var marker_bfca6d582b7113cd375f35352948e549 = L.marker(
+                [49.36409, -122.75339],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_1835c91fdc6b6581bbb20c5e8e577780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0324215cb3a95c5eb7d8afc4dd726c0 = $(`<div id="html_f0324215cb3a95c5eb7d8afc4dd726c0" style="width: 100.0%; height: 100.0%;">Site: Coquitlam fire weather<br>Precipitation: 2085.0 mm</div>`)[0];
+                popup_1835c91fdc6b6581bbb20c5e8e577780.setContent(html_f0324215cb3a95c5eb7d8afc4dd726c0);
+            
+        
+
+        marker_bfca6d582b7113cd375f35352948e549.bindPopup(popup_1835c91fdc6b6581bbb20c5e8e577780)
+        ;
+
+        
+    
+    
+            var marker_e2485825e804d519c388cc8e00e27c57 = L.marker(
+                [49.35889, -123.0356],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_69f633983b438609dcfe1b8f41de99e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17e1b847e310b5bd7c5a6bdc9439c69 = $(`<div id="html_c17e1b847e310b5bd7c5a6bdc9439c69" style="width: 100.0%; height: 100.0%;">Site: Hastings Creek<br>Precipitation: 2098.0 mm</div>`)[0];
+                popup_69f633983b438609dcfe1b8f41de99e0.setContent(html_c17e1b847e310b5bd7c5a6bdc9439c69);
+            
+        
+
+        marker_e2485825e804d519c388cc8e00e27c57.bindPopup(popup_69f633983b438609dcfe1b8f41de99e0)
+        ;
+
+        
+    
+    
+            var marker_b83e7e93a0b59141af5dd9b652d389f6 = L.marker(
+                [49.359, -123.08069],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_83f376800fa0276a43fb2c8e11926030 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3281c8dc001d125be914144b8b4219b6 = $(`<div id="html_3281c8dc001d125be914144b8b4219b6" style="width: 100.0%; height: 100.0%;">Site: Grouse Mountain - DNV<br>Precipitation: 2345.0 mm</div>`)[0];
+                popup_83f376800fa0276a43fb2c8e11926030.setContent(html_3281c8dc001d125be914144b8b4219b6);
+            
+        
+
+        marker_b83e7e93a0b59141af5dd9b652d389f6.bindPopup(popup_83f376800fa0276a43fb2c8e11926030)
+        ;
+
+        
+    
+    
+            var marker_bbadbef40763ec44d41eabf06d319c4b = L.marker(
+                [49.38694, -123.11968],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_8e3398a93b1168f9e8e8821b5363a09f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70d4bd118ef07d57ea34044f79eb3c7e = $(`<div id="html_70d4bd118ef07d57ea34044f79eb3c7e" style="width: 100.0%; height: 100.0%;">Site: Lower Capilano fire weather<br>Precipitation: 2442.0 mm</div>`)[0];
+                popup_8e3398a93b1168f9e8e8821b5363a09f.setContent(html_70d4bd118ef07d57ea34044f79eb3c7e);
+            
+        
+
+        marker_bbadbef40763ec44d41eabf06d319c4b.bindPopup(popup_8e3398a93b1168f9e8e8821b5363a09f)
+        ;
+
+        
+    
+    
+            var marker_7a29b237625422dbc03daac4d60ced5d = L.marker(
+                [49.37925, -122.99552],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_f58644c6f2b88431f87a45888cbbcb3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1538d7e51f2c0298ec1e72be04753060 = $(`<div id="html_1538d7e51f2c0298ec1e72be04753060" style="width: 100.0%; height: 100.0%;">Site: Lower Seymour fire weather<br>Precipitation: 2483.0 mm</div>`)[0];
+                popup_f58644c6f2b88431f87a45888cbbcb3a.setContent(html_1538d7e51f2c0298ec1e72be04753060);
+            
+        
+
+        marker_7a29b237625422dbc03daac4d60ced5d.bindPopup(popup_f58644c6f2b88431f87a45888cbbcb3a)
+        ;
+
+        
+    
+    
+            var marker_c06370301b80aa24e9064a1bc8945c93 = L.marker(
+                [49.35326, -122.77482],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_6be135149e9d5db016a61b34cb228ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_204f08f67daadb6b4943b4bf09d5b4e2 = $(`<div id="html_204f08f67daadb6b4943b4bf09d5b4e2" style="width: 100.0%; height: 100.0%;">Site: Coquitlam Dam<br>Precipitation: 2503.4 mm</div>`)[0];
+                popup_6be135149e9d5db016a61b34cb228ca2.setContent(html_204f08f67daadb6b4943b4bf09d5b4e2);
+            
+        
+
+        marker_c06370301b80aa24e9064a1bc8945c93.bindPopup(popup_6be135149e9d5db016a61b34cb228ca2)
+        ;
+
+        
+    
+    
+            var marker_f80fdb425f84c5ebb816b25f098af7bd = L.marker(
+                [49.40431, -123.19144],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_2e84c1f26aab5848fc567eff815301e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4abad916ac2ed955bd1c95e7a21614ff = $(`<div id="html_4abad916ac2ed955bd1c95e7a21614ff" style="width: 100.0%; height: 100.0%;">Site: Cypress Mountain<br>Precipitation: 2702.0 mm</div>`)[0];
+                popup_2e84c1f26aab5848fc567eff815301e8.setContent(html_4abad916ac2ed955bd1c95e7a21614ff);
+            
+        
+
+        marker_f80fdb425f84c5ebb816b25f098af7bd.bindPopup(popup_2e84c1f26aab5848fc567eff815301e8)
+        ;
+
+        
+    
+    
+            var marker_94b2c3ee38748766f7eaf1f752aba5bc = L.marker(
+                [49.48584, -122.94626],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_b6885e7c5fc302891945d15fe05f63b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0872f8f537d62297cdcad4c064e7e8c2 = $(`<div id="html_0872f8f537d62297cdcad4c064e7e8c2" style="width: 100.0%; height: 100.0%;">Site: Seymour fire weather<br>Precipitation: 2975.0 mm</div>`)[0];
+                popup_b6885e7c5fc302891945d15fe05f63b7.setContent(html_0872f8f537d62297cdcad4c064e7e8c2);
+            
+        
+
+        marker_94b2c3ee38748766f7eaf1f752aba5bc.bindPopup(popup_b6885e7c5fc302891945d15fe05f63b7)
+        ;
+
+        
+    
+    
+            var marker_d840a34ae84383d87f27d99c0bf6cf0a = L.marker(
+                [49.38081, -122.77678],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_988ff83b1196cf93b631c86ac752dc8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b81c224798da6ef0af679565289b2784 = $(`<div id="html_b81c224798da6ef0af679565289b2784" style="width: 100.0%; height: 100.0%;">Site: Cedar Creek<br>Precipitation: 3022.0 mm</div>`)[0];
+                popup_988ff83b1196cf93b631c86ac752dc8a.setContent(html_b81c224798da6ef0af679565289b2784);
+            
+        
+
+        marker_d840a34ae84383d87f27d99c0bf6cf0a.bindPopup(popup_988ff83b1196cf93b631c86ac752dc8a)
+        ;
+
+        
+    
+    
+            var marker_c62b4bfe2b555ed7f6a63b5b9e66a8d5 = L.marker(
+                [49.44029, -122.96769],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_c868e747c9d63bfcf0447e5407ca1a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24b4b5f48f172f1dc1f5e5db1a35ed6e = $(`<div id="html_24b4b5f48f172f1dc1f5e5db1a35ed6e" style="width: 100.0%; height: 100.0%;">Site: Seymour Falls Dam<br>Precipitation: 3075.0 mm</div>`)[0];
+                popup_c868e747c9d63bfcf0447e5407ca1a62.setContent(html_24b4b5f48f172f1dc1f5e5db1a35ed6e);
+            
+        
+
+        marker_c62b4bfe2b555ed7f6a63b5b9e66a8d5.bindPopup(popup_c868e747c9d63bfcf0447e5407ca1a62)
+        ;
+
+        
+    
+    
+            var marker_c60dfa7020dc5d942b0961fda7884566 = L.marker(
+                [49.48524, -123.12674],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_73d821d112a00f7ef997bf191426daba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27c41dc25562b1e32b7a3403f035d6cb = $(`<div id="html_27c41dc25562b1e32b7a3403f035d6cb" style="width: 100.0%; height: 100.0%;">Site: Enchantment Creek<br>Precipitation: 3145.0 mm</div>`)[0];
+                popup_73d821d112a00f7ef997bf191426daba.setContent(html_27c41dc25562b1e32b7a3403f035d6cb);
+            
+        
+
+        marker_c60dfa7020dc5d942b0961fda7884566.bindPopup(popup_73d821d112a00f7ef997bf191426daba)
+        ;
+
+        
+    
+    
+            var marker_241abe5489d1dcf8985d1b27585ffbcd = L.marker(
+                [49.44496, -123.10402],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_04dc23c8e320e466c2daed5eb37f3767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d3248dc4a3e3b2fb6cd0adb649812da = $(`<div id="html_5d3248dc4a3e3b2fb6cd0adb649812da" style="width: 100.0%; height: 100.0%;">Site: Capilano fire weather<br>Precipitation: 3546.0 mm</div>`)[0];
+                popup_04dc23c8e320e466c2daed5eb37f3767.setContent(html_5d3248dc4a3e3b2fb6cd0adb649812da);
+            
+        
+
+        marker_241abe5489d1dcf8985d1b27585ffbcd.bindPopup(popup_04dc23c8e320e466c2daed5eb37f3767)
+        ;
+
+        
+    
+    
+            var marker_c5e4dbccbe02c57ffed70961ca48e354 = L.marker(
+                [49.52026, -123.00398],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_f9a186d865d02bc9fe4227974747cc25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92a4d59dec97a546d78ddc65722b589d = $(`<div id="html_92a4d59dec97a546d78ddc65722b589d" style="width: 100.0%; height: 100.0%;">Site: Seymour at Orchid Creek<br>Precipitation: 3596.0 mm</div>`)[0];
+                popup_f9a186d865d02bc9fe4227974747cc25.setContent(html_92a4d59dec97a546d78ddc65722b589d);
+            
+        
+
+        marker_c5e4dbccbe02c57ffed70961ca48e354.bindPopup(popup_f9a186d865d02bc9fe4227974747cc25)
+        ;
+
+        
+    
+    
+            var marker_dbb404196b2fdaa004beef2ab6c107ea = L.marker(
+                [49.45379, -123.11012],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_2710c89c6dabbe568cde54ea63063809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_287dac52ef376831704b811ca2303b26 = $(`<div id="html_287dac52ef376831704b811ca2303b26" style="width: 100.0%; height: 100.0%;">Site: Capilano mid-valley<br>Precipitation: 3601.0 mm</div>`)[0];
+                popup_2710c89c6dabbe568cde54ea63063809.setContent(html_287dac52ef376831704b811ca2303b26);
+            
+        
+
+        marker_dbb404196b2fdaa004beef2ab6c107ea.bindPopup(popup_2710c89c6dabbe568cde54ea63063809)
+        ;
+
+        
+    
+    
+            var marker_24bfeaa52111d294f283fed1012cbb85 = L.marker(
+                [49.53588, -123.05076],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_5903368a9baf4eca000bcd81e976612f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d0ceb377e099989deab16c4fb84cb03 = $(`<div id="html_1d0ceb377e099989deab16c4fb84cb03" style="width: 100.0%; height: 100.0%;">Site: Orchid Lake<br>Precipitation: 4019.0 mm</div>`)[0];
+                popup_5903368a9baf4eca000bcd81e976612f.setContent(html_1d0ceb377e099989deab16c4fb84cb03);
+            
+        
+
+        marker_24bfeaa52111d294f283fed1012cbb85.bindPopup(popup_5903368a9baf4eca000bcd81e976612f)
+        ;
+
+        
+    
+    
+            var marker_948b2b0c03270f1a482c312585eec42c = L.marker(
+                [49.55448, -122.75861],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_ad41489aced53b8781d48c43a5c44214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38044b717161237c55f900be5be6b388 = $(`<div id="html_38044b717161237c55f900be5be6b388" style="width: 100.0%; height: 100.0%;">Site: Disappointment Lake<br>Precipitation: 4140.0 mm</div>`)[0];
+                popup_ad41489aced53b8781d48c43a5c44214.setContent(html_38044b717161237c55f900be5be6b388);
+            
+        
+
+        marker_948b2b0c03270f1a482c312585eec42c.bindPopup(popup_ad41489aced53b8781d48c43a5c44214)
+        ;
+
+        
+    
+    
+            var marker_6a31c1961ff8a22d04ed062ee9d33a6f = L.marker(
+                [49.45446, -123.03179],
+                {}
+            ).addTo(marker_cluster_0e8da0b9daf740a1c3cd9608c2291762);
+        
+    
+        var popup_754725b5550d209837362883774562de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_521284334842c0cddab2312c2081a46a = $(`<div id="html_521284334842c0cddab2312c2081a46a" style="width: 100.0%; height: 100.0%;">Site: Palisade Lake<br>Precipitation: 4291.0 mm</div>`)[0];
+                popup_754725b5550d209837362883774562de.setContent(html_521284334842c0cddab2312c2081a46a);
+            
+        
+
+        marker_6a31c1961ff8a22d04ed062ee9d33a6f.bindPopup(popup_754725b5550d209837362883774562de)
+        ;
+
+        
+    
+</script>
+</html>
